@@ -1,0 +1,235 @@
+concept_neural_network_architecture
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Архитектура нейронной сети"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Neural network architecture"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Архитектура нейронной сети")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Neural network architecture")]
+					(* <-lang_en;; *);;
+		*);;
+
+concept_alexnet
+
+	<- sc_node_not_relation;
+	
+	<- concept_neural_network_architecture;
+	
+	=> nrel_main_idtf: 
+		["AlexNet"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["AlexNet"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("AlexNet")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("AlexNet")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_neural_network_architecture;;
+				*);;
+
+			
+		*);;
+
+concept_googlenet
+
+	<- sc_node_not_relation;
+	
+	<- concept_neural_network_architecture;
+	
+	=> nrel_main_idtf: 
+		["GoogleNet"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GoogleNet"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("GoogleNet")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("GoogleNet")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_neural_network_architecture;;
+				*);;
+
+			
+		*);;
+
+concept_inception
+
+	<- sc_node_not_relation;
+	
+	<- concept_neural_network_architecture;
+	
+	=> nrel_main_idtf: 
+		["Inception"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Inception"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Inception")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Inception")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_neural_network_architecture;;
+				*);;
+
+			
+		*);;
+
+concept_vgg
+
+	<- sc_node_not_relation;
+	
+	<- concept_neural_network_architecture;
+	
+	=> nrel_main_idtf: 
+		["VGG"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["VGG"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("VGG")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("VGG")] 
+					(* <-lang_en;; *);;
+					
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_neural_network_architecture;;
+				*);;
+
+			
+		*);;
+
+concept_resnet
+
+	<- sc_node_not_relation;
+	
+	<- concept_neural_network_architecture;
+	
+	=> nrel_main_idtf: 
+		["ResNet"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["ResNet"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("ResNet")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("ResNet")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_neural_network_architecture;;
+				*);;
+
+			
+		*);;
+
+concept_densenet
+
+	<- sc_node_not_relation;
+	
+	<- concept_neural_network_architecture;
+	
+	=> nrel_main_idtf: 
+		["DenseNet"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["DenseNet"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("DenseNet")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("DenseNet")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_neural_network_architecture;;
+				*);;
+
+			
+		*);;

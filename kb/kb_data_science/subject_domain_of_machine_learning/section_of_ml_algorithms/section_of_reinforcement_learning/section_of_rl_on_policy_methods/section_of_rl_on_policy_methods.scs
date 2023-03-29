@@ -1,0 +1,16 @@
+section_of_rl_on_policy_methods
+
+	=> nrel_main_idtf:
+		[Раздел. On-policy методы RL]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. On-policy RL methods]
+			(* <- lang_en;; *);;
+
+	
+section_of_rl_on_policy_methods
+		-> rrel_key_sc_element:
+			concept_rl_on_policy_method;
+			concept_sarsa;
+			concept_trust_region_policy_optimization;
+			concept_proximal_policy_optimization;;

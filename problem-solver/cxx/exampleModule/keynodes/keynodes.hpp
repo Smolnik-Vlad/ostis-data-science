@@ -9,6 +9,7 @@
 #include <sc-memory/sc_object.hpp>
 #include <sc-memory/sc_addr.hpp>
 
+
 #include "keynodes.generated.hpp"
 
 namespace exampleModule
@@ -29,6 +30,9 @@ public:
 
   SC_PROPERTY(Keynode("question_find_isomorphic_structures"), ForceCreate)
   static ScAddr question_find_isomorphic_structures;
+
+  SC_PROPERTY(Keynode("Gameltonian_Cycle"), ForceCreate)
+  static ScAddr Gameltonian_Cycle;
 };
 
 } // namespace exampleModule

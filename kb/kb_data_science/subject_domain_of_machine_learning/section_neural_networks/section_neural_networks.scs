@@ -1,0 +1,35 @@
+section_neural_networks
+
+	=> nrel_main_idtf:
+		[Предметная область нейронных сетей]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Subject area of Neural Networks]
+			(* <- lang_en;; *);
+			
+	<- not_enough_formed_structure;
+
+	<= nrel_section_decomposition:
+	
+	
+		section_nn_layers_and_modules
+			(*
+			=> nrel_section_base_order:
+				section_nn_in_img_classification;;
+			*);
+			
+		section_nn_in_img_classification
+			(*
+			=> nrel_section_base_order:
+				section_nn_in_img_segmentation;;
+			*);
+			
+		section_nn_in_img_segmentation
+			(*
+			=> nrel_section_base_order:
+				section_nn_in_nlp;;
+			*);
+			
+		section_nn_in_nlp;;
+		
+	

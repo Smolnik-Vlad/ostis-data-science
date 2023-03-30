@@ -1,0 +1,33 @@
+subject_domain_of_data_analysis
+
+	=> nrel_main_idtf:
+		[Предметная область анализа данных]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Subject area of data analysis]
+			(* <- lang_en;; *);;
+			
+
+subject_domain_of_data_analysis
+			
+	<- not_enough_formed_structure;;
+
+subject_domain_of_data_analysis
+
+	<= nrel_section_decomposition:
+	
+	
+		section_linear_regression_assumptions
+			(*
+			=> nrel_section_base_order:
+				section_time_series_analysis;;
+			*);
+			
+		section_time_series_analysis
+			(*
+			=> nrel_section_base_order:
+				section_time_series_forecasting;;
+			*);
+			
+		section_time_series_forecasting;;
+		

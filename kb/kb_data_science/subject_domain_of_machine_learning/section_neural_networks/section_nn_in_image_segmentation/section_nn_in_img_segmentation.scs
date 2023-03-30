@@ -1,0 +1,23 @@
+section_nn_in_img_segmentation
+
+	=> nrel_main_idtf:
+		[Раздел. Архитектуры нейронных сетей в задачах сегментации изображений]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Neural network architectures in image segmentation tasks]
+			(* <- lang_en;; *);
+			
+	<- not_enough_formed_structure;
+
+	<= nrel_section_decomposition:
+	{
+	
+		section_nn_one_stage_detector
+			(*
+			=> nrel_section_base_order:
+				section_nn_two_stage_detector;;
+			*);
+			
+		section_nn_two_stage_detector
+			
+	};;

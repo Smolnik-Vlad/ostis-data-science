@@ -1,0 +1,17 @@
+section_nn_layers_and_modules
+
+	=> nrel_main_idtf:
+		[Раздел. Слои и модули нейронных сетей]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Neural Network's layers and modules]
+			(* <- lang_en;; *);
+	
+
+	-> rrel_key_sc_element: 
+		concept_neural_network_layer;
+		concept_fully_connected_neural_network;
+		concept_convolutional_neural_network;
+		concept_recurrent_neural_network;
+		concept_long_short_term_memory;
+		concept_gated_recurrent_unit;;

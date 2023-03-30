@@ -1,0 +1,18 @@
+section_nn_in_img_classification
+
+	=> nrel_main_idtf:
+		[Раздел. Архитектуры нейронных сетей в задачах классификации изображений]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Neural network architectures in image classification tasks]
+			(* <- lang_en;; *);
+
+		-> rrel_key_sc_element: 
+			concept_neural_network_architecture;
+			concept_alexnet;
+			concept_googlenet;
+			concept_inception;
+			concept_vgg;
+			concept_resnet;
+			concept_densenet;
+			concept_efficientnet;;

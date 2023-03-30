@@ -1,0 +1,14 @@
+section_of_nn_architectures_in_natural_language_processing
+
+	=> nrel_main_idtf:
+		[Раздел. Архитектуры нейронных сетей в задачах обработки естественного языка]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Neural network architectures in natural language processing tasks]
+			(* <- lang_en;; *);
+
+	-> rrel_key_sc_element: 
+		concept_bert;
+		concept_roberta;
+		concept_distilbert;
+		concept_gpt;;

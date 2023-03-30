@@ -1,0 +1,24 @@
+section_of_time_series_forecasting
+	
+	=> nrel_main_idtf:
+		[Раздел. Предсказание временных рядов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Time series Forecasting]
+			(* <- lang_en;; *);;
+			
+section_of_time_series_forecasting	<- not_enough_formed_structure;;
+
+section_of_time_series_forecasting
+
+	<= nrel_section_decomposition:
+	
+	
+		section_classical_time_series_forecasting_algorithms
+			(*
+			=> nrel_section_base_order:
+				section_non_classical_time_series_forecasting_algorithms;;
+			*);
+			
+		section_non_classical_time_series_forecasting_algorithms;;
+		

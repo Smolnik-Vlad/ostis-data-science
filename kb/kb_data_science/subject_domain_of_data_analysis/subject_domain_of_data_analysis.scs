@@ -16,7 +16,7 @@ subject_domain_of_data_analysis
 
 	<= nrel_section_decomposition:
 	
-	
+
 		section_linear_regression_assumptions
 			(*
 			=> nrel_section_base_order:
@@ -30,4 +30,5 @@ subject_domain_of_data_analysis
 			*);
 			
 		section_time_series_forecasting;;
+
 		

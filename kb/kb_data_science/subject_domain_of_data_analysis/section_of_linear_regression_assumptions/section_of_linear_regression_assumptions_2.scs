@@ -1,0 +1,271 @@
+concept_regression_assumption
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Предположение (допущение) линейной регрессии"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Assumption of Linear Regression"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Предположение линейной регрессии")] 
+					(* <-lang_ru;; *);;
+
+			=> nrel_main_idtf: 
+				[Def.("Assumption of Linear Regression")]
+					(* <-lang_en;; *);;
+			
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_regression_assumption.html" (* <-lang_ru;; *);;
+				*);;
+
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_regression_assumption.html" (* <-lang_en;; *);;
+				*);;
+			
+		*);;
+
+concept_assumption_of_linear_relationship
+
+	<- sc_node_not_relation;
+	
+	<- concept_regression_assumption;
+	
+	=> nrel_main_idtf: 
+		["Предположение существования линейной зависимости"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Assumption of Linear relationship"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Предположение существования линейной зависимости")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Assumption of Linear relationship")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_assumption_of_linear_relationship.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_assumption_of_linear_relationship.html" (* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_regression_assumption;;
+				*);;
+
+			
+		*);;
+		
+		
+
+concept_assumption_of_multicollinearity_absence
+
+	<- sc_node_not_relation;
+	
+	<- concept_regression_assumption;
+	
+	=> nrel_main_idtf: 
+		["Предположение отсутствия мультиколлинеарности"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Assumption of Multicollinearity absence"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Предположение отсутствия мультиколлинеарности")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Assumption of Multicollinearity absence")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_assumption_of_multicollinearity_absence.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_assumption_of_multicollinearity_absence.html" (* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_regression_assumption;;
+				*);;
+
+			
+		*);;
+		
+concept_assumption_of_autocorrelation_absence
+
+	<- sc_node_not_relation;
+	
+	<- concept_regression_assumption;
+	
+	=> nrel_main_idtf: 
+		["Предположение отсутствия автокорреляции"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Assumption of Autocorrelation absence"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Предположение отсутствия автокорреляции")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Assumption of Autocorrelation absence")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_assumption_of_autocorrelation_absence.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_assumption_of_autocorrelation_absence.html" (* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_regression_assumption;;
+				*);;
+
+			
+		*);;
+		
+concept_assumption_of_homoscedasticity
+
+	<- sc_node_not_relation;
+	
+	<- concept_regression_assumption;
+	
+	=> nrel_main_idtf: 
+		["Предположение наличия гомоскедастичности"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Assumption of Homoscedasticity presence"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Предположение наличия гомоскедастичности")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Assumption of Homoscedasticity presence")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_assumption_of_homoscedasticity.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_assumption_of_homoscedasticity.html" (* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_regression_assumption;;
+				*);;
+
+			
+		*);;
+		
+concept_assumption_of_multivariate_normality
+
+	<- sc_node_not_relation;
+	
+	<- concept_regression_assumption;
+	
+	=> nrel_main_idtf: 
+		["Предположение многомерной нормальности"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Assumption of Multivariate normality"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Предположение многомерной нормальности")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Assumption of Multivariate normality")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_assumption_of_multivariate_normality.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_assumption_of_multivariate_normality.html" (* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_regression_assumption;;
+				*);;
+
+			
+		*);;
+		

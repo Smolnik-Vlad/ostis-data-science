@@ -1,0 +1,18 @@
+section_of_supervised_learning
+
+	=> nrel_main_idtf:
+		[Раздел. Обучение с учителем]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Supervised Learning]
+			(* <- lang_en;; *);;
+
+section_of_supervised_learning	
+
+		-> rrel_key_sc_element: 
+			supervised_learning_algorithm;
+			linear_regression;
+			support_vector_machines;
+			decision_trees;
+			random_forest;
+			k_nearest_neighbors;;

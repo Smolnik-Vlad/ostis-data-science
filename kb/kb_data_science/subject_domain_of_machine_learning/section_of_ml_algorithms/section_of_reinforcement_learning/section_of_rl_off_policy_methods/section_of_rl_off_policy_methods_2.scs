@@ -1,0 +1,129 @@
+concept_rl_off_policy_method
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Off-policy метод"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Off-policy method"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Метод без политики (off-policy)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Off-policy method")]
+					(* <-lang_en;; *);;
+		*);;
+
+concept_q_learning
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_off_policy_method;
+	
+	=> nrel_main_idtf: 
+		["Q-learning"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Q-learning"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Q-learning")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Q-learning")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_rl_off_policy_method;;
+				*);;
+
+			
+		*);;
+		
+concept_deep_q_network
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_off_policy_method;
+	
+	=> nrel_main_idtf: 
+		["DQN"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["DQN"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("DQN")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("DQN")] 
+					(* <-lang_en;; *);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_rl_off_policy_method;;
+				*);;
+
+			
+		*);;
+		
+concept_deep_deterministic_policy_gradient
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_off_policy_method;
+	
+	=> nrel_main_idtf: 
+		["DDPG"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["DDPG"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("DDPG")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("DDPG")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_rl_off_policy_method;;
+				*);;
+
+			
+		*);;

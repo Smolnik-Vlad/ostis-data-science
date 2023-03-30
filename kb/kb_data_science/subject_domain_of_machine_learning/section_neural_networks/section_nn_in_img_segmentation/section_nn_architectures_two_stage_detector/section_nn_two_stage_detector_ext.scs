@@ -17,21 +17,10 @@ concept_nn_region_based_architecture
 			
 			=> nrel_main_idtf: 
 				[Опр.("Region-based архитектура нейронной сети")] 
-					(* <-lang_ru;; *);
+					(* <-lang_ru;; *);;
 			=> nrel_main_idtf: 
 				[Def.("Region-based neural network architecture")]
-					(* <-lang_en;; *);
-			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_nn_region_based_architecture.html" (* <-lang_ru;; *);
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_nn_region_based_architecture.html" (* <-lang_en;; *);
-				*);;
+					(* <-lang_en;; *);;
 			
 		*);;
 
@@ -62,17 +51,6 @@ concept_rcnn
 				[Def.("RCNN")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_rcnn.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_rcnn.html" (* <-lang_en;; *);;
-				*);;
-				
 			<= nrel_using_constants:
 				...
 				(*
@@ -109,17 +87,6 @@ concept_fast_rcnn
 				[Def.("fast RCNN")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_fast_rcnn.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_fast_rcnn.html" (* <-lang_en;; *);;
-				*);;
-				
 			<= nrel_using_constants:
 				...
 				(*
@@ -156,17 +123,6 @@ concept_faster_rcnn
 				[Def.("faster RCNN")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_faster_rcnn.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_faster_rcnn.html" (* <-lang_en;; *);;
-				*);;
-				
 			<= nrel_using_constants:
 				...
 				(*

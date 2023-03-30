@@ -17,21 +17,11 @@ concept_nn_region_free_architecture
 			
 			=> nrel_main_idtf: 
 				[Опр.("Region-free архитектура нейронной сети")] 
-					(* <-lang_ru;; *);
+					(* <-lang_ru;; *);;
 			=> nrel_main_idtf: 
 				[Def.("Region-free neural network architecture")]
-					(* <-lang_en;; *);
+					(* <-lang_en;; *);;
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_nn_region_free_architecture.html" (* <-lang_ru;; *);
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_nn_region_free_architecture.html" (* <-lang_en;; *);
-				*);;
 			
 		*);;
 
@@ -62,16 +52,6 @@ concept_ssd
 				[Def.("SSD (Single shot detector)")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_ssd.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_ssd.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...
@@ -109,17 +89,6 @@ concept_yolo
 				[Def.("YOLO")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_yolo.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_yolo.html" (* <-lang_en;; *);;
-				*);;
-				
 			<= nrel_using_constants:
 				...
 				(*

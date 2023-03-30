@@ -22,16 +22,6 @@ concept_rl_on_policy_method
 				[Def.("On-policy method")]
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_rl_on_policy_method.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_rl_on_policy_method.html" (* <-lang_en;; *);;
-				*);;
 				
 		*);;
 
@@ -61,16 +51,6 @@ concept_sarsa
 				[Def.("SARSA")] 
 					(* <-lang_en;; *);;
 				
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_sarsa.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_sarsa.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...
@@ -106,16 +86,6 @@ concept_trpo
 				[Def.("DQN")] 
 					(* <-lang_en;; *);;
 						
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_trpo.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_trpo.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...
@@ -151,16 +121,6 @@ concept_ppo
 				[Def.("PPO")] 
 					(* <-lang_en;; *);;
 						
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_ppo.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_ppo.html" (* <-lang_en;; *);;
-				*);;
 									
 			<= nrel_using_constants:
 				...

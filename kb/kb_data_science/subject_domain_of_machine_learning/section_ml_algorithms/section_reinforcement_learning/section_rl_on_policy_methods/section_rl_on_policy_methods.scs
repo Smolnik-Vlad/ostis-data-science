@@ -9,8 +9,9 @@ section_rl_on_policy_methods
 
 	
 section_rl_on_policy_methods
-		-> rrel_key_sc_element:
-			concept_rl_on_policy_method;
-			concept_sarsa;
-			concept_trpo;
-			concept_ppo;;
+
+	-> rrel_key_sc_element:
+		concept_rl_on_policy_method;
+		concept_sarsa;
+		concept_trpo;
+		concept_ppo;;

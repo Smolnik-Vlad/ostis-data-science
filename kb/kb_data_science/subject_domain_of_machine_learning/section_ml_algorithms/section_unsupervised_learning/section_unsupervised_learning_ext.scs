@@ -23,17 +23,6 @@ concept_unsupervised_learning_algorithm
 					(* <-lang_en;; *);;
 			
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_unsupervised_learning_algorithm.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_unsupervised_learning_algorithm.html" (* <-lang_en;; *);;
-				*);;
-			
 		*);;
 
 concept_k_means
@@ -63,16 +52,6 @@ concept_k_means
 					(* <-lang_en;; *);;
 			
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_k_means.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_k_means.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...

@@ -23,16 +23,6 @@ concept_rl_off_policy_method
 					(* <-lang_en;; *);;
 					
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_rl_off_policy_method.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_rl_off_policy_method.html" (* <-lang_en;; *);;
-				*);;
 				
 		*);;
 
@@ -62,16 +52,6 @@ concept_q_learning
 				[Def.("Q-learning")] 
 					(* <-lang_en;; *);;
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_q_learning.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_q_learning.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...
@@ -108,16 +88,6 @@ concept_dqn
 				[Def.("DQN")] 
 					(* <-lang_en;; *);;
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_dqn.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_dqn.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...
@@ -154,16 +124,6 @@ concept_ddpg
 				[Def.("DDPG")] 
 					(* <-lang_en;; *);;
 			
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/ru/concept_ddpg.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_ddpg.html" (* <-lang_en;; *);;
-				*);;
 				
 			<= nrel_using_constants:
 				...

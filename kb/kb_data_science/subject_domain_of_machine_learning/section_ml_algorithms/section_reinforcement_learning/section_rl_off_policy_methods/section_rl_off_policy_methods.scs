@@ -9,9 +9,9 @@ section_rl_off_policy_methods
 
 	
 section_rl_off_policy_methods
-		-> rrel_key_sc_element:
 
-			concept_rl_off_policy_method;
-			concept_q_learning;
-			concept_dqn;
-			concept_ddpq;;
+	-> rrel_key_sc_element:
+		concept_rl_off_policy_method;
+		concept_q_learning;
+		concept_dqn;
+		concept_ddpq;;

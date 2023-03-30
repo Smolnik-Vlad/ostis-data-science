@@ -17,7 +17,7 @@ section_reinforcement_learning
 		section_rl_off_policy_methods
 			(*
 			=> nrel_section_base_order:
-				section_of_rl_on_policy_methods;;
+				section_rl_on_policy_methods;;
 			*);
 			
 		section_rl_on_policy_methods;;					

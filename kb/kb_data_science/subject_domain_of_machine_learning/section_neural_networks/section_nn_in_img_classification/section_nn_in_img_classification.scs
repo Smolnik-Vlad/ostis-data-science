@@ -7,12 +7,12 @@ section_nn_in_img_classification
 		[Section. Neural network architectures in image classification tasks]
 			(* <- lang_en;; *);
 
-		-> rrel_key_sc_element: 
-			concept_neural_network_architecture;
-			concept_alexnet;
-			concept_googlenet;
-			concept_inception;
-			concept_vgg;
-			concept_resnet;
-			concept_densenet;
-			concept_efficientnet;;
+	-> rrel_key_sc_element: 
+		concept_neural_network_architecture;
+		concept_alexnet;
+		concept_googlenet;
+		concept_inception;
+		concept_vgg;
+		concept_resnet;
+		concept_densenet;
+		concept_efficientnet;;

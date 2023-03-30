@@ -23,6 +23,16 @@ concept_supervised_learning_algorithm
 				[Def.("Supervised Learning algorithm")]
 					(* <-lang_en;; *);;
 			
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_supervised_learning_algorithm.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_supervised_learning_algorithm.html" (* <-lang_en;; *);;
+				*);;
 
 		*);;
 

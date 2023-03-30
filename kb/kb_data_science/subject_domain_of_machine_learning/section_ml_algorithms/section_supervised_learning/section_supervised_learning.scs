@@ -9,10 +9,10 @@ section_supervised_learning
 
 section_supervised_learning	
 
-		-> rrel_key_sc_element: 
-			concept_supervised_learning_algorithm;
-			concept_linear_regression;
-			concept_support_vector_machines;
-			concept_decision_trees;
-			concept_random_forest;
-			concept_k_nearest_neighbors;;
+	-> rrel_key_sc_element: 
+		concept_supervised_learning_algorithm;
+		concept_linear_regression;
+		concept_support_vector_machines;
+		concept_decision_trees;
+		concept_random_forest;
+		concept_k_nearest_neighbors;;

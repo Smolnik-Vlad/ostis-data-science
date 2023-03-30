@@ -13,30 +13,29 @@ subject_domain_of_machine_learning
 
 	<= nrel_section_decomposition:
 
-	
-		subject_domain_of_ml_algorithms
+		section_ml_algorithms
 			(*
 			=> nrel_section_base_order:
-				subject_domain_of_neural_networks;;
+				section_neural_networks;;
 			*);
 			
-		subject_domain_of_neural_networks
+		section_neural_networks
 			(*
 			=> nrel_section_base_order:
-				subject_domain_of_ml_optimization_algorithms;;
+				section_ml_optimization_algorithms;;
 			*);
 		
-		subject_domain_of_ml_optimization_algorithms
+		section_ml_optimization_algorithms
 			(*
 			=> nrel_section_base_order:
-				subject_domain_of_ml_tasks;;
+				section_ml_tasks;;
 			*);
 			
-		subject_domain_of_ml_tasks
+		section_ml_tasks
 			(*
 			=> nrel_section_base_order:
-				subject_domain_of_ml_application_fields;;
+				section_ml_application_fields;;
 			*);
 			
-		subject_domain_of_ml_application_fields;;
+		section_ml_application_fields;;
 		

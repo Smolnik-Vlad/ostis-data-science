@@ -1,0 +1,17 @@
+section_nn_one_stage_detector
+
+	=> nrel_main_idtf:
+		[Раздел. Архитектуры на one-stage (region free) детекторах]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. One-stage (region free) detector based architectures]
+			(* <- lang_en;; *);;
+
+
+section_nn_one_stage_detector
+
+	-> rrel_key_sc_element: 
+		concept_nn_region_free_architecture;
+		concept_ssd;
+		concept_yolo;;
+			

@@ -1,0 +1,49 @@
+section_ml_application_fields
+	=> nrel_main_idtf:
+		[Раздел. Области применения машинного обучения]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Applications of machine learning]
+			(* <- lang_en;; *);
+			
+	<- not_enough_formed_structure;
+
+    <= nrel_section_decomposition:
+
+        section_computer_vision;
+        section_nlp;;
+
+
+
+
+
+section_ml_application_fields
+
+	=> nrel_main_idtf:
+		[Раздел. Области применения машинного обучения]
+			(* <- lang_ru;;*);
+		[Section. Applications of machine learning]
+			(* <- lang_en;; *);
+
+	<= nrel_section_decomposition:
+		section_computer_vision;
+		section_nlp;
+			
+	-> rrel_key_sc_element:
+		concept_ml_application_fields;
+
+	<- non_atomic_section;;
+
+
+concept_ml_application_fields
+
+	=> nrel_main_idtf:
+		[Области применения машинного обучения]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Applications of machine learning]
+			(* <- lang_en;; *);
+
+	    => nrel_private_subject_domain:
+			concept_nlp;
+			concept_cv;;

@@ -1,5 +1,6 @@
 concept_supervised_learning_algorithm
 
+
 	<- sc_node_not_relation;
 	
 	=> nrel_main_idtf: 
@@ -8,6 +9,15 @@ concept_supervised_learning_algorithm
 	=> nrel_main_idtf: 
 		["Supervised Learning algorithm"] 
 			(* <-lang_en;; *);
+
+	=> nrel_private_subject_domain:
+		concept_linear_regression;
+		concept_support_vector_machines;
+		concept_decision_trees;
+		concept_random_forest;
+		concept_k_nearest_neighbors;
+		concept_linear_regression;
+
 
 	<- rrel_key_sc_element:
 		...
@@ -26,12 +36,12 @@ concept_supervised_learning_algorithm
 			<= nrel_sc_text_translation:
 				...
 				(* 
-					-> rrel_example: "file://html/ru/concept_supervised_learning_algorithm.html" (* <-lang_ru;; *);;
+					-> rrel_example: "file://html/ru/concept_supervised_learning_algorithm.html" (* <-lang_ru; is_html;;*);;
 				*);;
 			<= nrel_sc_text_translation:
 				...
 				(* 
-					-> rrel_example: "file://html/en/concept_supervised_learning_algorithm.html" (* <-lang_en;; *);;
+					-> rrel_example: "file://html/en/concept_supervised_learning_algorithm.html" (* <-lang_en; is_html;;*);;
 				*);;
 
 		*);;
@@ -266,3 +276,52 @@ concept_k_nearest_neighbors
 
 			
 		*);;
+
+
+concept_logistic_regression
+
+	<- sc_node_not_relation;
+	
+	<- concept_supervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Метод логистической регрессии"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Logistic Regression"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Метод логистической регрессии")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Logistic Regression")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/ru/concept_logistic_regression.html" (* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: "file://html/en/concept_logistic_regression.html" (* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_supervised_learning_algorithm;;
+				*);;
+
+			
+		*);;
+
+

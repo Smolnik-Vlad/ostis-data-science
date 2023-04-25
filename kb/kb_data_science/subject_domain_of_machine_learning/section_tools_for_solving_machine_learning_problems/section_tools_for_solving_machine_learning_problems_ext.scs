@@ -1,0 +1,141 @@
+concept_tools_for_solving_ml_problems
+    => nrel_main_idtf: ["Инструменты решения задач машинного обучения"](*<-lang_ru;;*);
+    => nrel_main_idtf: ["Tools for solving machine learning problems"](*<-lang_en;;*);
+
+    => nrel_private_subject_domain:
+        concept_NumPy;
+        concept_Pandas;
+        concept_sklearn;
+        concept_Scipy;
+        concept_Forecast;;
+
+
+
+concept_tools_for_solving_ml_problems	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: инструменты решения задач машинного обучения](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Tools for solving machine learning problems](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [программные или аппаратные средства, которые используются для решения задач, связанных с обработкой и анализом данных, обучением моделей машинного обучения, их оценкой и применением в различных областях, таких как компьютерное зрение, обработка естественного языка, рекомендательные системы и другие. Эти инструменты могут включать в себя библиотеки программного обеспечения, фреймворки, облачные платформы, графические процессоры (GPU) и другие ресурсы, которые помогают разработчикам и исследователям машинного обучения улучшить производительность и точность моделей.](*<-lang_ru;;*);;
+            ->rrel_example:
+            [Software or hardware tools that are used to solve problems related to data processing and analysis, machine learning model training, evaluation, and applications in various fields, such as computer vision, natural language processing, recommendation systems, and others. These tools can include software libraries, frameworks, cloud platforms, graphics processing units (GPUs), and other resources that help developers and machine learning researchers improve model performance and accuracy.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_NumPy
+    => nrel_main_idtf: ["NumPy"](*<-lang_en;;*);;
+
+
+concept_NumPy
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: NumPy](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: NumPy](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Библиотека языка программирования Python, предоставляющая удобные и эффективные средства для работы с массивами и матрицами, а также для выполнения математических операций над ними.](*<-lang_ru;;*);;
+            ->rrel_example:
+            [Python programming language library that provides convenient and efficient tools for working with arrays and matrices, as well as for performing mathematical operations on them.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+
+concept_Pandas
+    => nrel_main_idtf: ["Pandas"](*<-lang_en;;*);;
+
+
+concept_Pandas	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Pandas](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Pandas](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Библиотека для языка программирования Python, которая предоставляет удобные структуры данных для анализа и манипулирования табличными данными. Она обеспечивает функциональность, аналогичную SQL, для объединения, группировки, фильтрации, агрегации и трансформации данных, а также обеспечивает широкие возможности по работе с пропущенными значениями. ](*<-lang_ru;;*);;
+            ->rrel_example:
+            [A library for the Python programming language that provides convenient data structures for analyzing and manipulating tabular data. It provides SQL-like functionality for combining, grouping, filtering, aggregating, and transforming data, as well as extensive skip-value handling capabilities.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_sklearn
+    => nrel_main_idtf: ["sklearn"](*<-lang_en;;*);;
+
+
+concept_sklearn	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение:  Scikit-learn (sklearn)](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Scikit-learn (sklearn)](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Библиотека для языка программирования Python, которая предоставляет множество инструментов для решения задач машинного обучения, включая классификацию, регрессию, кластеризацию, обработку текстовых данных, анализ изображений и многие другие.](*<-lang_ru;;*);;
+            ->rrel_example:
+            [Library for the Python programming language that provides many tools for machine learning tasks, including classification, regression, clustering, text processing, image analysis, and many others.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Scipy
+    => nrel_main_idtf: ["Scipy"](*<-lang_en;;*);;
+
+
+concept_Scipy	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Scipy](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Scipy](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Библиотека для научных вычислений и технических вычислений на Python. Она предоставляет множество функций для решения различных задач, таких как оптимизация, интегрирование, обработка сигналов, обработка изображений, статистический анализ, алгебра и т.д.](*<-lang_ru;;*);;
+            ->rrel_example:
+            [Is a library for scientific and technical computing in Python. It provides many functions to solve various problems, such as optimization, integration, signal processing, image processing, statistical analysis, algebra, etc.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Forecast
+    => nrel_main_idtf: ["Forecast"](*<-lang_en;;*);;
+
+
+concept_Forecast	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Forecast](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Forecast](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [инструмент для анализа и прогнозирования временных рядов, который позволяет исследовать и анализировать данные, чтобы определить тренды и сезонность, а также предсказать будущие значения.](*<-lang_ru;;*);;
+            ->rrel_example:
+            [A time series analysis and forecasting tool that allows you to examine and analyze data to determine trends and seasonality, and to predict future values.](*<-lang_en;;*);;
+            
+        *);;
+*);;

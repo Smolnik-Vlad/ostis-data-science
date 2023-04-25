@@ -1,0 +1,337 @@
+concept_nlp
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["NLP"] (* <-lang_ru;; *);
+		["NLP"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;;
+
+concept_nlp
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("обработка естественного языка")] 
+					(* <-lang_ru;; *);
+				[Def.("NLP (Natural Language Processing)")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Область искусственного интеллекта и компьютерной лингвистики, которая занимается разработкой методов и алгоритмов для обработки естественных языков (например, английского, русского, китайского и т. д.) компьютерами. Это включает в себя задачи, такие как распознавание речи, синтаксический анализ, машинный перевод, классификация текстов, генерация текстов и многое другое.](*<-lang_ru;;*);
+					[The field of artificial intelligence and computational linguistics, which deals with the development of methods and algorithms for processing natural languages (e.g. English, Russian, Chinese, etc.) by computers. This includes tasks such as speech recognition, syntactic analysis, machine translation, text classification, text generation, and more.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+concept_nlp_task
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["NLP tasks"] (* <-lang_ru;; *);
+		["NLP tasks"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+            concept_conversational_response_modelling;
+            concept_masked_language_modeling;
+            concept_question_answering;
+            concept_sentence_similarity;
+            concept_text_summarization;
+            concept_text_classification;
+            concept_text_generation;
+            concept_translation;;
+            
+
+
+
+concept_conversational_response_modelling
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Моделирование разговорных реакций"] (* <-lang_ru;; *);
+		["Conversational Response Modelling"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Моделирование разговорных реакций")] 
+					(* <-lang_ru;; *);
+				[Def.("Conversational Response Modelling")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Область искусственного интеллекта и компьютерной лингвистики, которая занимается разработкой методов и алгоритмов для обработки естественных языков (например, английского, русского, китайского и т. д.) компьютерами. Это включает в себя задачи, такие как распознавание речи, синтаксический анализ, машинный перевод, классификация текстов, генерация текстов и многое другое.](*<-lang_ru;;*);
+					[A subfield of natural language generation that involves building algorithms and models to enable computer systems to communicate with human users in natural language. The goal of conversational response modeling is to develop chatbots, virtual assistants, and other conversational agents that can engage in meaningful and useful conversations with users, simulating the experience of talking to a human.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_masked_language_modeling
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Маскированное моделирование языка"] (* <-lang_ru;; *);
+		["Masked Language Modeling"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Маскированное моделирование языка")] 
+					(* <-lang_ru;; *);
+				[Def.("Masked Language Modeling")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Задача в NLP, которая заключается в обучении модели для заполнения пропущенных слов в предложении. В этой задаче модель получает на вход предложение, в котором случайным образом выбраны некоторые слова и заменены специальным символом-маской. Затем модель должна предсказать пропущенные слова.](*<-lang_ru;;*);
+					[A task in NLP that involves training a model to fill in missing words in a sentence. In this task, the model receives as input a sentence in which some words are randomly selected and replaced with a special character-mask. The model must then predict the missing words.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_question_answering
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Ответы на вопросы"] (* <-lang_ru;; *);
+		["Question Answering"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Ответы на вопросы")] 
+					(* <-lang_ru;; *);
+				[Def.("Question Answering")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Задача нахождения ответа на вопрос, заданный в естественном языке, используя информацию из заданного контекста. Обычно контекст представляет собой текстовый документ, в котором необходимо найти ответ на вопрос.](*<-lang_ru;;*);
+					[The task of finding an answer to a question posed in natural language using information from a given context. Typically, the context is a text document in which you need to find the answer to a question.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_sentence_similarity
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Схоство предложений"] (* <-lang_ru;; *);
+		["Sentence Similarity"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Схоство предложений")] 
+					(* <-lang_ru;; *);
+				[Def.("Sentence Similarity")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Процесс определения того, насколько два или более предложения похожи друг на друга с точки зрения их смысла или семантического содержания.](*<-lang_ru;;*);
+					[Process of determining how similar two or more sentences are to each other in terms of their meaning or semantic content.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_text_summarization
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Обобщение текста"] (* <-lang_ru;; *);
+		["Text Summarization"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Обобщение текста")] 
+					(* <-lang_ru;; *);
+				[Def.("Text Summarization")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Задача создания краткого и связного резюме большого текстового документа с сохранением наиболее важных и информативных аспектов исходного содержания. Она включает извлечение ключевых идей, концепций и аргументов из текста и представление их в более краткой форме.](*<-lang_ru;;*);
+					[The task of generating a concise and coherent summary of a larger text document while retaining the most important and informative aspects of the original content. It involves extracting the key ideas, concepts, and arguments from the text and presenting them in a shorter form. ](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_text_classification
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Классификация текста"] (* <-lang_ru;; *);
+		["Text Classification"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Классификация текста")] 
+					(* <-lang_ru;; *);
+				[Def.("Text Classification")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Задача машинного обучения, которая заключается в определении категории или метки, которая лучше всего описывает заданный текстовый документ. Она может использоваться во многих приложениях, таких как фильтрация спама, анализ тональности отзывов, категоризация новостей, определение языка текста и т.д.](*<-lang_ru;;*);
+					[A machine learning task that involves determining the category or label that best describes a given text document. It can be used in many applications, such as spam filtering, review tone analysis, news categorization, text language detection, etc.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_text_generation
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Генерация текста"] (* <-lang_ru;; *);
+		[" Text Generation"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Генерация текста")] 
+					(* <-lang_ru;; *);
+				[Def.(" Text Generation")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Задача в области обработки естественного языка (NLP), которая заключается в создании текста на естественном языке, похожего на текст, написанный человеком. Для этого могут использоваться различные методы, такие как языковое моделирование, нейронные сети и другие методы машинного обучения. Целью является создание связного и осмысленного текста, который кажется написанным человеком, и может быть использован для различных приложений, таких как чат-боты, языковой перевод и создание контента.](*<-lang_ru;;*);
+					[A task in Natural Language Processing (NLP) that involves generating natural language text that resembles text written by humans. This can be done using various techniques, such as language modeling, neural networks, and other machine learning methods. The goal is to create coherent and meaningful text that appears to be written by a human, and can be used for a variety of applications, such as chatbots, language translation, and content creation.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+concept_translation
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Перевод"] (* <-lang_ru;; *);
+		["Translation"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_nlp_task;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Перевод")] 
+					(* <-lang_ru;; *);
+				[Def.("Trnaslation")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Задача автоматического перевода текстов с одного языка на другой с помощью компьютерных алгоритмов и моделей машинного обучения. Цель этой задачи - создание систем, способных переводить тексты с высокой точностью и сохранением смысла. ](*<-lang_ru;;*);
+					[The task of automatic translation of texts from one language to another using computer algorithms and machine learning models. The goal of this task is to create systems capable of translating texts with high accuracy and preservation of meaning.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;

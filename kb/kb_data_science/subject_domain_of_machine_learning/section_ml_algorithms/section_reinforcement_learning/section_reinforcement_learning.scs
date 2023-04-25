@@ -1,25 +1,57 @@
+// section_reinforcement_learning <- sc_node_struct;;
 section_reinforcement_learning
 
 	=> nrel_main_idtf:
-		[Предметная область обучения с подкреплением]
+		[Раздел. Обучение с подкреплением]
 			(* <- lang_ru;; *);
-	=> nrel_main_idtf:
-		[Subject area of Reinforcement Learning]
-			(* <- lang_en;; *);
-			
-	<- not_enough_formed_structure;;
+		[Section. Reinforcement Learning]
+			(* <- lang_en;; *);;
 
 section_reinforcement_learning
-
 	<= nrel_section_decomposition:
+			section_rl_off_policy_methods;
+			section_rl_on_policy_methods;;	
+
+
+section_reinforcement_learning -> rrel_key_sc_element:
+	concept_reinforcement_learning;
+	concept_rl_off_policy_method;
+	concept_rl_on_policy_method;;
+
+
+section_reinforcement_learning	<- non_atomic_section;;
+
+
+
+ //	section_reinforcement_learning = [*
+	concept_reinforcement_learning
+	=> nrel_main_idtf: ["Обучение с подкреплением"](*<-lang_ru;;*);
+	=> nrel_main_idtf: ["Reinforcement Learnings"](*<-lang_en;;*);
+
+	=> nrel_private_subject_domain:
+		concept_rl_off_policy_method;
+		concept_rl_on_policy_method;;
 	
-	
-		section_rl_off_policy_methods
+
+	concept_reinforcement_learning
+	<-rrel_key_sc_element:
+	...
+	(*
+		<- sc_definition;;
+			=>nrel_main_idtf: [Определение: Обучение с подкреплением](*<-lang_ru;;*);;
+			=>nrel_main_idtf: [Definition: Reinforcement Learnings](*<-lang_en;;*);;
+		<-definition;;
+		<=nrel_sc_text_translation: ...
 			(*
-			=> nrel_section_base_order:
-				section_rl_on_policy_methods;;
-			*);
-			
-		section_rl_on_policy_methods;;					
-	
-	
+				->rrel_example:
+				[Обучение с подкреплением - это раздел машинного обучения, который занимается изучением того, как агент должен действовать в определенной среде, чтобы максимизировать получаемый награду.](*<-lang_ru;;*);
+				[Reinforcement learning is a branch of machine learning that studies how an agent must act in a particular environment in order to maximize the reward received.](*<-lang_en;;*);;
+				
+			*);;
+
+	*);;
+	concept_reinforcement_learning
+	->rrel_key_sc_element:
+		concept_ml_algorithms;
+		concept_rl_off_policy_method;
+		concept_rl_on_policy_method;;

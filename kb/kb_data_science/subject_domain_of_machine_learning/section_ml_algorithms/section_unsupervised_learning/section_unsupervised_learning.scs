@@ -10,5 +10,128 @@ section_unsupervised_learning
 	
 section_unsupervised_learning
 		-> rrel_key_sc_element: 
-			concept_unsupervised_learning_algorithm;
-			concept_k_means;;
+		concept_unsupervised_learning_algorithm;
+		concept_lle;
+		concept_sne;
+		concept_lda;
+		concept_nmf;
+		concept_ica;
+		concept_cca;
+		concept_umap;
+		concept_isomap;
+		concept_autoencoders;;
+				
+
+section_unsupervised_learning
+	<= nrel_section_decomposition:
+		section_lle;
+		section_sne;
+		section_lda;
+		section_nmf;
+		section_ica;
+		section_cca;
+		section_umap;
+		section_isomap;
+		section_autoencoders;;
+
+
+section_lle
+
+	=> nrel_main_idtf:
+		[Раздел. Алгоритмы снижения размерности]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Dimensionality reduction algorithms]
+			(* <- lang_en;; *);;
+
+	
+section_sne
+		-> rrel_key_sc_element: 
+			concept_dra;
+			concept_lle;;
+
+
+section_lda
+
+	=> nrel_main_idtf:
+		[Раздел. LDA]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. LDA]
+			(* <- lang_en;; *);
+
+	-> rrel_key_sc_element: 
+		concept_lda;;
+
+section_nmf
+
+	=> nrel_main_idtf:
+		[Раздел. NMF]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. NMF]
+			(* <- lang_en;; *);
+	-> rrel_key_sc_element: 
+		concept_nmf;;
+
+
+
+section_ica
+
+	=> nrel_main_idtf:
+		[Раздел. ICA]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. ICA]
+			(* <- lang_en;; *);
+	-> rrel_key_sc_element: 
+		concept_ica;;
+
+section_cca
+
+	=> nrel_main_idtf:
+		[Раздел. CCA]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. CCA]
+			(* <- lang_en;; *);
+
+	-> rrel_key_sc_element: 
+		concept_cca;;
+
+section_umap
+
+	=> nrel_main_idtf:
+		[Раздел. UMAP]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. UMAP]
+			(* <- lang_en;; *);
+
+	-> rrel_key_sc_element: 
+		concept_umap;;
+
+section_isomap
+
+	=> nrel_main_idtf:
+		[Раздел. Isomap]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Isomap]
+			(* <- lang_en;; *);
+
+	-> rrel_key_sc_element: 
+		concept_isomap;;
+
+section_autoencoders
+
+	=> nrel_main_idtf:
+		[Раздел. Автоэнкодеры]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Autoencoders]
+			(* <- lang_en;; *);
+	
+	-> rrel_key_sc_element: 
+		concept_autoencoders;;
+

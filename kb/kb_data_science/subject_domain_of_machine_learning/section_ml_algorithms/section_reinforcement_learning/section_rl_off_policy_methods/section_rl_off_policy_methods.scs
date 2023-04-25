@@ -1,17 +1,72 @@
 section_rl_off_policy_methods
 
 	=> nrel_main_idtf:
-		[Раздел. Off-policy методы RL]
-			(* <- lang_ru;; *);
-	=> nrel_main_idtf:
-		[Section. Off-policy RL methods]
-			(* <- lang_en;; *);;
+		[Раздел. Off-policy методы RL](* <- lang_ru;; *);
+		[Section. Off-policy RL methods](* <- lang_en;; *);;
 
 	
 section_rl_off_policy_methods
 
-	-> rrel_key_sc_element:
-		concept_rl_off_policy_method;
+	
+	<= nrel_section_decomposition:
 		concept_q_learning;
 		concept_dqn;
+		concept_sac;
+		concept_td3;
 		concept_ddpq;;
+
+section_rl_off_policy_methods
+	-> rrel_key_sc_element:
+		concept_rl_off_policy_method;;
+
+
+
+section_q_learning
+
+	=> nrel_main_idtf:
+		[Раздел. Q-Learning](* <- lang_ru;; *);
+		[Section. Q-Learning](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_q_learning;;
+
+section_dqn
+
+	=> nrel_main_idtf:
+		[Раздел. DQN](* <- lang_ru;; *);
+		[Section. DQN](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_dqn;;
+
+section_sac
+
+	=> nrel_main_idtf:
+		[Раздел. SAC](* <- lang_ru;; *);
+		[Section. SAC](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_sac;;
+
+section_td3
+
+	=> nrel_main_idtf:
+		[Раздел. TD3](* <- lang_ru;; *);
+		[Section. TD3](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_td3;;
+
+section_ddpg
+
+	=> nrel_main_idtf:
+		[Раздел. DDPG](* <- lang_ru;; *);
+		[Section. DDPG](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_ddpg;;

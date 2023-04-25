@@ -3,75 +3,90 @@ concept_rl_off_policy_method
 	<- sc_node_not_relation;
 	
 	=> nrel_main_idtf: 
-		["Off-policy метод"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["Off-policy method"] 
-			(* <-lang_en;; *);
+		["Off-policy метод"] (* <-lang_ru;; *);
+		["Off-policy method"] (* <-lang_en;; *);
 
+		=> nrel_private_subject_domain:
+			concept_q_learning;
+			concept_dqn;
+			concept_sac;
+			concept_td3;
+			concept_ddpq;;
+
+concept_rl_off_policy_method
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
 				[Опр.("Метод без политики (off-policy)")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
+					(* <-lang_ru;; *);
 				[Def.("Off-policy method")]
-					(* <-lang_en;; *);;
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Off-policy методы являются  подклассом алгоритмов обучения с подкреплением и основываются на использовании опыта, полученного из другой стратегии, отличной от текущей стратегии. В этом случае, агент не привязан к текущей стратегии и может использовать опыт, полученный из различных стратегий для обновления оценок.](*<-lang_ru;;*);
+					[Off-policy methods are a subclass of reinforcement learning algorithms and are based on the use of experience obtained from another strategy, different from the current strategy. In this case, the agent is not bound to the current strategy and can use the experience obtained from different strategies to update the estimates.](*<-lang_en;;*);;
 					
-			
+				*);;
 				
 		*);;
+concept_rl_off_policy_method
+	->rrel_key_sc_element:
+		concept_q_learning;
+		concept_dqn;
+		concept_sac;
+		concept_td3;
+		concept_ddpq;;
 
 concept_q_learning
 
 	<- sc_node_not_relation;
 	
-	<- concept_rl_off_policy_method;
+	<- concept_rl_on_policy_method;
 	
 	=> nrel_main_idtf: 
-		["Q-learning"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["Q-learning"] 
+		["Q-Learning"] 
+			(* <-lang_ru;; *); 
+		["Q-Learning"] 
 			(* <-lang_en;; *);
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
-				[Опр.("Q-learning")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("Q-learning")] 
+				[Опр.("Q-Learning")] 
+					(* <-lang_ru;; *);
+				[Def.("Q-Learning")] 
 					(* <-lang_en;; *);;
-			
-				
-			<= nrel_using_constants:
-				...
-				(*
-					-> concept_rl_off_policy_method;;
-				*);;
 
-			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Q-Learning - это алгоритм обучения с подкреплением, используемый для решения задачи обучения с подкреплением с использованием таблицы Q-значений. Он позволяет обучать агента, который может выбирать действия на основе текущего состояния окружающей среды, получать награды за свои действия и учиться на основе опыта.](*<-lang_ru;;*);
+					[Q-Learning is a reinforcement learning algorithm used to solve the reinforcement learning problem using a Q-value table. It allows you to train an agent that can choose actions based on the current state of the environment, receive rewards for its actions, and learn from experience.](*<-lang_en;;*);;
+				*);;	
 		*);;
-		
+
+
 concept_dqn
 
 	<- sc_node_not_relation;
 	
-	<- concept_rl_off_policy_method;
+	<- concept_rl_on_policy_method;
 	
 	=> nrel_main_idtf: 
 		["DQN"] 
 			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
 		["DQN"] 
 			(* <-lang_en;; *);
 
@@ -79,35 +94,98 @@ concept_dqn
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
 				[Опр.("DQN")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
+					(* <-lang_ru;; *);
 				[Def.("DQN")] 
 					(* <-lang_en;; *);;
-			
-				
-			<= nrel_using_constants:
-				...
-				(*
-					-> concept_rl_off_policy_method;;
-				*);;
 
-			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[DQN (Deep Q-Network) - это алгоритм обучения с подкреплением, который использует нейронные сети для аппроксимации функции Q-оценки (Q-function) в задаче управления агентом в среде.](*<-lang_ru;;*);
+					[DQN (Deep Q-Network) is a reinforcement learning algorithm that uses neural networks to approximate the Q-function in an agent control task in an environment.](*<-lang_en;;*);;
+				*);;	
 		*);;
+
+concept_sac
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_on_policy_method;
+	
+	=> nrel_main_idtf: 
+		["SAC"] 
+			(* <-lang_ru;; *);
+		["SAC"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
 		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("SAC")] 
+					(* <-lang_ru;; *);
+				[Def.("SAC")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[SAC (Soft Actor-Critic) - это алгоритм обучения с подкреплением, используемый для решения задачи обучения агента, который может выбирать действия на основе текущего состояния среды и получать награду за свои действия.](*<-lang_ru;;*);
+					[SAC (Soft Actor-Critic) is a reinforcement learning algorithm used to solve the problem of training an agent who can choose actions based on the current state of the environment and be rewarded for his actions.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_td3
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_on_policy_method;
+	
+	=> nrel_main_idtf: 
+		["TD3"] 
+			(* <-lang_ru;; *);
+		["TD3"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("TD3")] 
+					(* <-lang_ru;; *);
+				[Def.("TD3")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[TD3 (Twin Delayed Deep Deterministic Policy Gradient) - это алгоритм обучения с подкреплением, который используется для решения задач контроля и управления. Он является усовершенствованным вариантом алгоритма DDPG (Deep Deterministic Policy Gradient) и использует несколько инновационных методов для повышения его эффективности и устойчивости.](*<-lang_ru;;*);
+					[TD3 (Twin Delayed Deep Deterministic Policy Gradient) is a reinforcement learning algorithm used for control and management tasks. It is an improved version of the DDPG (Deep Deterministic Policy Gradient) algorithm and uses several innovative techniques to improve its efficiency and stability.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
 concept_ddpg
 
 	<- sc_node_not_relation;
 	
-	<- concept_rl_off_policy_method;
+	<- concept_rl_on_policy_method;
 	
 	=> nrel_main_idtf: 
 		["DDPG"] 
 			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
 		["DDPG"] 
 			(* <-lang_en;; *);
 
@@ -115,21 +193,19 @@ concept_ddpg
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
 				[Опр.("DDPG")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
+					(* <-lang_ru;; *);
 				[Def.("DDPG")] 
 					(* <-lang_en;; *);;
-			
-				
-			<= nrel_using_constants:
-				...
-				(*
-					-> concept_rl_off_policy_method;;
-				*);;
 
-			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[DDPG (Deep Deterministic Policy Gradient) - это алгоритм обучения с подкреплением, который применяется для решения задач контроля и управления в непрерывных пространствах действий. DDPG является расширением алгоритма DPG (Deterministic Policy Gradient), который был предложен ранее.](*<-lang_ru;;*);
+					[DDPG (Deep Deterministic Policy Gradient) is a reinforcement learning algorithm that is used to solve control and management problems in continuous action spaces. DDPG is an extension of the DPG (Deterministic Policy Gradient) algorithm that was proposed earlier.](*<-lang_en;;*);;
+				*);;	
 		*);;

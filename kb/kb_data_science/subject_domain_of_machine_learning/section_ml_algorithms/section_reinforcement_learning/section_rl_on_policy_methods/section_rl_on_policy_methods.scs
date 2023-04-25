@@ -1,11 +1,8 @@
 section_rl_on_policy_methods
 
 	=> nrel_main_idtf:
-		[Раздел. On-policy методы RL]
-			(* <- lang_ru;; *);
-	=> nrel_main_idtf:
-		[Section. On-policy RL methods]
-			(* <- lang_en;; *);;
+		[Раздел. On-policy методы RL](* <- lang_ru;; *);
+		[Section. On-policy RL methods](* <- lang_en;; *);;
 
 	
 section_rl_on_policy_methods
@@ -14,4 +11,118 @@ section_rl_on_policy_methods
 		concept_rl_on_policy_method;
 		concept_sarsa;
 		concept_trpo;
-		concept_ppo;;
+		concept_ppo;
+		concept_policy_gradients;
+		concept_ac;
+		concept_a3c;
+		concept_ddpg;;
+		
+
+section_sarsa
+
+	=> nrel_main_idtf:
+		[Раздел. SARSA]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. SARSA]
+			(* <- lang_en;; *);;
+
+section_trpo
+
+	=> nrel_main_idtf:
+		[Раздел. TRPO]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. TRPO]
+			(* <- lang_en;; *);;
+
+section_ppo
+
+	=> nrel_main_idtf:
+		[Раздел. PPO]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. PPO]
+			(* <- lang_en;; *);;
+
+section_q_learning
+
+	=> nrel_main_idtf:
+		[Раздел. Q-Learning]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Q-Learning]
+			(* <- lang_en;; *);;
+
+section_dqn
+
+	=> nrel_main_idtf:
+		[Раздел. DQN]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. DQN]
+			(* <- lang_en;; *);;
+
+section_ddqn
+
+	=> nrel_main_idtf:
+		[Раздел. DDQN]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. DDQN]
+			(* <- lang_en;; *);;
+
+section_policy_gradients
+
+	=> nrel_main_idtf:
+		[Раздел. Policy Gradient]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Policy Gradient]
+			(* <- lang_en;; *);;
+
+
+section_ac
+
+	=> nrel_main_idtf:
+		[Раздел. AC]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. AC]
+			(* <- lang_en;; *);;
+
+section_a3c
+
+	=> nrel_main_idtf:
+		[Раздел. A3C]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. A3C]
+			(* <- lang_en;; *);;
+
+section_ddpg
+
+	=> nrel_main_idtf:
+		[Раздел. DDPG]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. DDPG]
+			(* <- lang_en;; *);;
+
+section_td3
+
+	=> nrel_main_idtf:
+		[Раздел. TD3]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. TD3]
+			(* <- lang_en;; *);;
+
+section_sac
+
+	=> nrel_main_idtf:
+		[Раздел. SAC]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. SAC]
+			(* <- lang_en;; *);;

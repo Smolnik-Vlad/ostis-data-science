@@ -9,11 +9,21 @@ concept_unsupervised_learning_algorithm
 		["Unsupervised Learning algorithm"] 
 			(* <-lang_en;; *);
 
+		=> nrel_private_subject_domain:
+		concept_k_means;
+		concept_dbscan;
+		concept_pca;
+		concept_t_sne;
+		concept_ar;
+		concept_dra;
+		
+		
+
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
 				[Опр.("Алгоритм обучения без учителя")] 
@@ -21,6 +31,14 @@ concept_unsupervised_learning_algorithm
 			=> nrel_main_idtf: 
 				[Def.("Unsupervised Learning algorithm")]
 					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритмы обучения без учителя используются для поиска закономерностей в данных, когда нет явных меток классов или целевых переменных. Они используются для кластеризации, сокращения размерности, обнаружения выбросов и ассоциативного анализа.](*<-lang_ru;;*);
+					[Unsupervised Learning algorithms are used to find patterns in data when there are no explicit class labels or target variables. They are used for clustering, dimensionality reduction, outlier detection, and associative analysis.](*<-lang_en;;*);;
+				*);;
 			
 			
 		*);;
@@ -51,7 +69,14 @@ concept_k_means
 				[Def.("k-means")] 
 					(* <-lang_en;; *);;
 			
-			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм без учителя, который разбивает набор данных на кластеры (группы объектов), основываясь на их сходстве друг с другом. Алгоритм ищет центры кластеров и переносит объекты в ближайший кластер на основе расстояния до центра. Часто используется для анализа данных, сжатия изображений и сегментации изображений.](*<-lang_ru;;*);
+					[A teacherless algorithm that splits the dataset into clusters (groups of objects) based on their similarity to each other. The algorithm looks for cluster centers and moves objects to the closest cluster based on the distance to the center. It is often used for data analysis, image compression, and image segmentation.](*<-lang_en;;*);;
+					
+				*);;
 				
 			<= nrel_using_constants:
 				...
@@ -60,4 +85,620 @@ concept_k_means
 				*);;
 
 			
+		*);;
+
+concept_dbscan
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["DBSCAN"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["DBSCAN"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Пространственная кластеризация приложений с шумом на основе плотности")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Density-Based Spatial Clustering of Applications with Noise")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[алгоритм кластеризации, основанный на плотности точек. Он позволяет автоматически обнаруживать кластеры произвольной формы и определять выбросы (outliers). ](*<-lang_ru;;*);
+					[clustering algorithm based on point density. It allows automatic detection of arbitrarily shaped clusters and detection of outliers.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+
+			
+		*);;
+
+concept_pca
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["PCA"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["PCA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Анализ главных компонент")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Principal Component Analysis")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм снижения размерности, который используется в обучении без учителя для извлечения главных компонент из многомерных данных. Цель PCA - найти линейные комбинации исходных признаков, которые наиболее сильно влияют на изменение данных. ](*<-lang_ru;;*);
+					[A dimensionality reduction algorithm that is used in teacherless learning to extract principal components from multivariate data. The goal of PCA is to find the linear combinations of the original features that most strongly affect the change in the data.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+
+			
+		*);;
+
+concept_t_sne
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["t-SNE"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["t-SNE"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("t-распределенное стохастическое встраивание соседей")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("t-Distributed Stochastic Neighbor Embedding")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм визуализации данных, который используется в обучении без учителя для снижения размерности данных с сохранением информации о их геометрической структуре. Он может использоваться для визуализации высокоразмерных данных в двух- или трехмерном пространстве, что упрощает их анализ и интерпретацию. ](*<-lang_ru;;*);
+					[A data visualization algorithm that is used in teacherless learning to reduce the dimensionality of data while preserving information about its geometric structure. It can be used to visualize high-dimensional data in two- or three-dimensional space, which simplifies their analysis and interpretation.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+
+			
+		*);;
+
+concept_ar
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Ассоциативные правила"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Association Rules"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf:
+				[Опр.("Ассоциативные правила")] 
+					(* <-lang_ru;; *);
+				[Def.("Association Rules)] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[метод анализа данных в области data mining, который позволяет выявлять связи между атрибутами в больших наборах данных. Ассоциативные правила используются для определения скрытых шаблонов и зависимостей между различными элементами данных.](*<-lang_ru;;*);
+					[A data mining data analysis technique that identifies relationships between attributes in large datasets. Associative rules are used to identify hidden patterns and dependencies between different data elements.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+
+			
+		*);;
+
+
+
+concept_dra
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Алгоритмы снижения размерности"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Dimensionality reduction algorithms"] 
+			(* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+		concept_lle;
+		concept_sne;
+		concept_lda;
+		concept_nmf;
+		concept_ica;
+		concept_cca;
+		concept_umap;
+		concept_isomap;
+		concept_autoencoders;
+
+
+		
+		<= nrel_private_subject_domain:
+			concept_unsupervised_learning_algorithm;
+		
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Алгоритмы снижения размерности")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Dimensionality reduction algorithms")]
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритмы снижения размерности используются для уменьшения количества входных признаков в наборе данных при сохранении наиболее важной информации. Это делается для упрощения модели, уменьшения шума и ускорения процесса обучения.](*<-lang_ru;;*);
+					[Dimensionality reduction algorithms are used to reduce the number of input features in a dataset while retaining the most important information. This is done to simplify the model, reduce noise, and speed up the training process.](*<-lang_en;;*);;
+				*);;
+			
+			
+		*);;
+
+
+
+concept_lle
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["LLE"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["LLE"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Локально линейное вложение")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Locally Linear Embedding")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод нелинейного снижения размерности данных в машинном обучении и анализе данных. Он используется для поиска скрытых структур в данных, которые могут быть изображены в пространстве меньшей размерности.](*<-lang_ru;;*);
+					[Nonlinear data dimensionality reduction method in machine learning and data analysis. It is used to find hidden structures in data that can be depicted in a lower dimensional space.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+
+			
+		*);;
+
+
+concept_sne
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["SNE"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["SNE"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Стохастическое встраивание соседей")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Stochastic Neighbor Embedding")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод нелинейного снижения размерности данных, который позволяет визуализировать многомерные данные в двух- или трехмерном пространстве.](*<-lang_ru;;*);
+					[Nonlinear data dimensionality reduction method, which allows to visualize multidimensional data in two- or three-dimensional space.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+
+concept_lda
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["LDA"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["LDA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Линейный дискриминантный анализ (LDA)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Linear Discriminant Analysis (LDA)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм машинного обучения, используемый в задачах классификации и снижения размерности признаков. Он находит линейные комбинации исходных признаков, которые максимально разделяют классы в данных, и использует их для прогнозирования меток классов на новых данных.](*<-lang_ru;;*);
+					[A machine learning algorithm used in classification and feature dimensionality reduction tasks. It finds linear combinations of initial features that maximize class separation in the data, and uses them to predict class labels on new data.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+
+concept_nmf
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["NMF"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["NMF"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Неотрицательная матричная факторизация (НМФ)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Non-negative Matrix Factorization (NMF)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[метод линейной алгебры, который позволяет разложить матрицу на две матрицы меньшего размера. Одна матрица содержит неотрицательные веса признаков, а другая - неотрицательные веса объектов. ](*<-lang_ru;;*);
+					[Linear algebra method, which allows to decompose a matrix into two matrices of smaller size. One matrix contains non-negative feature weights, and the other contains non-negative feature weights.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+concept_ica
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["ICA"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["ICA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Независимый компонентный анализ (ICA)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Independent Component Analysis (ICA)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод извлечения скрытых факторов из набора наблюдаемых случайных переменных. Он основан на предположении, что наблюдаемые переменные являются линейными комбинациями некоторых скрытых переменных (которые называются источниками). ](*<-lang_ru;;*);
+					[Method of extracting latent factors from a set of observed random variables. It is based on the assumption that the observed variables are linear combinations of some latent variables (which are called sources).](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+
+concept_cca
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["CCA"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["CCA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Канонический корреляционный анализ (ККА)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Canonical Correlation Analysis (CCA)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Cтатистический метод, используемый для выявления линейной связи между двумя наборами переменных. Он находит линейные комбинации каждого набора переменных, которые максимально коррелируют друг с другом. CCA часто используется в многомерном анализе данных, машинном обучении и обработке сигналов для поиска взаимосвязи между двумя наборами переменных.](*<-lang_ru;;*);
+					[Statistical method used to identify the linear relationship between two sets of variables. It finds the linear combinations of each set of variables that are maximally correlated with each other. CCA is often used in multivariate data analysis, machine learning, and signal processing to find the relationship between two sets of variables.).](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+
+concept_umap
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["UMAP"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["UMAP"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Равномерная аппроксимация и проекция многообразия (UMAP)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Uniform Manifold Approximation and Projection (UMAP)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм нелинейного снижения размерности данных, который был представлен в 2018 году. Он может использоваться как для задач визуализации, так и для подготовки данных для дальнейшего анализа. UMAP применяет идеи из топологического анализа данных и представляет собой метод многомерного шкалирования (Multidimensional Scaling, MDS), который использует локальные структуры данных, такие как расстояния между соседними точками, для построения глобальной карты данных в более низкой размерности.](*<-lang_ru;;*);
+					[Nonlinear data dimensionality reduction algorithm, which was introduced in 2018. It can be used both for visualization tasks and for preparing data for further analysis. UMAP applies ideas from topological data analysis and is a Multidimensional Scaling (MDS) method that uses local data structures, such as distances between neighboring points, to construct a global data map in lower dimensionality.).](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+concept_isomap
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Isomap"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Isomap"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("(изометрическое отображение)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Isomap (Isometric Mapping)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм снижения размерности, который использует геометрическую структуру данных, чтобы сохранить глобальное расстояние между точками при снижении размерности.](*<-lang_ru;;*);
+					[A dimensionality reduction algorithm that uses a geometric data structure to preserve the global distance between points while reducing the dimensionality.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
+		*);;
+
+concept_autoencoders
+
+	<- sc_node_not_relation;
+	
+	<- concept_unsupervised_learning_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Autoencoders"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Автоэнкдеры"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Автоэнкодеры (подход на основе нейронных сетей)")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Autoencoders (Neural Network-based approach)")] 
+					(* <-lang_en;; *);;
+			
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод обучения без учителя, используемый для снижения размерности входных данных и извлечения наиболее значимых признаков. Автоэнкодеры состоят из двух основных компонентов: кодировщика и декодировщика. Кодировщик преобразует входные данные в более компактное представление, называемое латентным представлением, которое содержит наиболее значимые признаки входных данных. Декодировщик восстанавливает исходные данные из латентного представления.](*<-lang_ru;;*);
+					[A teacherless learning method used to reduce the dimensionality of the input data and extract the most significant features. Autoencoders consist of two main components: an encoder and a decoder. The encoder converts the input data into a more compact representation, called the latent representation, which contains the most significant features of the input data. The decoder reconstructs the input data from the latent representation.](*<-lang_en;;*);;
+					
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_unsupervised_learning_algorithm;;
+				*);;
 		*);;

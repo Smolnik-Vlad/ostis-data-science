@@ -1,0 +1,129 @@
+section_nlp
+	=> nrel_main_idtf:
+		[Раздел. NLP (Natural Language Processing)]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. NLP (Natural Language Processing)]
+			(* <- lang_en;; *);
+	
+	<=nrel_section_decomposition:
+		section_nlp_task;;
+
+section_nlp
+    ->rrel_key_sc_element:
+        concept_nlp;
+		concept_nlp_task;;
+
+
+
+	
+section_nlp_task
+	=> nrel_main_idtf:
+		[Раздел. Задачи NLP ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. The tasks of NLP]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_nlp_task;
+
+	<=nrel_section_decomposition:
+		section_conversational_response_modelling;
+		section_masked_language_modeling;
+		section_question_answering;
+		section_sentence_similarity;
+		section_text_summarization;
+		section_text_classification;
+		section_text_generation;
+		section_translation;;
+
+section_conversational_response_modelling
+	=> nrel_main_idtf:
+		[Раздел. Моделирование разговорных реакций]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Conversational Response Modelling]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_conversational_response_modelling;;
+
+
+section_masked_language_modeling
+	=> nrel_main_idtf:
+		[Раздел. Маскированное моделирование языка]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Masked Language Modeling]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_masked_language_modeling;;
+
+section_question_answering
+	=> nrel_main_idtf:
+		[Раздел. Ответы на вопросы]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Question Answering]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_question_answering;;
+
+section_sentence_similarity
+	=> nrel_main_idtf:
+		[Раздел. Схоство предложений]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Sentence Similarity]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_sentence_similarity;;
+
+section_text_summarization
+	=> nrel_main_idtf:
+		[Раздел. Обобщение текста]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Text Summarization]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_text_summarization;;
+
+section_text_classification
+	=> nrel_main_idtf:
+		[Раздел. Классификация текста]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Text Classification]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_text_classification;;
+
+section_text_generation
+	=> nrel_main_idtf:
+		[Раздел. Генерация текста]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Text Generation]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_text_generation;;
+
+section_translation
+	=> nrel_main_idtf:
+		[Раздел. Перевод]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Translation]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_translation;;
+

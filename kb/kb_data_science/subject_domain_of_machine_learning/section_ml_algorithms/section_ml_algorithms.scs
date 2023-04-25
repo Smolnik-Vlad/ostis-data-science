@@ -1,33 +1,62 @@
+//section_ml_algorithms <- sc_node_struct;;
 section_ml_algorithms
 
 	=> nrel_main_idtf:
-		[Предметная область алгоритмов машинного обучения]
+		[Раздел. Предметная область алгоритмов машинного обучения]
 			(* <- lang_ru;; *);
-	=> nrel_main_idtf:
-		[Subject area of Machine Learning algorithms]
-			(* <- lang_en;; *);
-			
-	<- not_enough_formed_structure;;
+		[Section. Subject domain of Machine Learning algorithms]
+			(* <- lang_en;; *);;
 
 section_ml_algorithms
 
 	<= nrel_section_decomposition:
-	
-	
-		section_supervised_learning
-			(*
-			=> nrel_section_base_order:
-				section_unsupervised_learning;;
-			*);
-			
-		section_unsupervised_learning
-			(*
-			=> nrel_section_base_order:
-				section_reinforcement_learning;;
-			*);
-			
+		section_supervised_learning;
+		section_unsupervised_learning;
 		section_reinforcement_learning;;
+
+section_ml_algorithms	
+	-> rrel_key_sc_element:
+		concept_ml_algorithms;
+		concept_supervised_learning_algorithm;
+		concept_unsupervised_learning_algorithm;
+		concept_reinforcement_learning;;
+
+section_ml_algorithms <- non_atomic_section;;
+
+
+	concept_ml_algorithms
+		=> nrel_main_idtf: ["Алгоритмы машинного обучения"](*<-lang_ru;;*);
+		=> nrel_main_idtf: ["Machine Learning algorithms"](*<-lang_en;;*);
+
+		=> nrel_private_subject_domain:
+			concept_reinforcement_learning;
+			concept_unsupervised_learning_algorithm;
+			concept_supervised_learning_algorithm;
 		
+		<= nrel_private_subject_domain:
+			concept_machine_learning;;
+	
+	concept_ml_algorithms	
+		<-rrel_key_sc_element:
+	...
+	(*
+		<- sc_definition;;
+			=>nrel_main_idtf: [Определение: алгоритмы машинного обучения](*<-lang_ru;;*);;
+			=>nrel_main_idtf: [Definition: machine learning algorithms](*<-lang_en;;*);;
+		<-definition;;
+		<=nrel_sc_text_translation: ...
+			(*
+				->rrel_example:
+				[Алгоритм машинного обучения - это компьютерная процедура или метод, который используется для обучения компьютерной системы на основе опыта, т.е. данных, с целью сделать автоматические прогнозы или принимать решения на основе новых входных данных.](*<-lang_ru;;*);;
+				->rrel_example:
+				[Machine Learning Algorithm is a computer procedure or method that is used to train a computer system based on experience, i.e., data, in order to make automatic predictions or make decisions based on new input data.](*<-lang_en;;*);;
+				
+			*);;
+	*);;
+	concept_ml_algorithms
+	->rrel_key_sc_element:
+		concept_ml_algorithms;
+		concept_reinforcement_learning;
+		concept_unsupervised_learning_algorithm;
+		concept_supervised_learning_algorithm;;
 		
-	
-	

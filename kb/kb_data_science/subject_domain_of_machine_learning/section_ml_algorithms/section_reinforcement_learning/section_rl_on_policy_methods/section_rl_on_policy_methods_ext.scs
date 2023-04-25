@@ -3,11 +3,17 @@ concept_rl_on_policy_method
 	<- sc_node_not_relation;
 	
 	=> nrel_main_idtf: 
-		["On-policy метод"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["On-policy method"] 
-			(* <-lang_en;; *);
+		["On-policy метод"] (* <-lang_ru;; *);
+		["On-policy method"] (* <-lang_en;; *);
+
+	=> nrel_private_subject_domain:
+		concept_sarsa;
+		concept_trpo;
+		concept_ppo;
+		concept_policy_gradients;
+		concept_ac;
+		concept_a3c;
+		concept_ddpg;
 
 	<- rrel_key_sc_element:
 		...
@@ -17,12 +23,19 @@ concept_rl_on_policy_method
 			
 			=> nrel_main_idtf: 
 				[Опр.("On-policy метод")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
+					(* <-lang_ru;; *);
 				[Def.("On-policy method")]
 					(* <-lang_en;; *);;
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[On-policy методы являются подклассом алгоритмов обучения с подкреплением и основываются на обучении непосредственно на основе текущей политики. Эти методы пытаются максимизировать награду, следуя текущей стратегии, которая обновляется на каждой итерации обучения.](*<-lang_ru;;*);
+					[On-policy methods are a subclass of reinforcement learning algorithms and are based on learning directly from the current policy. These methods try to maximize reward by following the current policy, which is updated at each iteration of learning.](*<-lang_en;;*);;
 					
-				
+				*);;
+						
 		*);;
 
 concept_sarsa
@@ -32,32 +45,27 @@ concept_sarsa
 	<- concept_rl_on_policy_method;
 	
 	=> nrel_main_idtf: 
-		["SARSA"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["SARSA"] 
-			(* <-lang_en;; *);
+		["SARSA"] (* <-lang_ru;; *);
+		["SARSA"] (* <-lang_en;; *);
 
 	<- rrel_key_sc_element:
 		...
 		(*
-		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
 				[Опр.("SARSA")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
+					(* <-lang_ru;; *);
 				[Def.("SARSA")] 
 					(* <-lang_en;; *);;
-				
-				
-			<= nrel_using_constants:
-				...
+
+			<-definition;;
+				<=nrel_sc_text_translation: ...
 				(*
-					-> concept_rl_on_policy_method;;
-				*);;
-				
+					->rrel_example:
+					[SARSA (State-Action-Reward-State-Action) - это один из алгоритмов обучения с подкреплением (reinforcement learning), который используется для обучения агента в задачах, где принимающие решения агенты находятся в динамической среде и получают награду или штраф за каждое принятое решение.](*<-lang_ru;;*);
+					[SARSA (State-Action-Reward-State-Action) is one of the reinforcement learning algorithms used for agent learning in tasks where decision-making agents are in a dynamic environment and receive a reward or penalty for each decision made.](*<-lang_en;;*);;
+				*);;	
 		*);;
 		
 concept_trpo
@@ -67,32 +75,30 @@ concept_trpo
 	<- concept_rl_on_policy_method;
 	
 	=> nrel_main_idtf: 
-		["TRPO"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["TRPO"] 
-			(* <-lang_en;; *);
+		["TRPO"] (* <-lang_ru;; *);
+		["TRPO"] (* <-lang_en;; *);
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
-				[Опр.("DQN")] 
+				[Опр.("TRPO")] 
 					(* <-lang_ru;; *);;
 			=> nrel_main_idtf: 
-				[Def.("DQN")] 
+				[Def.("TRPO")] 
 					(* <-lang_en;; *);;
-						
-				
-			<= nrel_using_constants:
-				...
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
 				(*
-					-> concept_rl_on_policy_method;;
-				*);;
-					
+					->rrel_example:
+					[TRPO (Trust Region Policy Optimization) - это один из алгоритмов обучения с подкреплением (reinforcement learning), который используется для обучения оптимальных стратегий в задачах с непрерывным пространством действий.](*<-lang_ru;;*);
+					[STRPO (Trust Region Policy Optimization) is one of the reinforcement learning algorithms used to train optimal strategies in continuous action space problems.](*<-lang_en;;*);;
+				*);;	
+
 		*);;
 		
 concept_ppo
@@ -102,17 +108,14 @@ concept_ppo
 	<- concept_rl_on_policy_method;
 	
 	=> nrel_main_idtf: 
-		["PPO"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["PPO"] 
-			(* <-lang_en;; *);
+		["PPO"] (* <-lang_ru;; *);
+		["PPO"] (* <-lang_en;; *);
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
+			<- sc_definition;;
 			
 			=> nrel_main_idtf: 
 				[Опр.("PPO")] 
@@ -120,13 +123,150 @@ concept_ppo
 			=> nrel_main_idtf: 
 				[Def.("PPO")] 
 					(* <-lang_en;; *);;
-						
-									
-			<= nrel_using_constants:
-				...
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
 				(*
-					-> concept_rl_on_policy_method;;
-				*);;
+					->rrel_example:
+					[PPO (Proximal Policy Optimization) - это алгоритм обучения с подкреплением, который используется для обучения оптимальных стратегий в задачах с непрерывным пространством действий.](*<-lang_ru;;*);
+					[PPO (Proximal Policy Optimization) is a reinforcement learning algorithm that is used to train optimal strategies in continuous action space problems.](*<-lang_en;;*);;
+				*);;	
 
 			
 		*);;
+
+
+
+concept_ddqn
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_on_policy_method;
+	
+	=> nrel_main_idtf: 
+		["DDQN"] 
+			(* <-lang_ru;; *);
+		["DDQN"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("DDQN")] 
+					(* <-lang_ru;; *);
+				[Def.("DDQN")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Double Deep Q-Network (DDQN) - это модификация алгоритма Deep Q-Network (DQN) для обучения с подкреплением, предложенная в 2015 году. DDQN является Value-based алгоритмом, который основан на идеях Q-learning и нейронных сетей.](*<-lang_ru;;*);
+					[Double Deep Q-Network (DDQN) is a modification of the Deep Q-Network (DQN) algorithm for reinforcement learning proposed in 2015. DDQN is a Value-based algorithm that is based on the ideas of Q-learning and neural networks.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_policy_gradients
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_on_policy_method;
+	
+	=> nrel_main_idtf: 
+		["Policy Gradients"] 
+			(* <-lang_ru;; *);
+		["Policy Gradients"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Policy Gradients")] 
+					(* <-lang_ru;; *);
+				[Def.("Policy Gradients")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Policy Gradients - это класс алгоритмов обучения с подкреплением, которые напрямую оптимизируют параметры стратегии агента (policy) для достижения максимальной награды. В отличие от Value-based подходов, таких как Q-learning и SARSA, которые оценивают ценность состояний или действий, Policy Gradients работают напрямую с вероятностным распределением выбора действий в каждом состоянии.](*<-lang_ru;;*);
+					[Policy Gradients is a class of reinforcement learning algorithms that directly optimize agent (policy) strategy parameters to maximize reward. Unlike Value-based approaches such as Q-learning and SARSA, which estimate the value of states or actions, Policy Gradients work directly with the probability distribution of action choices in each state.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_ac
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_on_policy_method;
+	
+	=> nrel_main_idtf: 
+		["Actor Critic"] 
+			(* <-lang_ru;; *);
+		["Actor Critic"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Actor Critic")] 
+					(* <-lang_ru;; *);
+				[Def.("Actor Critic")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Actor-Critic (AC) – это семейство алгоритмов обучения с подкреплением, которые сочетают в себе преимущества двух других классов алгоритмов - Policy-based и Value-based. В AC-алгоритмах имеется две нейронные сети: Actor и Critic. Actor отвечает за выбор оптимального действия в каждом состоянии, она обучается на основе градиентного спуска и функции оценки качества действия (обычно это функция Q-значений). Critic оценивает ценность состояний и используется для обновления функции оценки Actor. Критик обучается на основе методов Value-based обучения, например, Q-Learning или SARSA.](*<-lang_ru;;*);
+					[Actor-Critic (AC) is a family of reinforcement learning algorithms that combine the advantages of two other classes of algorithms, Policy-based and Value-based. AC algorithms have two neural networks: Actor and Critic. Actor is responsible for selecting the optimal action in each state, it is trained on the basis of the gradient descent and the action quality function (usually a Q-value function). Critic evaluates the value of the states and is used to update Actor's evaluation function. Critic is trained based on Value-based learning techniques such as Q-Learning or SARSA.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_a3c
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_on_policy_method;
+	
+	=> nrel_main_idtf: 
+		["A3C"] 
+			(* <-lang_ru;; *);
+		["A3C"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("A3C")] 
+					(* <-lang_ru;; *);
+				[Def.("A3C")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[A3C (Asynchronous Advantage Actor-Critic) – это алгоритм обучения с подкреплением, который использует современный подход к распределенному обучению нейронных сетей. Он является усовершенствованной версией алгоритма Asynchronous Policy Gradient (APG), который разработан для быстрого обучения нейронных сетей на многоядерных процессорах.](*<-lang_ru;;*);
+					[A3C (Asynchronous Advantage Actor-Critic) is a reinforcement learning algorithm that uses a modern approach to distributed learning of neural networks. It is an improved version of the Asynchronous Policy Gradient (APG) algorithm, which is designed for fast training of neural networks on multicore processors.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+

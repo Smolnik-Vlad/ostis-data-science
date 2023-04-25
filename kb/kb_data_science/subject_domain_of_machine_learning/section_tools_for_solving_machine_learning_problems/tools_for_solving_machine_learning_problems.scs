@@ -1,0 +1,14 @@
+section_tools_for_solving_ml_problems
+
+	=> nrel_main_idtf:
+		[Раздел. Инструменты решения задач машинного обучения]
+			(* <- lang_ru;; *);
+		[Section. Tools for solving machine learning problems]
+			(* <- lang_en;; *);;
+
+section_tools_for_solving_ml_problems	
+	-> rrel_key_sc_element:
+        concept_tools_for_solving_ml_problems;;
+
+section_tools_for_solving_ml_problems <- atomic_section;;
+

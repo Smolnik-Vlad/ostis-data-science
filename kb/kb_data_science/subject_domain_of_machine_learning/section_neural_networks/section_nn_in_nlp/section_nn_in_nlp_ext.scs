@@ -1,139 +1,795 @@
-concept_bert
+concept_gpt
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
-		["BERT"] 
+		["GPT"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
-		["BERT"] 
-			(* <-lang_en;; *);
+		["GPT"] 
+			(* <-lang_en;; *);;
+			
+concept_gpt
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("BERT")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("BERT")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
+					->rrel_example:
+					[Generative pre-trained transformer или GPT (рус. Генеративный предобученный трансформер) — это тип нейронных языковых моделей, впервые представленных компанией OpenAI, которые обучаются на больших наборах текстовых данных, чтобы генерировать текст, схожий с человеческим. Предобучение относится к начальному процессу обучения на корпусе, в результате которого модель учится предсказывать следующее слово в тексте и получает основу для успешного выполнения дальнейших задач, не имея больших объёмов данных. GPT являются «трансформерами», которые представляют собой тип нейросетей, использующих механизм самосвязываемости для обработки последовательных данных. Они могут быть дообучены для различных задач обработки естественного языка (NLP), таких как генерация текста, машинный перевод и классификация текста.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Generative pre-trained transformers (GPT) are a family of large language models (LLMs), which was introduced in 2018 by the American artificial intelligence organization OpenAI. GPT models are artificial neural networks that are based on the transformer architecture, pre-trained on large datasets of unlabelled text, and able to generate novel human-like text. As of 2023, most LLMs have these characteristics and are sometimes referred to broadly as GPTs.](*<-lang_en;;*);;
+					
 				*);;
+		*);;
 
+concept_gpt2
+
+	=> nrel_main_idtf: 
+		["GPT-2"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-2"] 
+			(* <-lang_en;; *);;
 			
+concept_gpt2
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-2](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-2](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Generative Pre-trained Transformer 2 (GPT-2) — это крупноязыковая модель искусственного интеллекта с открытым исходным кодом, созданная OpenAI в феврале 2019 года. GPT-2 переводит текст, отвечает на вопросы, резюмирует отрывки и генерирует вывод текста на уровне, который, хотя иногда и неотличим от человеческого, может стать повторяющимся или бессмысленным при создании длинных отрывков. Это универсальный ученик; он не был специально обучен выполнять какие-либо из этих задач, и его способность выполнять их является расширением его общей способности точно синтезировать следующий элемент в произвольной последовательности. GPT-2 представляет собой «прямое масштабирование» модели GPT OpenAI 2018 года с десятикратным увеличением как количества параметров, так и размера набора обучающих данных.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Generative Pre-trained Transformer 2 (GPT-2) is an open-source artificial intelligence large language model created by OpenAI in February 2019. GPT-2 translates text, answers questions, summarizes passages, and generates text output on a level that, while sometimes indistinguishable from that of humans, can become repetitive or nonsensical when generating long passages. It is a general-purpose learner; it was not specifically trained to do any of these tasks, and its ability to perform them is an extension of its general ability to accurately synthesize the next item in an arbitrary sequence. GPT-2 was created as a "direct scale-up" of OpenAI's 2018 GPT model, with a ten-fold increase in both its parameter count and the size of its training dataset.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_gpt3
+
+	=> nrel_main_idtf: 
+		["GPT-3"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-3"] 
+			(* <-lang_en;; *);;
+			
+concept_gpt3
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-3](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-3](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[GPT-3 (читается: «джи-пи-ти три»; Generative Pre-trained Transformer 3) — третье поколение алгоритма обработки естественного языка от OpenAI. На сентябрь 2020 года это самая крупная и продвинутая языковая модель в мире. Модель, по заявлению разработчиков, может быть использована для решения «любых задач на английском языке». GPT-3, как и GPT-2, — это авторегрессионная генеративная языковая модель на архитектуре трансформер.
+
+По сравнению с GPT-2 количество используемых параметров увеличилось более чем в 100 раз: с 1,5 до 175 млрд. Обучение модели происходило на суперкомпьютере Microsoft Azure AI, который был построен специально для OpenAI. Компания Lambda Labs подсчитала, что на такое обучение могло уйти от 4,6 млн долларов.
+
+Для обучения алгоритма исследователи собрали набор данных из более 570 ГБ текстов, включающий данные проекта Common Crawl, английскую Википедию, два датасета с книгами и датасет WebText2 с текстами веб-страниц. Лишь 0,11 % документов, входящих в датасет, были на русском языке.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Generative Pre-trained Transformer 3 (GPT-3) is an autoregressive language model released in 2020 that uses deep learning to produce human-like text. When given a prompt, it will generate text that continues the prompt.
+
+The architecture is a decoder-only transformer network with a 2048-token-long context and then-unprecedented size of 175 billion parameters, requiring 800GB to store. The model was trained using generative pre-training; it is trained to predict what the next token is based on previous tokens. The model demonstrated strong zero-shot and few-shot learning on many tasks.
+
+The successor to GPT-2, GPT-3 is the third-generation language prediction model in a GPT series created by OpenAI, a San Francisco-based artificial intelligence research laboratory. GPT-3, which was introduced in May 2020, and was in beta testing as of July 2020, is part of a trend in natural language processing (NLP) systems of pre-trained language representations.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_gpt3_5
+
+	=> nrel_main_idtf: 
+		["GPT-3.5"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-3.5"] 
+			(* <-lang_en;; *);;
+			
+concept_gpt3_5
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-3.5](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-3.5](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[GPT 3.5, как следует из названия, является своего рода мостом между GPT-3 и GPT-4. OpenAI на самом деле не особо открыто говорил о том, что именно делает GPT 3.5 лучше, чем GPT 3, но кажется, что основные цели заключались в увеличении скорости модели и, что, возможно, наиболее важно, в снижении стоимости её запуска.
+
+Интересно, что OpenAI предоставил пользователям не сырое ядро GPT 3.5, а несколько специализированных ответвлений. Например, GPT 3.5 Turbo — это версия, которая была настроена специально для чата, хотя в целом она по-прежнему может делать всё то же, что и GPT 3.5.](*<-lang_ru;;*);;
+					->rrel_example:
+					[GPT-3.5 model is a fined-tuned version of the GPT3 (Generative Pre-Trained Transformer) model. GPT-3.5 was developed in January 2022 and has 3 variants each with 1.3B, 6B and 175B parameters. The main feature of GPT-3.5 was to eliminate toxic output to a certain extend.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_gpt4
+
+	=> nrel_main_idtf: 
+		["GPT-4"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-4"] 
+			(* <-lang_en;; *);;
+			
+concept_gpt4
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-4](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-4](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[GPT-4 (Generative Pre-trained Transformer 4) — мультимодальная  (англ.)рус. большая языковая модель, созданная OpenAI, четвёртая в серии GPT. Она была выпущена 14 марта 2023 года и доступна для пользователей ChatGPT Plus. Microsoft подтвердила, что версии Bing, использующие GPT, на самом деле использовали GPT-4 до его официального выпуска. В качестве трансформера GPT-4 была предварительно обучена прогнозировать следующий токен (используя как общедоступные данные, так и «данные, лицензированные сторонними поставщиками»), а затем была доработана с помощью обучения с подкреплением на основе отзывов людей.](*<-lang_ru;;*);;
+					->rrel_example:
+					[GPT-4 is OpenAI's large multimodal language model that generates text from textual and visual input. Open AI is the American AI research company behind Dall-E, ChatGPT and GPT-4's predecessor GPT-3.
+
+GPT-4 can handle more complex tasks than previous GPT models. The model exhibits human-level performance on many professional and academic benchmarks, including the Uniform Bar Exam. It was developed to improve alignment and scalability for large models of its kind.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_chatgpt
+
+	=> nrel_main_idtf: 
+		["ChatGPT"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["ChatGPT"] 
+			(* <-lang_en;; *);;
+			
+concept_chatgpt
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: ChatGPT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: ChatGPT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[ChatGPT (англ. Generative Pre-trained Transformer или рус. генеративный предварительно обученный трансформер) — чат-бот с искусственным интеллектом, разработанный компанией OpenAI и способный работать в диалоговом режиме, поддерживающий запросы на естественных языках. ChatGPT — большая языковая модель, для тренировки которой использовались методы обучения с учителем и обучения с подкреплением. Данный чат-бот основывается на другой языковой модели от OpenAI — GPT-3.5 — улучшенной версии модели GPT-3. 14 марта 2023 года была выпущена языковая модель GPT-4, доступная тестировщикам и платным подписчикам ChatGPT Plus. В новой версии у ИИ появилась возможность обработки не только текста, но и картинок](*<-lang_ru;;*);;
+					->rrel_example:
+					[ChatGPT is an artificial intelligence (AI) chatbot developed by OpenAI and released in November 2022. It is built on top of OpenAI's GPT-3.5 and GPT-4 families of large language models (LLMs) and has been fine-tuned (an approach to transfer learning) using both supervised and reinforcement learning techniques.
+
+ChatGPT launched as a prototype on November 30, 2022, and garnered attention for its detailed responses and articulate answers across many domains of knowledge. Its propensity, at times, to confidently provide factually incorrect responses, however, has been identified as a significant drawback. In 2023, following the release of ChatGPT, OpenAI's valuation was estimated at US$29 billion. The advent of the chatbot has increased competition within the space, motivating the creation of Google's Bard and Meta's LLaMA.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_instructgpt
+
+	=> nrel_main_idtf: 
+		["InstructGPT"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["InstructGPT"] 
+			(* <-lang_en;; *);;
+			
+concept_instructgpt
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: InstructGPT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: InstructGPT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[InstructGPT это GPT-3, тонко настроенный для выполнения инструкций с использованием обратной связи с человеком.](*<-lang_ru;;*);;
+					->rrel_example:
+					[InstructGPT is the successor to the GPT-3 large language model (LLM) developed by OpenAI. InstructGPT is a model which uses reinforcement learning from human feedback that gets incorporated into the GPT model to make it more reliable.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_gptj
+
+	=> nrel_main_idtf: 
+		["GPT-J"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-J"] 
+			(* <-lang_en;; *);;
+			
+concept_gptj
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-J](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-J](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[GPT-J — языковая модель искусственного интеллекта с открытым исходным кодом, разработанная EleutherAI. GPT-J работает очень похоже на GPT-3 от OpenAI в различных zero-shot задачах и может даже превзойти его в задачах генерации кода. Новейшая версия GPT-J-6B представляет собой языковую модель, основанную на наборе данных под названием The Pile. Pile — это 825- гигабайтный набор данных языкового моделирования с открытым исходным кодом, который разделен на 22 меньших набора данных. GPT-J похож на ChatGPT по возможностям, хотя он не работает как чат-бот, а только как предсказатель текста. В марте 2023 года Databricks выпустила Dolly, лицензированную Apache модель следования инструкциям, основанную на GPT-J с тонкой настройкой из набора данных Stanford Alpaca.](*<-lang_ru;;*);;
+					->rrel_example:
+					[GPT-J is an open source artificial intelligence language model developed by EleutherAI. It generally follows GPT-2 architecture with the only major difference of the so-called parallel decoders: instead of placing the feed-forward multilayer perceptron after the masked multi-head attention, they are computed in parallel in order to achieve higher throughput with distributed training.
+
+GPT-J performs very similarly to similarly-sized OpenAI's GPT-3 versions on various zero-shot down-streaming tasks and can even outperform it on code generation tasks. The newest version, GPT-J-6B is a language model based on a data set called The Pile. The Pile is an open-source 825 gibibyte language modelling data set that is split into 22 smaller datasets.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_bloom
+
+	=> nrel_main_idtf: 
+		["BLOOM"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["BLOOM"] 
+			(* <-lang_en;; *);;
+			
+concept_bloom
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: BLOOM](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: BLOOM](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[BigScience Large Open-science Multilingual Language Model с открытым доступом ( BLOOM  ) — большая языковая модель на основе трансформера. Была создана более чем 1000 исследователями ИИ, чтобы предоставить бесплатную большую языковую модель для всех желающих. Обученна примерно по 176 миллиардам весов с марта по июль 2022 года, считается альтернативой OpenAI GPT-3. BLOOM использует архитектуру модели трансформатора только для декодера, модифицированную от Megatron-LM GPT-2 .
+
+Проект BLOOM  был запущен соучредителем Hugging Face. Было задействовано шесть основных групп людей, в том числе команда BigScience HuggingFace, команда Microsoft DeepSpeed, команда NVIDIA Megatron-LM, команда IDRIS/GENCI, команда PyTorch и волонтеры из рабочей группы BigScience Engineering. ](*<-lang_ru;;*);;
+					->rrel_example:
+					[BigScience Large Open-science Open-access Multilingual Language Model (BLOOM) is a transformer-based large language model. It was created by over 1000 AI researchers to provide a free large language model for everyone who wants to try. Trained on around 176 billion parameters over March through July 2022, it is considered an alternative to OpenAI's GPT-3 trained on 176 billion parameters. BLOOM uses a decoder-only transformer model architecture modified from Megatron-LM GPT-2.
+
+The BLOOM project was started by a co-founder of Hugging Face. Six main groups of people were involved, including HuggingFace's BigScience team, the Microsoft DeepSpeed team, the NVIDIA Megatron-LM team, the IDRIS/GENCI team, the PyTorch team, and the volunteers in the BigScience Engineering workgroup.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_bert
+
+	=> nrel_main_idtf: 
+		["BERT"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["BERT"] 
+			(* <-lang_en;; *);;
+			
+concept_bert
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: BERT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: BERT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[BERT (англ. Bidirectional Encoder Representations from Transformers) — языковая модель, основанная на архитектуре трансформер, предназначенная для предобучения языковых представлений с целью их последующего применения в широком спектре задач обработки естественного языка. BERT представляет собой нейронную сеть, основу которой составляет композиция кодировщиков трансформера. BERT является автокодировщиком. В каждом слое кодировщика применяется двустороннее внимание (attention), что позволяет модели учитывать контекст с обеих сторон от рассматриваемого токена, а значит, точнее определять значения токенов.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Bidirectional Encoder Representations from Transformers (BERT) is a family of masked-language models introduced in 2018 by researchers at Google. A 2020 literature survey concluded that "in a little over a year, BERT has become a ubiquitous baseline in Natural Language Processing (NLP) experiments counting over 150 research publications analyzing and improving the model."
+
+BERT was originally implemented in the English language at two model sizes: (1) BERTBASE: 12 encoders with 12 bidirectional self-attention heads totaling 110 million parameters, and (2) BERTLARGE: 24 encoders with 16 bidirectional self-attention heads totaling 340 million parameters. Both models were pre-trained on the Toronto BookCorpus (800M words) and English Wikipedia (2,500M words).](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_albert
+
+	=> nrel_main_idtf: 
+		["ALBERT"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["ALBERT"] 
+			(* <-lang_en;; *);;
+			
+concept_albert
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: ALBERT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: ALBERT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[ALBERT был представлен примерно в то же время, что и DistilBERT. Как и DistilBERT, ALBERT уменьшает размер модели BERT (в 18 раз меньше параметров), а также обучается в 1,7 раза быстрее. Но в отличие от DistilBERT, у ALBERT нет компромисса производительности (у DistilBERT он есть, хоть и небольшой). Это происходит из-за разницы в том, как структурированы эксперименты DistilBERT и ALBERT. Первый подготовлен так, чтобы использовать BERT в качестве учителя для процесса обучения/дистилляции. Второй, как и BERT, обучается с нуля. Более того, ALBERT превосходит все предыдущие модели, включая BERT, RoBERTa, DistilBERT и XLNet.](*<-lang_ru;;*);;
+					->rrel_example:
+					[The ALBERT model was proposed in ALBERT: A Lite BERT for Self-supervised Learning of Language Representations by Zhenzhong Lan, Mingda Chen, Sebastian Goodman, Kevin Gimpel, Piyush Sharma, Radu Soricut. It presents two parameter-reduction techniques to lower memory consumption and increase the training speed of BERT:
+
+Splitting the embedding matrix into two smaller matrices.
+Using repeating layers split among groups.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
 concept_roberta
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["RoBERTa"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["RoBERTa"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_roberta
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("RoBERTa")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("RoBERTa")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: RoBERTa](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: RoBERTa](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
-				*);;
+					->rrel_example:
+					[RoBERTa — это простая, но очень популярная альтернатива/преемник BERT. Она улучшает BERT за счет тщательной и разумной оптимизации обучающих гиперпараметров для BERT. Несколько простых и понятных изменений в совокупности повышают производительность RoBERTa и позволяют ей превзойти BERT практически во всех задачах, для которых он был разработан. ](*<-lang_ru;;*);;
+					->rrel_example:
+					[The RoBERTa model was proposed in RoBERTa: A Robustly Optimized BERT Pretraining Approach by Yinhan Liu, Myle Ott, Naman Goyal, Jingfei Du, Mandar Joshi, Danqi Chen, Omer Levy, Mike Lewis, Luke Zettlemoyer, Veselin Stoyanov. It is based on Google’s BERT model released in 2018.
 
-			
+It builds on BERT and modifies key hyperparameters, removing the next-sentence pretraining objective and training with much larger mini-batches and learning rates.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
 concept_distilbert
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["DistilBERT"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["DistilBERT"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_distilbert
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("DistilBERT")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("DistilBERT")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: DistilBERT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: DistilBERT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
-				*);;
+					->rrel_example:
+					[DistilBERT нацелен на оптимизацию обучения за счет уменьшения размера и увеличения скорости BERT — и все это при попытке сохранить производительность. В частности, DistilBERT весит на 40% меньше, чем оригинальная BERT-модель, она на 60% быстрее ее и сохраняет 97% ее функциональности.
 
-			
+Как DistilBERT это делает? Он использует почти ту же архитектуру, что и BERT, но только с 6 блоками енкодера (в базе BERT их 12). Эти блоки инициализируются простым взятием 1 из каждых 2 предобученных блоков енкодеров BERT. Кроме того, из DistilBERT удалено сопоставление токенов и функции пулинга.](*<-lang_ru;;*);;
+					->rrel_example:
+					[The DistilBERT model was proposed in the blog post Smaller, faster, cheaper, lighter: Introducing DistilBERT, a distilled version of BERT, and the paper DistilBERT, a distilled version of BERT: smaller, faster, cheaper and lighter. DistilBERT is a small, fast, cheap and light Transformer model trained by distilling BERT base. It has 40% less parameters than bert-base-uncased, runs 60% faster while preserving over 95% of BERT’s performances as measured on the GLUE language understanding benchmark.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
-concept_gpt
+concept_palm
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
-		["GPT"] 
+		["PaLM"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
-		["GPT"] 
-			(* <-lang_en;; *);
+		["PaLM"] 
+			(* <-lang_en;; *);;
+			
+concept_palm
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("GPT")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("GPT")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: PaLM](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: PaLM](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
-				*);;
+					->rrel_example:
+					[PaLM (англ. Pathways Language Model) — это большая языковая модель на основе архитектуры трансформера с 540 миллиардов параметров, разработанная Google AI. Исследователи также создали версии моделеи PaLM с 8 и 62 миллиардами параметров, чтобы проверить влияние масштаба.
 
+PaLM способен выполнять широкий спектр задач, включая логические рассуждения, арифметические рассуждения, объяснение шуток, генерацию кода и перевод текстов. В сочетании с подсказками по цепочке рассуждений PaLM достигла значительно более высокой производительности при работе с наборами данных, требующими логических выыодов в несколько этапов, таких как текстовые задачи и логические вопросы.](*<-lang_ru;;*);;
+					->rrel_example:
+					[PaLM (Pathways Language Model) is a 540 billion parameter transformer-based large language model developed by Google AI. Researchers also trained smaller versions of PaLM, 8 and 62 billion parameter models, to test the effects of model scale.
+
+PaLM is capable of a wide range of tasks, including commonsense reasoning, arithmetic reasoning, joke explanation, code generation, and translation. When combined with chain-of-thought prompting, PaLM achieved significantly better performance on datasets requiring reasoning of multiple steps, such as word problems and logic-based questions.
+
+The model was first announced in April 2022 and remained private until March 2023, when Google launched an API for PaLM and several other technologies. The API will first be available to a limited number of developers who join a waitlist before being opened to the public.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_minerva
+
+	=> nrel_main_idtf: 
+		["Minerva"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Minerva"] 
+			(* <-lang_en;; *);;
 			
+concept_minerva
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Minerva](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Minerva](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Minerva — языковая модель, способная решать математические и научные вопросы с помощью пошаговых рассуждений. Мы показываем, что, сосредоточив внимание на сборе обучающих данных, которые имеют отношение к задачам количественного мышления, обучении моделей в масштабе и использовании лучших в своем классе методов логического вывода, мы достигаем значительного прироста производительности в различных сложных задачах количественного мышления. Minerva решает такие проблемы, генерируя решения, включающие числовые вычисления и символьные операции, не полагаясь на внешние инструменты, такие как калькулятор. Модель анализирует математические вопросы и отвечает на них, используя сочетание естественного языка и математических обозначений. Minerva сочетает в себе несколько методов, в том числе подсказку с использованием нескольких шагов, подсказку по цепочке мыслей или блокнот, а также голосование большинством, чтобы достичь самых современных результатов в задачах рассуждения STEM.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Minerva is a language model capable of solving mathematical and scientific questions using step-by-step reasoning. We show that by focusing on collecting training data that is relevant for quantitative reasoning problems, training models at scale, and employing best-in-class inference techniques, we achieve significant performance gains on a variety of difficult quantitative reasoning tasks. Minerva solves such problems by generating solutions that include numerical calculations and symbolic manipulation without relying on external tools such as a calculator. The model parses and answers mathematical questions using a mix of natural language and mathematical notation. Minerva combines several techniques, including few-shot prompting, chain of thought or scratchpad prompting, and majority voting, to achieve state-of-the-art performance on STEM reasoning tasks.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_lamda
+
+	=> nrel_main_idtf: 
+		["LaMDA"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["LaMDA"] 
+			(* <-lang_en;; *);;
+			
+concept_lamda
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: LaMDA](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: LaMDA](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[LaMDA (англ. Language Model for Dialogue Applications, языковая модель для диалоговых приложений) — семейство разговорных нейронных языковых моделей, разработанных Google. Первое поколение было анонсировано во время презентации Google I/O 2021 года, а второе поколение было анонсировано на мероприятии следующего года. В июне 2022 года LaMDA привлекла всеобщее внимание, когда инженер Google Блейк Лемуан заявил, что чат-бот обладает разумом. Научное сообщество в значительной степени отвергло утверждения Лемуана, хотя это привело к разговорам об эффективности Теста Тьюринга, который измеряет, может ли компьютер сойти за человека.](*<-lang_ru;;*);;
+					->rrel_example:
+					[LaMDA (Language Model for Dialogue Applications) is a family of conversational large language models developed by Google. Originally developed and introduced as Meena in 2020, the first-generation LaMDA was announced during the 2021 Google I/O keynote, while the second generation was announced the following year. In June 2022, LaMDA gained widespread attention when Google engineer Blake Lemoine made claims that the chatbot had become sentient. The scientific community has largely rejected Lemoine's claims, though it has led to conversations about the efficacy of the Turing test, which measures whether a computer can pass for a human. In February 2023, Google announced Bard, a conversational artificial intelligence chatbot powered by LaMDA, to counter the rise of OpenAI's ChatGPT.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_gopher
+
+	=> nrel_main_idtf: 
+		["Gopher"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Gopher"] 
+			(* <-lang_en;; *);;
+			
+concept_gopher
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Gopher](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Gopher](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Gopher представляет собой языковую модель от DeepMind, включающую в себя 280 миллиардов параметров.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Gopher is a 280 billion parameter language model made by DeepMind.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_gptneo
+
+	=> nrel_main_idtf: 
+		["GPT-Neo"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-Neo"] 
+			(* <-lang_en;; *);;
+			
+concept_gptneo
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-Neo](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-Neo](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[GPT-Neo - это одна из больших языковых моделей EleutherAI, выпущенная в марте 2021 года. На момент выпуска это была самая большая в мире языковая модель в стиле GPT-3 с открытым исходным кодом, которая включала 125M, 1,3B или 2,7B параметров.](*<-lang_ru;;*);;
+					->rrel_example:
+					[GPT-Neo is one of the EleutherAI's large language models that was released in March 2021, it was the largest open source GPT-3-style language model in the world at the time of release and included 125M, 1.3B or 2.7B parameters.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_gptneox
+
+	=> nrel_main_idtf: 
+		["GPT-NeoX"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GPT-NeoX"] 
+			(* <-lang_en;; *);;
+			
+concept_gptneox
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GPT-NeoX](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GPT-NeoX](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[GPT-NeoX был выпущен EleutherAI в феврале 2022 года. На момент выпуска это была самая большая языковая модель с открытым исходным кодом в мире с общим количеством параметров 20 млрд.](*<-lang_ru;;*);;
+					->rrel_example:
+					[GPT-NeoX was released in February 2022 by EleutherAI, it was the largest open-source language model in the world at the time of release with 20B parameters in total.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+concept_dialogpt
+
+	=> nrel_main_idtf: 
+		["DialoGPT"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["DialoGPT"] 
+			(* <-lang_en;; *);;
+			
+concept_dialogpt
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: DialoGPT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: DialoGPT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[DialoGPT был предложен в DialoGPT: крупномасштабное генеративное предварительное обучение для генерации разговорных ответов Ичжэ Чжаном, Сици Суном, Мишелем Галлеем, Йен-Чун Ченом, Крисом Брокеттом, Сян Гао, Цзяньфэн Гао, Цзинцзин Лю, Биллом Доланом. Это модель GPT2, обученная на 147 миллионах диалоговых обменов, извлеченных из Reddit.](*<-lang_ru;;*);;
+					->rrel_example:
+					[DialoGPT was proposed in DialoGPT: Large-Scale Generative Pre-training for Conversational Response Generation by Yizhe Zhang, Siqi Sun, Michel Galley, Yen-Chun Chen, Chris Brockett, Xiang Gao, Jianfeng Gao, Jingjing Liu, Bill Dolan. It’s a GPT2 Model trained on 147M conversation-like exchanges extracted from Reddit.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_turingnlg
+
+	=> nrel_main_idtf: 
+		["T-NLG"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["T-NLG"] 
+			(* <-lang_en;; *);;
+			
+concept_turingnlg
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: T-NLG](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: T-NLG](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Генерация естественного языка Тьюринга (T-NLG) — это языковая модель с 17 миллиардами параметров от Microsoft, которая превосходит современные технологии во многих последующих задачах НЛП. Это модель генеративного языка на основе Transformer, что означает, что он может генерировать слова для выполнения открытых текстовых задач. Помимо завершения незаконченного предложения, он может генерировать прямые ответы на вопросы и резюме входных документов.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Turing Natural Language Generation (T-NLG) is a 17 billion parameter language model by Microsoft that outperforms the state of the art on many downstream NLP tasks. It's a Transformer-based generative language model, which means it can generate words to complete open-ended textual tasks. In addition to completing an unfinished sentence, it can generate direct answers to questions and summaries of input documents.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_chinchilla
+
+	=> nrel_main_idtf: 
+		["Chinchilla"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Chinchilla"] 
+			(* <-lang_en;; *);;
+			
+concept_chinchilla
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Chinchilla](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Chinchilla](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Chinchilla — это модель с параметрами 70 млрд, обученная как оптимальная для вычислений модель с 1,4 трлн токенов. Полученные данные свидетельствуют о том, что эти типы моделей оптимально обучаются за счет одинакового масштабирования как размера модели, так и обучающих токенов. Он использует тот же бюджет вычислений, что и Gopher, но имеет в 4 раза больше обучающих данных. Шиншиллу и суслика обучают на одинаковое количество FLOP. Он обучается с помощью MassiveText с использованием слегка модифицированного токенизатора SentencePiece.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Chinchilla is a 70B parameters model trained as a compute-optimal model with 1.4 trillion tokens. Findings suggest that these types of models are trained optimally by equally scaling both model size and training tokens. It uses the same compute budget as Gopher but with 4x more training data. Chinchilla and Gopher are trained for the same number of FLOPs. It is trained using MassiveText using a slightly modified SentencePiece tokenizer.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_sparrow
+
+	=> nrel_main_idtf: 
+		["Sparrow"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Sparrow"] 
+			(* <-lang_en;; *);;
+			
+concept_sparrow
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Sparrow](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Sparrow](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Sparrow — это чат-бот, разработанный исследовательской лабораторией искусственного интеллекта DeepMind, дочерней компанией Alphabet Inc. Он предназначен для того, чтобы правильно отвечать на вопросы пользователей, снижая при этом риск небезопасных и неуместных ответов. Одной из мотиваций Sparrow является решение проблемы языковых моделей, производящих неверные, предвзятые или потенциально вредные результаты. Воробей обучается с использованием человеческих суждений, чтобы быть более «полезным, правильным и безвредным» по сравнению с базовыми предварительно обученными языковыми моделями. Разработка Sparrow включала в себя просьбу участников платного исследования взаимодействовать со Sparrow и сбор их предпочтений для обучения модели того, насколько полезен ответ.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Sparrow is a chatbot developed by the artificial intelligence research lab DeepMind, a subsidiary of Alphabet Inc. It is designed to answer users' questions correctly, while reducing the risk of unsafe and inappropriate answers. One motivation behind Sparrow is to address the problem of language models producing incorrect, biased or potentially harmful outputs. Sparrow is trained using human judgements, in order to be more “Helpful, Correct and Harmless” compared to baseline pre-trained language models. The development of Sparrow involved asking paid study participants’ to interact with Sparrow, and collecting their preferences to train a model of how useful an answer is.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_opt
+
+	=> nrel_main_idtf: 
+		["OPT"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["OPT"] 
+			(* <-lang_en;; *);;
+			
+concept_opt
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: OPT](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: OPT](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Модель OPT, или модель оптимальной тренировки, представляет собой систему фитнес-тренировок, разработанную NASM. Модель OPT основана на научных данных и принципах, которые продвигают человека через пять тренировочных фаз: стабилизационная выносливость, силовая выносливость, гипертрофия, максимальная сила и мощность.](*<-lang_ru;;*);;
+					->rrel_example:
+					[The OPT Model, or Optimum Performance Training Model, is a fitness training system developed by NASM. The OPT Model is based on scientific evidence and principles that progresses an individual through five training phases: stabilization endurance, strength endurance, hypertrophy, maximal strength and power.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_blenderbot3
+
+	=> nrel_main_idtf: 
+		["Blenderbot 3"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Blenderbot 3"] 
+			(* <-lang_en;; *);;
+			
+concept_blenderbot3
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Blenderbot 3](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Blenderbot 3](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[BlenderBot 3 — это модель разговорного языка, созданная компанией Meta. BlenderBot 3 предназначен для улучшения разговорных навыков и безопасности за счет обратной связи от людей, которые общаются с ним, уделяя особое внимание полезным отзывам и избегая обучения на бесполезных или опасных ответах.](*<-lang_ru;;*);;
+					->rrel_example:
+					[BlenderBot 3 is a conversational language model made by Meta. BlenderBot 3 is designed to improve its conversational skills and safety through feedback from people who chat with it, focusing on helpful feedback while avoiding learning from unhelpful or dangerous responses.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_jurrasic1
+
+	=> nrel_main_idtf: 
+		["Jurrasic 1"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Jurrasic 1"] 
+			(* <-lang_en;; *);;
+			
+concept_jurrasic1
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Jurrasic 1](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Jurrasic 1](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Jurassic-1 Jumbo — это LLM, выпущенный AI21 Labs, который содержит 178 миллиардов параметров, что на 3 миллиарда больше, чем GPT-3 (но не больше, чем PanGu-Alpha, HyperCLOVA или Wu Dao 2.0).](*<-lang_ru;;*);;
+					->rrel_example:
+					[Jurassic-1 Jumbo is a LLM released by AI21 Labs that contains 178 billion parameters, or 3 billion more than GPT-3 (but not more than PanGu-Alpha, HyperCLOVA, or Wu Dao 2.0).](*<-lang_en;;*);;
+					
+				*);;
 		*);;

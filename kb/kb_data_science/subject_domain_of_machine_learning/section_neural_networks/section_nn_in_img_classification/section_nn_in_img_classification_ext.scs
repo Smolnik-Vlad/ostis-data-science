@@ -1,6 +1,4 @@
 concept_neural_network_architecture
-
-	<- sc_node_not_relation;
 	
 	=> nrel_main_idtf: 
 		["Архитектура нейронной сети"] 
@@ -8,228 +6,263 @@ concept_neural_network_architecture
 	=> nrel_main_idtf: 
 		["Neural network architecture"] 
 			(* <-lang_en;; *);
+	
+	=> nrel_private_subject_domain:
+		concept_alexnet;
+		concept_googlenet;
+		concept_inception;
+		concept_vgg;
+		concept_resnet;
+		concept_densenet;
+		concept_efficientnet;;
+		
+concept_neural_network_architecture
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("Архитектура нейронной сети")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("Neural network architecture")]
-					(* <-lang_en;; *);;
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: архитектура нейронной сети](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: neural network architecture](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Нейронная сеть — это метод в искусственном интеллекте, который учит компьютеры обрабатывать данные таким же способом, как и человеческий мозг. Это тип процесса машинного обучения, называемый глубоким обучением, который использует взаимосвязанные узлы или нейроны в слоистой структуре, напоминающей человеческий мозг.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Neural Networks are the functional unit of Deep Learning and are known to mimic the behavior of the human brain to solve complex data-driven problems.
+
+The input data is processed through different layers of artificial neurons stacked together to produce the desired output.
+
+From speech recognition and person recognition to healthcare and marketing, Neural Networks have been used in a varied set of domains. ](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
 concept_alexnet
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["AlexNet"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["AlexNet"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_alexnet
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("AlexNet")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("AlexNet")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: AlexNet](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: AlexNet](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
+					->rrel_example:
+					[AlexNet — сверточная нейронная сеть, которая оказала большое влияние на развитие машинного обучения, в особенности — на алгоритмы компьютерного зрения. Сеть с большим отрывом выиграла конкурс по распознаванию изображений ImageNet LSVRC-2012 в 2012 году (с количеством ошибок 15,3% против 26,2% у второго места). Архитектура AlexNet схожа с созданной Yann LeCum сетью LeNet. Однако у AlexNet больше фильтров на слое и вложенных сверточных слоев. Сеть включает в себя свертки, максимальное объединение, дропаут, аугментацию данных, функции активаций ReLU и стохастический градиентный спуск.](*<-lang_ru;;*);;
+					->rrel_example:
+					[AlexNet is the name of a convolutional neural network (CNN) architecture, designed by Alex Krizhevsky in collaboration with Ilya Sutskever and Geoffrey Hinton, who was Krizhevsky's Ph.D. advisor.
+
+AlexNet competed in the ImageNet Large Scale Visual Recognition Challenge on September 30, 2012. The network achieved a top-5 error of 15.3%, more than 10.8 percentage points lower than that of the runner up. The original paper's primary result was that the depth of the model was essential for its high performance, which was computationally expensive, but made feasible due to the utilization of graphics processing units (GPUs) during training.](*<-lang_en;;*);;
+					
 				*);;
-
-			
 		*);;
-
+		
 concept_googlenet
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["GoogleNet"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["GoogleNet"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_googlenet
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("GoogleNet")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("GoogleNet")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GoogleNet](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GoogleNet](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
-				*);;
+					->rrel_example:
+					[GoogleNet — нейросетевая архитектура с 22 слоями. Целью Google было разработать нейросеть с наибольшей вычислительной эффективностью. Для этого они придумали так называемый модуль Inception — вся архитектура состоит из множества таких модулей, следующих друг за другом.
 
-			
+Также в GoogleNet нет полносвязных слоёв, и она содержит всего 5 миллионов параметров — в 12 раз меньше, чем у AlexNet.
+
+В составе GoogleNet есть небольшая подсеть — Stem Network. Она состоит из трёх свёрточных слоёв с двумя pooling-слоями и располагается в самом начале архитектуры.](*<-lang_ru;;*);;
+					->rrel_example:
+					[GoogLeNet is a type of convolutional neural network based on the Inception architecture. It utilises Inception modules, which allow the network to choose between multiple convolutional filter sizes in each block. An Inception network stacks these modules on top of each other, with occasional max-pooling layers with stride 2 to halve the resolution of the grid. The winner of the ILSVRC 2014 competition was GoogLeNet(a.k.a. Inception V1) from Google. It achieved a top-5 error rate of 6.67%! This was very close to human level performance which the organisers of the challenge were now forced to evaluate. As it turns out, this was actually rather hard to do and required some human training in order to beat GoogLeNets accuracy. After a few days of training, the human expert (Andrej Karpathy) was able to achieve a top-5 error rate of 5.1%(single model) and 3.6%(ensemble). The network used a CNN inspired by LeNet but implemented a novel element which is dubbed an inception module. It used batch normalization, image distortions and RMSprop. This module is based on several very small convolutions in order to drastically reduce the number of parameters. Their architecture consisted of a 22 layer deep CNN but reduced the number of parameters from 60 million (AlexNet) to 4 million.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
-concept_inception
+concept_inceptionv2
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
-		["Inception"] 
+		["Inception V2"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
-		["Inception"] 
-			(* <-lang_en;; *);
+		["Inception V2"] 
+			(* <-lang_en;; *);;
+			
+concept_inceptionv2
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("Inception")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("Inception")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Inception V2](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Inception V2](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
+					->rrel_example:
+					[Inception v2 — это второе поколение архитектур сверточной нейронной сети Inception, в котором, в частности, используется batch normalization. Другие изменения включают добавление слоев dropout и удаление local response normalization из-за преимуществ batch normalization.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Inception v2 is the second generation of Inception convolutional neural network architectures which notably uses batch normalization. Other changes include dropping dropout and removing local response normalization, due to the benefits of batch normalization.](*<-lang_en;;*);;
+					
 				*);;
-
-			
 		*);;
 
 concept_vgg
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["VGG"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["VGG"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_vgg
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("VGG")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("VGG")] 
-					(* <-lang_en;; *);;
-					
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: VGG](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: VGG](*<-lang_en;;*);;
 				
-			<= nrel_using_constants:
-				...
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
-				*);;
+					->rrel_example:
+					[VGG — модель сверточной нейронной сети, предложенная K. Simonyan и A. Zisserman из Оксфордского университета в статье “Very Deep Convolutional Networks for Large-Scale Image Recognition”. Модель достигает точности 92.7% — топ-5, при тестировании на ImageNet в задаче распознавания объектов на изображении. Этот датасет состоит из более чем 14 миллионов изображений, принадлежащих к 1000 классам. Изначальное архитектура VGG была представлена в 2 вариациях: VGG16 и VGG19.](*<-lang_ru;;*);;
+					->rrel_example:
+					[VGG Net is the name of a pre-trained convolutional neural network (CNN) invented by Simonyan and Zisserman from Visual Geometry Group (VGG) at University of Oxford in 2014 and it was able to be the 1st runner-up of the ILSVRC (ImageNet Large Scale Visual Recognition Competition) 2014 in the classification task. VGG Net has been trained on ImageNet ILSVRC data set which include images of 1000 classes split into three sets of 1.3 million training images, 100,000 testing images and 50,000 validation images. The model obtained 92.7% test accuracy in ImageNet. VGG Net has been successful in many real world applications such as estimating the heart rate based on the body motion, and pavement distress detection.
 
-			
+VGG Net has learned to extract the features (feature extractor) that can distinguish the objects and is used to classify unseen objects. VGG was invented with the purpose of enhancing classification accuracy by increasing the depth of the CNNs. VGG 16 and VGG 19, having 16 and 19 weight layers, respectively, have been used for object recognition. VGG Net takes input of 224×224 RGB images and passes them through a stack of convolutional layers with the fixed filter size of 3×3 and the stride of 1. There are five max pooling filters embedded between convolutional layers in order to down-sample the input representation (image, hidden-layer output matrix, etc.). The stack of convolutional layers are followed by 3 fully connected layers, having 4096, 4096 and 1000 channels, respectively. The last layer is a soft-max layer. Below figure shows VGG network structure.
+
+Although VGG Net have been effective for object recognition, it does not work properly for scenes recognition. Places205-VGGNet is an updated version of VGG Net. Places205-VGGNet that has been trained on MIT67, SUN397, and Places205 data set, can recognize scene images. Places205-VGGNet utilizes corner cropping strategy and multi-scale cropping method.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
 concept_resnet
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["ResNet"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["ResNet"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_resnet
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("ResNet")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("ResNet")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: ResNet](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: ResNet](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
-				*);;
+					->rrel_example:
+					[ResNet — это сокращенное название для Residual Network (дословно  — «остаточная сеть»), но что такое residual learning («остаточное обучение»)?
 
-			
+Глубокие сверточные нейронные сети превзошли человеческий уровень классификации изображений в 2015 году. Глубокие сети извлекают низко-, средне- и высокоуровневые признаки  сквозным многослойным способом, а увеличение количества stacked layers может обогатить «уровни» признаков.](*<-lang_ru;;*);;
+					->rrel_example:
+					[ResNet, short for Residual Network is a specific type of neural network that was introduced in 2015 by Kaiming He, Xiangyu Zhang, Shaoqing Ren and Jian Sun in their paper “Deep Residual Learning for Image Recognition”.The ResNet models were extremely successful which you can guess from the following:
+
+Won 1st place in the ILSVRC 2015 classification competition with a top-5 error rate of 3.57% (An ensemble model)
+Won the 1st place in ILSVRC and COCO 2015 competition in ImageNet Detection, ImageNet localization, Coco detection and Coco segmentation.
+Replacing VGG-16 layers in Faster R-CNN with ResNet-101. They observed relative improvements of 28%
+Efficiently trained networks with 100 layers and 1000 layers also.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
 concept_densenet
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	
 	=> nrel_main_idtf: 
 		["DenseNet"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
 		["DenseNet"] 
-			(* <-lang_en;; *);
+			(* <-lang_en;; *);;
+			
+concept_densenet
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("DenseNet")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("DenseNet")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: DenseNet](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: DenseNet](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_neural_network_architecture;;
+					->rrel_example:
+					[DenseNet — это тип сверточной нейронной сети, в которой используются плотные связи между слоями через dense blocks, где все слои (с соответствующими размерами карт объектов) соединяются напрямую друг с другом. Чтобы сохранить характер прямой связи, каждый слой получает дополнительные входные данные от всех предыдущих слоев и передает свои собственные карты объектов всем последующим слоям.](*<-lang_ru;;*);;
+					->rrel_example:
+					[A DenseNet is a type of convolutional neural network that utilises dense connections between layers, through Dense Blocks, where we connect all layers (with matching feature-map sizes) directly with each other. To preserve the feed-forward nature, each layer obtains additional inputs from all preceding layers and passes on its own feature-maps to all subsequent layers.](*<-lang_en;;*);;
+					
 				*);;
-
-			
 		*);;
+
+concept_efficientnet
+
+	=> nrel_main_idtf: 
+		["EfficientNet"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["EfficientNet"] 
+			(* <-lang_en;; *);;
+			
+concept_efficientnet
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: EfficientNet](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: EfficientNet](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[EfficientNets — это семейство state-of-the-art моделей для классификации изображений на эффективно масштабированных сверточных сетях. На текущий момент EfficientNets обучаются не раньше чем за день. Например, EfficientNet-B0 обучается за 23 часа наCloud TPU v2-8 ноде. Чтобы ускорить время обучения классификаторов, исследователи предложили изменения в пайплайн обучения.
+					Среди методов для ускорения, которые исследователи использовали:
+
+					Выбор больших батч оптимизаторов;
+					Адаптивный learning rate (learning rate schedules);
+					Распределенная оценка;
+					Батч нормализация](*<-lang_ru;;*);;
+					->rrel_example:
+					[EfficientNet is a convolutional neural network architecture and scaling method that uniformly scales all dimensions of depth/width/resolution using a compound coefficient. Unlike conventional practice that arbitrary scales these factors, the EfficientNet scaling method uniformly scales network width, depth, and resolution with a set of fixed scaling coefficients.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		

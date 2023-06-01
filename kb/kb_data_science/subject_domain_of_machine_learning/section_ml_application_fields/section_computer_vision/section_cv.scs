@@ -1,0 +1,750 @@
+section_computer_vision
+	=> nrel_main_idtf:
+		[Раздел. CV (Computer Vision)]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. CV (Computer Vision)]
+			(* <- lang_en;; *);
+	
+	<=nrel_section_decomposition:
+		section_nlp_task;;
+
+section_computer_vision
+    ->rrel_key_sc_element:
+		concept_pose_estimation;
+		concept_depth_estimation;
+		concept_image_to_image ;
+		concept_image_generation;
+		concept_image_processing;
+		concept_filtering;
+		concept_morphological_operations;
+		concept_binarization ;
+		concept_edge_detection;
+		concept_noise_removal;
+		concept_image_quality_assessment;
+		concept_image_reconstruction;
+		concept_object_recognition;
+		concept_face_recognition;
+		concept_pattern_recognition;
+		concept_character_recognition;
+		concept_handwriting_recognition;
+		concept_gesture_recognition;
+		concept_video_landmark_recognition;
+		concept_determining_the_position_and_orientation_of_objects_in_an_image;
+		concept_video_object_detection;
+		concept_automatic_license_plate_recognition ;
+		concept_image_and_video_enhancement  ;
+		concept_object_manipulation_robotization;
+		concept_medical_imaging_diagnostics_and_medical_diagnostic_support;
+		concept_traffic_management_and_video_surveillance_in_public_places;
+		concept_reconstruction_of_3D_models_of_objects_and_spaces;
+		concept_product_recognition;
+		concept_control_of_sales_and_inventory;
+		concept_military_imaging_processing ;
+		concept_drone_navigation;
+		concept_traffic_analysis;
+		concept_virtual_reality ;
+		concept_truck_weight_analysis_programs;
+		concept_analysis_of_human_behavior_in_public_places;
+		concept_environmental_monitoring;
+		concept_border_passenger_control;
+		concept_road_surface_quality_assessment ;
+		concept_automated_search_for_parking_violations;
+		concept_expert_systems_development;
+		concept_inspection_of_unmanned_aerial_vehicles;
+		concept_working_with_large_data_arrays;
+		concept_improvement_of_the_educational_process;
+		concept_development_of_self_driving_cars;
+		concept_automatic_control_of_equipment_in_production;
+		concept_development_of_a_container_movement_management_system;
+		concept_satellite_navigation_enhancement;
+		concept_supply_chain_management;
+		concept_development_of_algorithms_for_the_analysis_of_multidimensional_data;
+		concept_automatic_audio_signal_processing;
+		concept_development_of_a_data_stream_multiplexing_system;
+		concept_automatic_quality_control_of_welding_seams;
+		concept_development_of_a_laser_cutting_system;;
+
+
+
+	
+section_computer_vision
+	=> nrel_main_idtf:
+		[Раздел. Компьютерное зрение]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section.Computer Vision]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_cv;
+
+	<=nrel_section_decomposition:
+		section_pose_estimation;
+		section_depth_estimation;
+		section_image_to_image ;
+		section_image_generation;
+		section_image_processing;
+		section_filtering;
+		section_morphological_operations;
+		section_binarization ;
+		section_edge_detection;
+		section_noise_removal;
+		section_image_quality_assessment;
+		section_image_reconstruction;
+		section_object_recognition;
+		section_face_recognition;
+		section_pattern_recognition;
+		section_character_recognition;
+		section_handwriting_recognition;
+		section_gesture_recognition;
+		section_video_landmark_recognition;
+		section_determining_the_position_and_orientation_of_objects_in_an_image;
+		section_video_object_detection;
+		section_automatic_license_plate_recognition ;
+		section_image_and_video_enhancement  ;
+		section_object_manipulation_robotization;
+		section_medical_imaging_diagnostics_and_medical_diagnostic_support;
+		section_traffic_management_and_video_surveillance_in_public_places;
+		section_reconstruction_of_3D_models_of_objects_and_spaces;
+		section_product_recognition;
+		section_control_of_sales_and_inventory;
+		section_creating_recommendations_for_customers;
+		section_military_imaging_processing ;
+		section_drone_navigation;
+		section_traffic_analysis;
+		section_virtual_reality ;
+		section_truck_weight_analysis_programs;
+		section_analysis_of_human_behavior_in_public_places;
+		section_environmental_monitoring;
+		section_border_passenger_control;
+		section_road_surface_quality_assessment ;
+		section_automated_search_for_parking_violations;
+		section_expert_systems_development;
+		section_inspection_of_unmanned_aerial_vehicles;
+		section_working_with_large_data_arrays;
+		section_improvement_of_the_educational_process;
+		section_development_of_self_driving_cars;
+		section_automatic_control_of_equipment_in_production;
+		section_development_of_a_container_movement_management_system;
+		section_satellite_navigation_enhancement;
+		section_supply_chain_management;
+		section_development_of_algorithms_for_the_analysis_of_multidimensional_data;
+		section_automatic_audio_signal_processing;
+		section_development_of_a_data_stream_multiplexing_system;
+		section_automatic_quality_control_of_welding_seams;
+		section_development_of_a_laser_cutting_system;;
+
+
+section_pose_estimation
+	=> nrel_main_idtf:
+		[Раздел. Оценка позиции]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Pose estimation]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_pose_estimation;;
+
+section_depth_estimation
+	=> nrel_main_idtf:
+		[Раздел. Оценка глубины]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Depth estimation]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_depth_estimation;;
+
+section_image_to_image
+	=> nrel_main_idtf:
+		[Раздел. Image to Image]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Image to Image]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_image_to_image;;
+
+section_image_generation
+	=> nrel_main_idtf:
+		[Раздел. Генерация изображения]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Image generation]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_image_generation;;
+		
+section_image_processing
+	=> nrel_main_idtf:
+		[Раздел. Обработка изображений]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Image processing]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_image_processing;;
+
+
+section_filtering
+	=> nrel_main_idtf:
+		[Раздел. Фильтрация]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Filtering]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_filtering;;
+
+section_morphological_operations
+	=> nrel_main_idtf:
+		[Раздел. Морфологические операции]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Morphological operations]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_morphological_operations;;
+
+section_binarization
+	=> nrel_main_idtf:
+		[Раздел. Бинаризация]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Binarization]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_binarization;;
+
+section_edge_detection
+	=> nrel_main_idtf:
+		[Раздел. Выделение контуров]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Edge detection]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_edge_detection;;
+
+section_noise_removal
+	=> nrel_main_idtf:
+		[Раздел. Удаление шума]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Noise removal]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_noise_removal;;
+		
+section_image_quality_assessment
+	=> nrel_main_idtf:
+		[Раздел. Оценка качества изображений]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Image quality assessment]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_image_quality_assessment;;
+
+
+section_image_reconstruction
+	=> nrel_main_idtf:
+		[Раздел. Реконструкция изображения]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Image reconstruction]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_image_reconstruction;;
+
+	
+
+section_object_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание объектов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Object recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_object_recognition;;
+
+section_face_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание лиц]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Face recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_face_recognition;;
+
+section_pattern_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание паттернов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Pattern recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_pattern_recognition;;
+
+section_character_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание символов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Character recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_character_recognition;;
+		
+section_handwriting_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание рукописного текста]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Handwriting recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_handwriting_recognition;;
+		
+section_gesture_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание жестов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Gesture recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_gesture_recognition;;
+
+
+section_video_landmark_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание ориентиров на видео]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section.  Video Landmark Recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_video_landmark_recognition;;
+
+	
+
+section_determining_the_position_and_orientation_of_objects_in_an_image
+	=> nrel_main_idtf:
+		[Раздел. Определение позиции и ориентации объектов на изображении]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Determining the position and orientation of objects in an image]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_determining_the_position_and_orientation_of_objects_in_an_image;;
+
+section_video_object_detection
+	=> nrel_main_idtf:
+		[Раздел. Обнаружение объектов на видео]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Video object detection]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_video_object_detection;;
+
+section_automatic_license_plate_recognition
+	=> nrel_main_idtf:
+		[Раздел. Автоматическое распознавание номерных знаков]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Automatic license plate recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_automatic_license_plate_recognition;;
+
+section_image_and_video_enhancement
+	=> nrel_main_idtf:
+		[Раздел. Улучшение качества изображений и видео]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Image and video enhancement]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_image_and_video_enhancement;;
+		
+section_object_manipulation_robotization
+	=> nrel_main_idtf:
+		[Раздел. Роботизация манипуляций с объектами]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Object manipulation robotization]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_object_manipulation_robotization;;
+
+
+section_medical_imaging_diagnostics_and_medical_diagnostic_support
+	=> nrel_main_idtf:
+		[Раздел. Диагностика медицинских изображений и поддержка медицинской диагностики]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Medical imaging diagnostics and medical diagnostic support]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_medical_imaging_diagnostics_and_medical_diagnostic_support;;
+
+	
+
+section_traffic_management_and_video_surveillance_in_public_places
+	=> nrel_main_idtf:
+		[Раздел. Управление транспортным потоком и видеонаблюдение в общественных местах]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Traffic management and video surveillance in public places]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_traffic_management_and_video_surveillance_in_public_places;;
+
+section_reconstruction_of_3D_models_of_objects_and_spaces
+	=> nrel_main_idtf:
+		[Раздел. Реконструкция 3D-моделей объектов и пространств]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section.  Reconstruction of 3D models of objects and spaces]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_reconstruction_of_3D_models_of_objects_and_spaces;;
+		
+section_product_recognition
+	=> nrel_main_idtf:
+		[Раздел. Распознавание товаров]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Product recognition]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_product_recognition;;
+
+	
+
+section_control_of_sales_and_inventory
+	=> nrel_main_idtf:
+		[Раздел. Контроль за продажами и запасами]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Control of sales and inventory]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_control_of_sales_and_inventory;;
+
+section_creating_recommendations_for_customers
+	=> nrel_main_idtf:
+		[Раздел. Создание рекомендаций для покупателей ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Creating recommendations for customers]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_creating_recommendations_for_customers;;
+		
+section_military_imaging_processing
+	=> nrel_main_idtf:
+		[Раздел. Обработка изображений военного назначения]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Military Imaging Processing]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_military_imaging_processing;;
+
+section_drone_navigation
+	=> nrel_main_idtf:
+		[Раздел. Навигация дронов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Drone navigation]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_drone_navigation;;
+
+section_traffic_analysis
+	=> nrel_main_idtf:
+		[Раздел. Анализ трафика]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Traffic analysis]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_traffic_analysis;;
+
+section_virtual_reality
+	=> nrel_main_idtf:
+		[Раздел. Виртуальная реальность]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Virtual reality]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_virtual_reality;;
+		
+section_truck_weight_analysis_programs
+	=> nrel_main_idtf:
+		[Раздел. Программы анализа веса грузовиков]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Truck weight analysis programs]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_truck_weight_analysis_programs;;
+
+
+section_analysis_of_human_behavior_in_public_places
+	=> nrel_main_idtf:
+		[Раздел. Анализ людского поведения в общественных местах]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Analysis of human behavior in public places]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_analysis_of_human_behavior_in_public_places;;
+
+section_environmental_monitoring
+	=> nrel_main_idtf:
+		[Раздел. Экологический мониторинг]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Environmental monitoring]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_environmental_monitoring;;
+
+section_border_passenger_control
+	=> nrel_main_idtf:
+		[Раздел. Контроль прохождения границы пассажирами]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Border Passenger Control]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_border_passenger_control;;
+
+section_road_surface_quality_assessment
+	=> nrel_main_idtf:
+		[Раздел. Оценка качества дорожных покрытий]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Road surface quality assessment]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_road_surface_quality_assessment;;
+
+section_automated_search_for_parking_violations
+	=> nrel_main_idtf:
+		[Раздел. Автоматизированный поиск нарушений при парковке автомобилей]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Automated search for parking violations]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_automated_search_for_parking_violations;;
+		
+section_expert_systems_development
+	=> nrel_main_idtf:
+		[Раздел. Разработка экспертных систем]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Expert systems development]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_expert_systems_development;;
+
+
+section_inspection_of_unmanned_aerial_vehicles
+	=> nrel_main_idtf:
+		[Раздел. Инспекция беспилотных летательных аппаратов]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Inspection of unmanned aerial vehicles]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_inspection_of_unmanned_aerial_vehicles;;
+
+	
+
+section_working_with_large_data_arrays
+	=> nrel_main_idtf:
+		[Раздел. Работа с большими массивами данных]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Working with large data arrays]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_working_with_large_data_arrays;;
+
+section_improvement_of_the_educational_process
+	=> nrel_main_idtf:
+		[Раздел. Улучшение образовательного процесса]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Improvement of the educational process]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_improvement_of_the_educational_process;;
+
+section_development_of_self_driving_cars
+	=> nrel_main_idtf:
+		[Раздел. Развитие беспилотных автомобилей ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Development of self-driving cars]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_development_of_self_driving_cars;;
+
+section_automatic_control_of_equipment_in_production
+	=> nrel_main_idtf:
+		[Раздел. Автоматический контроль техники на производстве ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Automatic control of equipment in production]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_automatic_control_of_equipment_in_production;;
+		
+section_development_of_a_container_movement_management_system
+	=> nrel_main_idtf:
+		[Раздел. Разработка системы управления движением контейнеров ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Development of a container movement management system]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_development_of_a_container_movement_management_system;;
+		
+section_satellite_navigation_enhancement
+	=> nrel_main_idtf:
+		[Раздел. Расширение возможностей спутниковой навигации ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Satellite navigation enhancement]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_satellite_navigation_enhancement;;
+
+
+section_supply_chain_management
+	=> nrel_main_idtf:
+		[Раздел. Управление цепочкой поставок]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section.  Supply chain management]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_supply_chain_management;;
+
+	
+
+section_development_of_algorithms_for_the_analysis_of_multidimensional_data
+	=> nrel_main_idtf:
+		[Раздел. Разработка алгоритмов анализа многомерных данных ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Development of algorithms for the analysis of multidimensional data	]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_development_of_algorithms_for_the_analysis_of_multidimensional_data;;
+
+section_automatic_audio_signal_processing
+	=> nrel_main_idtf:
+		[Раздел. Автоматическая обработка звукового сигнала]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Automatic audio signal processing]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_automatic_audio_signal_processing;;
+
+section_development_of_a_data_stream_multiplexing_system
+	=> nrel_main_idtf:
+		[Раздел. Разработка системы мультиплексирования потока данных ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Development of a data stream multiplexing system]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_development_of_a_data_stream_multiplexing_system;;
+
+section_automatic_quality_control_of_welding_seams
+	=> nrel_main_idtf:
+		[Раздел. Автоматический контроль качества сварочных швов ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Automatic quality control of welding seams]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_automatic_quality_control_of_welding_seams;;
+		
+section_development_of_a_laser_cutting_system
+	=> nrel_main_idtf:
+		[Раздел. Разработка системы лазерной резки ]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Development of a laser cutting system]
+			(* <- lang_en;; *);
+
+	->rrel_key_sc_element:
+		concept_development_of_a_laser_cutting_system;;

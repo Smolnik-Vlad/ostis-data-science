@@ -1,0 +1,54 @@
+section_forecasting
+	=> nrel_main_idtf:
+		[Раздел. Прогнозирование временных рядов]
+			(* <- lang_ru;; *);
+		[Section. Forecasting]
+			(* <- lang_en;; *);;
+
+section_forecasting
+	<= nrel_section_decomposition:
+			section_rl_classical_algorithm;
+			section_rl_non_classical_algorithm;;	
+
+
+section_forecasting -> rrel_key_sc_element:
+	concept_forecasting;
+	concept_rl_classical_algorithm;
+	concept_rl_non_classical_algorithm;;
+
+
+section_forecasting	<- non_atomic_section;;
+
+
+
+ //	section_forecasting = [*
+	concept_forecasting
+	=> nrel_main_idtf: ["Прогнозирование временных рядов"](*<-lang_ru;;*);
+	=> nrel_main_idtf: ["Forecasting"](*<-lang_en;;*);
+
+	=> nrel_private_subject_domain:
+		concept_rl_classical_algorithm;
+		concept_rl_non_classical_algorithm;;
+	
+
+	concept_forecasting
+	<-rrel_key_sc_element:
+	...
+	(*
+		<- sc_definition;;
+			=>nrel_main_idtf: [Определение: Прогнозирование временных рядов](*<-lang_ru;;*);;
+			=>nrel_main_idtf: [Definition: Forecasting](*<-lang_en;;*);;
+		<-definition;;
+		<=nrel_sc_text_translation: ...
+			(*
+				->rrel_example:
+				[Прогнозирование временных рядов заключается в построении модели для предсказания будущих событий основываясь на известных событиях прошлого, предсказания будущих данных до того, как они будут измерены.](*<-lang_ru;;*);
+				[Time series forecasting consists in building a model for predicting future events based on known past events, predicting future data before they are measured.](*<-lang_en;;*);;
+				
+			*);;
+
+	*);;
+	concept_forecasting
+	->rrel_key_sc_element:
+		concept_rl_classical_algorithm;
+		concept_rl_non_classical_algorithm;;

@@ -11,7 +11,6 @@ section_nn_one_stage_detector
 section_nn_one_stage_detector
 
 	-> rrel_key_sc_element: 
-		concept_nn_region_free_architecture;
 		concept_ssd;
 		concept_yolo;;
 			

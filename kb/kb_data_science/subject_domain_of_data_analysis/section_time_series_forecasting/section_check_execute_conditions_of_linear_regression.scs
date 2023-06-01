@@ -1,0 +1,95 @@
+section_check_execute_conditions_of_linear_regression
+	=> nrel_main_idtf:
+		[Раздел. Проверка выполнения условий линейной регрессии]
+			(* <- lang_ru;; *);
+			
+		[Section. check execute conditions of linear regression]
+			(* <- lang_en;; *);;
+
+section_check_execute_conditions_of_linear_regression	
+	-> rrel_key_sc_element: 
+		concept_check_execute_conditions_of_linear_regression;
+		concept_linear_relationship;
+		concept_no_or_little_multicollinear;
+		concept_no_auto_corelation;
+		concept_homoscedasticity;
+		concept_multivariate_normality;
+
+	<= nrel_section_decomposition:
+		section_linear_relationship;
+		section_no_or_little_multicollinear;
+		section_no_auto_corelation;
+		section_homoscedasticity;
+		section_multivariate_normality;;
+
+
+section_linear_relationship
+	=> nrel_main_idtf:
+		[Раздел. Линейная регрессия]
+			(* <- lang_ru;; *);
+		[Section. Linear relationship]
+			(* <- lang_en;; *);;
+
+
+section_linear_relationship
+	-> rrel_key_sc_element:
+		concept_linear_relationship;;
+
+section_linear_relationship <- atomic_section;;
+
+section_no_or_little_multicollinear
+	=> nrel_main_idtf:
+		[Раздел. Отсутствие мультиколлинеарности]
+			(* <- lang_ru;; *);
+		[Section. No or little multicollinear]
+			(* <- lang_en;; *);;
+
+
+section_no_or_little_multicollinear
+	-> rrel_key_sc_element:
+		concept_no_or_little_multicollinear;;
+
+section_no_or_little_multicollinear <- atomic_section;;
+
+section_no_auto_corelation
+	=> nrel_main_idtf:
+		[Раздел. Отсутствие автокорреляции]
+			(* <- lang_ru;; *);
+		[Section. No auto_corelation]
+			(* <- lang_en;; *);;
+
+section_no_auto_corelation
+	-> rrel_key_sc_element:
+		concept_no_auto_corelation;;
+
+section_no_auto_corelation <- atomic_section;;
+
+
+
+section_homoscedasticity
+	=> nrel_main_idtf:
+		[Раздел. Гомоскедастичность]
+			(* <- lang_ru;; *);
+		[Section. Homoscedasticity]
+			(* <- lang_en;; *);;
+
+section_homoscedasticity
+	-> rrel_key_sc_element:
+		concept_homoscedasticity;;
+
+section_homoscedasticity <- atomic_section;;
+
+
+
+section_multivariate_normality
+	=> nrel_main_idtf:
+		[Раздел. Многомерная нормальность]
+			(* <- lang_ru;; *);
+		[Section. Multivariate normality]
+			(* <- lang_en;; *);;
+
+section_multivariate_normality
+	-> rrel_key_sc_element:
+		concept_multivariate_normality;;
+
+section_multivariate_normality <- atomic_section;;

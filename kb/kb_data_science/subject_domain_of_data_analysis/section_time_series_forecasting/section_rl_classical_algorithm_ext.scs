@@ -1,0 +1,491 @@
+concept_rl_classical_algorithm
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Off-policy метод"] (* <-lang_ru;; *);
+		["Off-policy method"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_naive;
+			concept_seasonal_naive;
+			concept_exponential_fit;
+			concept_ses;
+			concept_ets_exponential_smoothing;
+			concept_holt_winters_ets;
+			concept_autoregression;
+			concept_ma;
+			concept_arma;
+			concept_arima;
+			concept_sarima;
+			concept_sarimax;
+			concept_stlf;;
+
+concept_rl_classical_algorithm
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Классические алгоритмы прогнозирования временных рядов")] 
+					(* <-lang_ru;; *);
+				[Def.("Classical algorithms of forecating")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Классические алгоритмы прогнозирования при анализе данных относятся к набору традиционных или общепринятых методов прогнозирования будущих результатов на основе исторических данных. Эти алгоритмы используют статистические методы для анализа структуры данных и тенденций с целью составления прогнозов относительно будущих событий.](*<-lang_ru;;*);
+					[Classical algorithms of forecasting in data analysis refer to a set of traditional or widely accepted methods for predicting future outcomes based on historical data. These algorithms use statistical techniques to analyze data patterns and trends in order to make forecasts or predictions about future events.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+concept_rl_off_policy_method
+	->rrel_key_sc_element:
+		concept_naive;
+		concept_seasonal_naive;
+		concept_exponential_fit;
+		concept_ses;
+		concept_ets_exponential_smoothing;
+		concept_holt_winters_ets;
+		concept_autoregression;
+		concept_ma;
+		concept_arma;
+		concept_arima;
+		concept_sarima;
+		concept_sarimax;
+		concept_stlf;;
+
+concept_naive
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["NAIVE"] 
+			(* <-lang_ru;; *); 
+		["NAIVE"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("NAIVE")] 
+					(* <-lang_ru;; *);
+				[Def.("NAIVE")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[В анализе данных NAIVE алгоритм, также известный как наивный байесовский классификатор, является простым и популярным вероятностным алгоритмом машинного обучения. Он основан на теореме Байеса и предполагает, что наличие определенного объекта в точке данных не зависит от наличия других объектов. То есть алгоритм предполагает, что каждая функция имеет равную важность и вносит равный вклад в результат.](*<-lang_ru;;*);
+					[In data analysis, the Naive algorithm, also known as the Naive Bayes classifier, is a simple and popular probabilistic machine learning algorithm. It is based on the Bayes theorem and assumes that the presence of a particular feature in a data point is independent of the presence of other features. That is, the algorithm assumes that each feature has equal importance and provides equal contribution to the outcome.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+
+concept_seasonal_naive
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Seasonal NAIVE"] 
+			(* <-lang_ru;; *);
+		["Seasonal NAIVE"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Seasonal NAIVE")] 
+					(* <-lang_ru;; *);
+				[Def.("Seasonal NAIVE")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Seasonal NAIVE алгоритм делает прогнозы, предполагая, что будущие значения данных временного ряда будут равны значениям, наблюдавшимся в течение соответствующего сезонного периода в прошлом. В частности, алгоритм берет самое последнее наблюдение за тот же сезон предыдущего года и использует это значение в качестве прогноза на текущий период. Если временной ряд имеет квартальную сезонность, алгоритм возьмет значение за тот же квартал предыдущего года, а если он имеет месячную сезонность, он возьмет значение за тот же месяц предыдущего года.](*<-lang_ru;;*);
+					[The Seasonal Naive algorithm makes predictions by assuming that the future values of the time series data will be equal to the values observed during the corresponding seasonal period in the past. Specifically, the algorithm takes the most recent observation from the same season in the previous year and uses that value as the forecast for the current period. If the time series has a quarterly seasonality, the algorithm will take the value from the same quarter of the previous year, and if it has a monthly seasonality, it will take the value from the same month of the previous year.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_exponential_fit
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Exponential fit of n'th degree"] 
+			(* <-lang_ru;; *);
+		["Экспоненциальное соответствие n-й степени"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Экспоненциальное соответствие n-й степени")] 
+					(* <-lang_ru;; *);
+				[Def.("Exponential fit of n'th degree")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[алгоритм экспоненциальной подгонки n-й степени - это метод, используемый для подгонки экспоненциальных кривых к набору точек данных. Он также известен как алгоритм экспоненциальной регрессии или экспоненциального сглаживания.](*<-lang_ru;;*);
+					[Exponential fit of n'th degree algorithm is a technique used to fit exponential curves to a set of data points. It is also known as the exponential regression or exponential smoothing algorithm.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_ses
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["SES"] 
+			(* <-lang_ru;; *);
+		["SES"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("SES")] 
+					(* <-lang_ru;; *);
+				[Def.("SES")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм SES (Простое экспоненциальное сглаживание) - это статистический метод, используемый при анализе данных и прогнозировании. Это метод прогнозирования временных рядов, который присваивает экспоненциально убывающие веса прошлым наблюдениям для прогнозирования будущих значений.](*<-lang_ru;;*);
+					[The SES (Simple Exponential Smoothing) algorithm is a statistical technique used in data analysis and forecasting. It is a time series forecasting method that assigns exponentially decreasing weights to past observations to forecast future values.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_ets_exponential_smoothing
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["ETS Exponential smoothing"] 
+			(* <-lang_ru;; *);
+		["ETS Exponential smoothing"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("ETS Exponential smoothing")] 
+					(* <-lang_ru;; *);
+				[Def.("ETS Exponential smoothing")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[ETS или экспоненциальное сглаживание - это метод прогнозирования в анализе данных, который использует средневзвешенное значение прошлых наблюдений для прогнозирования будущих значений. Он основан на предположении, что на будущие значения временного ряда влияют его предыдущие значения, причем последние значения оказывают большее влияние на прогноз, чем более старые значения. Алгоритм присваивает более высокие веса более свежим наблюдениям и меньшие веса более старым, генерируя сглаженную оценку тренда и сезонности в данных. Алгоритм ETS обычно используется в бизнес- и экономическом прогнозировании, управлении запасами и анализе продаж.](*<-lang_ru;;*);
+					[ETS or Exponential Smoothing is a forecasting technique in data analysis that uses a weighted average of past observations to predict future values. It is based on the assumption that the future values of a time series are influenced by its previous values, with the recent values having a greater impact on the forecast than the older values. The algorithm assigns higher weights to the more recent observations and smaller weights to the older ones, generating a smoothed estimate of the trend and seasonality in the data. The ETS algorithm is commonly used in business and economic forecasting, inventory management, and sales analysis.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_holt_winters_ets
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["holt_winters ETS"] 
+			(* <-lang_ru;; *);
+		["holt_winters ETS"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("holt_winters ETS")] 
+					(* <-lang_ru;; *);
+				[Def.("holt_winters ETS")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм Холта-Уинтерса ETC, также известный как тройное экспоненциальное сглаживание, представляет собой усовершенствованный метод прогнозирования в анализе данных, который добавляет два уравнения сглаживания к исходному алгоритму экспоненциального сглаживания. Он предназначен для обработки данных временных рядов с учетом тенденций и сезонности, что делает его мощным инструментом прогнозирования в бизнесе и экономике. Алгоритм использует три фактора сглаживания для создания прогнозов - сглаживание по уровню, сглаживание тренда и сезонное сглаживание. В дополнение к учету прошлых значений, он также учитывает тенденцию и сезонность в данных, что делает его более точным в своих прогнозах. Алгоритм Холта-Уинтерса ETS может быть применен к различным типам данных сезонных и несезонных временных рядов, обеспечивая улучшенное прогнозирование и анализ тенденций в таких областях, как прогнозирование продаж, управление запасами и финансовое планирование.](*<-lang_ru;;*);
+					[holt_winters ETS Algorithm, also known as Triple Exponential Smoothing, is an advanced forecasting technique in data analysis that adds two smoothing equations to the original Exponential Smoothing algorithm. It is designed to handle time series data with trends and seasonality, which makes it a powerful tool for forecasting in business and economics. The algorithm uses three smoothing factors to create predictions - level smoothing, trend smoothing, and seasonal smoothing. In addition to considering past values, it also accounts for the trend and seasonality in the data, making it more accurate in its predictions. The holt_winters ETS algorithm can be applied to various types of seasonal and non-seasonal time series data, providing improved forecasting and trend analysis in areas such as sales forecasting, inventory management, and financial planning.](*<-lang_en;;*);;
+				*);;	
+		*);;
+		
+concept_autoregression
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Авторегрессия"] 
+			(* <-lang_ru;; *);
+		["Autoregression"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Авторегрессия")] 
+					(* <-lang_ru;; *);
+				[Def.("Autoregression")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм AR (алгоритм авторегрессии) - это алгоритм прогнозирования временных рядов, используемый при анализе данных. Он моделирует зависимую взаимосвязь между текущим наблюдением и рядом предыдущих наблюдений в данных временного ряда. Этот алгоритм основан на предположении, что будущие значения временного ряда могут быть предсказаны с использованием предыдущих значений того же ряда. Алгоритм AR использует прошлые значения временного ряда, также известные как запаздывающие значения, для моделирования текущего значения ряда. Обычно он используется для решения таких задач, как прогнозирование фондового рынка, прогнозирование погоды и прогнозирование продаж.](*<-lang_ru;;*);
+					[AR algorithm (AutoRegressive algorithm) is a time-series forecasting algorithm used in data analysis. It models the dependent relationship between the current observation and a number of previous observations in the time series data. This algorithm is based on the assumption that the future values of a time series can be predicted using the previous values of the same series. The AR algorithm uses the past values of a time-series, also known as lagged values, to model the current value of the series. It is typically used for solving problems such as stock market predictions, weather forecasting, and sales forecasting.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_ma
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["MA"] 
+			(* <-lang_ru;; *);
+		["MA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("MA")] 
+					(* <-lang_ru;; *);
+				[Def.("MA")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм скользящего среднего (MA) - это распространенный метод анализа временных рядов, используемый при анализе данных, когда набор последовательных точек данных усредняется для получения одной точки данных. Он используется для сглаживания колебаний в наборе данных путем фильтрации случайного шума и выделения тенденций и закономерностей в данных. Алгоритм MA обычно используется, когда данные временных рядов демонстрируют случайную изменчивость или краткосрочные колебания, и целью является оценка лежащего в основе тренда или закономерности в данных. Алгоритм работает путем вычисления скользящего среднего для определенного окна точек данных, которое может быть скорректировано с учетом различных временных горизонтов, и этот процесс повторяется для каждой точки данных во временном ряду. Результатом работы алгоритма MA является новый временной ряд, состоящий из значений скользящей средней, который может быть использован для дальнейшего анализа или визуализации.](*<-lang_ru;;*);
+					[The Moving Average (MA) algorithm is a common time-series analysis method used in data analysis where a set of consecutive data points are averaged to produce a single data point. It is used to smooth out fluctuations in a data set by filtering out the random noise and highlighting the trends and patterns in the data. The MA algorithm is typically used when the time-series data exhibits a random variability or short-term fluctuations, and the purpose is to estimate the underlying trend or pattern in the data. The algorithm works by calculating the moving average of a specific window of data points, which can be adjusted to account for different time horizons, and this process is repeated for every data point in the time-series. The output of the MA algorithm is a new time-series consisting of the moving average values, which can be used for further analysis or visualization.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_arma
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["ARMA"] 
+			(* <-lang_ru;; *);
+		["ARMA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("ARMA")] 
+					(* <-lang_ru;; *);
+				[Def.("ARMA")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Модель ARMA сочетает в себе модели AR и MA, позволяя моделировать более сложные данные временных рядов. Он часто используется для прогнозирования, а также для выявления закономерностей и тенденций в данных](*<-lang_ru;;*);
+					[The ARMA model combines the AR and MA models, allowing for the modeling of more complex time series data. It is often used for forecasting and prediction, as well as for identifying patterns and trends in the data](*<-lang_en;;*);;
+				*);;	
+		*);;
+		
+concept_arima
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["ARIMA"] 
+			(* <-lang_ru;; *);
+		["ARIMA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("ARIMA")] 
+					(* <-lang_ru;; *);
+				[Def.("ARIMA")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[ARIMA (Авторегрессионная интегрированная скользящая средняя) - это алгоритм статистического моделирования и прогнозирования, используемый при анализе данных. Это модель временных рядов, которая учитывает автокорреляцию и тенденции в данных, и для нее требуются стационарные данные временных рядов (т.е. среднее значение, дисперсия и функция автокорреляции не изменяются с течением времени). Модели ARIMA обычно используются в финансах, экономике и других областях для анализа и прогнозирования данных, таких как цены на акции, ВВП и погодные условия. Алгоритм включает в себя подгонку данных временного ряда к математическому уравнению, которое затем используется для прогнозирования будущих значений в ряду. Его можно использовать для моделирования как одномерных, так и многомерных данных временных рядов.](*<-lang_ru;;*);
+					[ARIMA (AutoRegressive Integrated Moving Average) is a statistical modeling and forecasting algorithm used in data analysis. It is a time series model that takes into account the autocorrelation and trends in the data, and it requires stationary time series data (i.e., the mean, variance, and autocorrelation function do not change over time). ARIMA models are commonly used in finance, economics, and other fields to analyze and forecast data, such as stock prices, GDP, and weather patterns. The algorithm involves fitting the time series data to a mathematical equation, which is then used to make predictions about future values in the series. It can be used to model both univariate and multivariate time series data.](*<-lang_en;;*);;
+				*);;	
+		*);;
+
+concept_sarima
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["SARIMA"] 
+			(* <-lang_ru;; *);
+		["SARIMA"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("SARIMA")] 
+					(* <-lang_ru;; *);
+				[Def.("SARIMA")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[SARIMA (Seasonal Autoregressive Integrated Moving Average) algorithm is a time series forecasting method that models the relationship between the current and previous observations and the relationship between the current and past errors, as well as the seasonal component of a time series. It is an extension of the ARIMA algorithm that includes additional parameters to capture the seasonal pattern observed in many time-series data. The acronym stands for Seasonal ARIMA. The algorithm is used to model, forecast, and analyze time-series data in various fields, including economics, finance, and marketing. The SARIMA model provides predictions for a set period based on the patterns and trends observed in the historical time-series data. The algorithm is typically used to identify and analyze periodic or cyclical patterns in seasonal data.](*<-lang_ru;;*);
+					[Алгоритм SARIMA (Seasonal Autoregressive Integrated Moving Average) - это метод прогнозирования временных рядов, который моделирует взаимосвязь между текущими и предыдущими наблюдениями и взаимосвязь между текущими и прошлыми ошибками, а также сезонную составляющую временного ряда. Это расширение алгоритма ARIMA, которое включает дополнительные параметры для фиксации сезонной закономерности, наблюдаемой во многих данных временных рядов. Аббревиатура расшифровывается как Сезонный ARIMA. Алгоритм используется для моделирования, прогнозирования и анализа данных временных рядов в различных областях, включая экономику, финансы и маркетинг. Модель SARIMA предоставляет прогнозы на определенный период, основанные на закономерностях и тенденциях, наблюдаемых в исторических данных временных рядов. Алгоритм обычно используется для выявления и анализа периодических или циклических закономерностей в сезонных данных.](*<-lang_en;;*);;
+				*);;	
+		*);;
+		
+concept_sarimax
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["SARIMAX"] 
+			(* <-lang_ru;; *);
+		["SARIMAX"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("SARIMAX")] 
+					(* <-lang_ru;; *);
+				[Def.("SARIMAX")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[SARIMAX - это статистический алгоритм, используемый в анализе временных рядов для моделирования и прогнозирования данных, которые имеют как сезонные, так и несезонные закономерности. Это означает сезонную авторегрессионную интегрированную скользящую среднюю с учетом экзогенных факторов. Алгоритм включает в себя подгонку модели временных рядов, которая включает компоненты авторегрессии (AR), скользящей средней (MA) и разности (I). Кроме того, в нем учитывается влияние внешних переменных, таких как экономические показатели или погодные условия, на данные временных рядов. Проще говоря, SARIMAX помогает в моделировании и прогнозировании данных, которые имеют как сезонный, так и несезонный компонент, и может фиксировать влияние внешних факторов на данные временных рядов.](*<-lang_ru;;*);
+					[SARIMAX is a statistical algorithm used in time series analysis to model and forecast data that has both seasonal and non-seasonal patterns. It stands for Seasonal AutoRegressive Integrated Moving Average with eXogenous factors. The algorithm involves fitting a time-series model that incorporates auto-regressive (AR), moving average (MA), and difference (I) components. In addition, it takes into account the impact of exogenous variables, such as economic indicators or weather patterns, on the time-series data. Simply put, SARIMAX helps in modeling and forecasting data that has both a seasonal and non-seasonal component, and can capture the influence of external factors on the time-series data.](*<-lang_en;;*);;
+				*);;	
+		*);;
+		
+concept_stlf
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["STFL"] 
+			(* <-lang_ru;; *);
+		["STFL"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("STFL")] 
+					(* <-lang_ru;; *);
+				[Def.("STFL")] 
+					(* <-lang_en;; *);;
+
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[STFL - это "логарифм кратковременного преобразования Фурье", который представляет собой метод обработки сигналов, используемый для анализа частотного содержания изменяющегося во времени сигнала. При анализе данных STFL может использоваться для извлечения полезной информации из данных временных рядов или сигналов путем разбиения их на частотные составляющие. Этот метод особенно полезен в таких задачах, как распознавание речи, анализ звука и анализ вибрации.](*<-lang_ru;;*);
+					[STFL is "Short Time Fourier Transform Logarithm," which is a signal processing technique used to analyze the frequency content of a time-varying signal. In data analysis, STFL can be used to extract useful information from time-series data or signals by breaking them down into their frequency components. This method is particularly useful in tasks such as speech recognition, audio analysis, and vibration analysis.](*<-lang_en;;*);;
+				*);;	
+		*);;

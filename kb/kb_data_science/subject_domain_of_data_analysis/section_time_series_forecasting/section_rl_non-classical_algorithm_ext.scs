@@ -1,0 +1,330 @@
+concept_rl_non_classical_algorithm
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Неклассические алгоритмы"] (* <-lang_ru;; *);
+		[" Non-classical alghoritm"] (* <-lang_en;; *);
+
+	=> nrel_private_subject_domain:
+		concept_tslm;
+		concept_hybrid_models;
+		
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Неклассические алгоритмы")] 
+					(* <-lang_ru;; *);
+				[Def.("non_classical algorithm")]
+					(* <-lang_en;; *);;
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Неклассические алгоритмы прогнозирования - это методы, которые не полагаются на традиционные статистические или математические модели для прогнозирования будущих результатов. Эти алгоритмы часто используются в таких областях, как машинное обучение и искусственный интеллект, и включают сложные математические модели, которые извлекают уроки из данных и могут делать прогнозы на основе закономерностей в этих данных. Некоторые примеры неклассических алгоритмов прогнозирования включают нейронные сети, деревья решений и машины опорных векторов. Эти методы полезны в ситуациях, когда традиционных методов моделирования может быть недостаточно, например, при работе со сложными наборами данных, включающими множество переменных, или когда данные являются неполными или ненадежными.](*<-lang_ru;;*);
+					[non_classical algorithms of forecasting are methods that do not rely on traditional statistical or mathematical models to predict future outcomes. These algorithms are often used in fields such as machine learning and artificial intelligence and involve complex mathematical models that learn from data and can make predictions based on patterns in that data. Some examples of non_classical algorithms of forecasting include neural networks, decision trees, and support vector machines. These methods are valuable in situations where traditional modeling techniques may not be sufficient, such as in complex data sets that involve multiple variables or when data is incomplete or unreliable.](*<-lang_en;;*);;
+					
+				*);;
+						
+		*);;
+
+concept_tslm
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["TSLM"] (* <-lang_ru;; *);
+		["TSLM"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("TSLM")] 
+					(* <-lang_ru;; *);
+				[Def.("TSLM")] 
+					(* <-lang_en;; *);;
+
+			<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм TSLM (линейная модель временных рядов) - это статистический метод, используемый при анализе данных для выявления линейных взаимосвязей между переменными во временном ряду. Это включает в себя подбор линейной модели, которая наилучшим образом объясняет поведение данных временных рядов, и анализ коэффициентов модели для определения значимости каждой переменной или фактора.](*<-lang_ru;;*);
+					[The TSLM algorithm (Time Series Linear Model) is a statistical method used in data analysis to identify the linear relationships between variables in a time series. It involves fitting a linear model that best explains the behavior of the time series data and analyzing the coefficients of the model to determine the significance of each variable or factor.](*<-lang_en;;*);;
+				*);;	
+		*);;
+		
+concept_hybrid_models
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Гибридные модели"] (* <-lang_ru;; *);
+		["Hybrid models"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Гибридные модели")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Hybrid models")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Алгоритм гибридных моделей - это подход к анализу данных, который сочетает в себе множество алгоритмов и подходов для повышения точности и эффективности анализа. Этот подход предполагает интеграцию нескольких моделей, таких как статистические модели, модели машинного обучения, нейронные сети, деревья принятия решений или другие методы интеллектуального анализа данных, для повышения общей прогностической способности результирующей модели. Гибридные модели предназначены для устранения ограничений конкретных моделей, использования сильных сторон различных моделей и получения более точных и надежных прогнозов. Такой подход особенно полезен для сложных наборов данных с множеством переменных и зависимостей, где один алгоритм или модель не могут эффективно отразить все нюансы данных.](*<-lang_ru;;*);
+					[Hybrid Models algorithm is a data analysis approach that combines multiple algorithms and approaches to improve the accuracy and effectiveness of the analysis. This approach involves integrating multiple models, such as statistical models, machine learning models, neural networks, decision trees, or other data mining techniques, to enhance the overall predictive power of the resulting model. Hybrid models are designed to address the limitations of specific models, leverage the strengths of different models, and deliver more accurate and robust predictions. This approach is particularly useful for complex datasets with multiple variables and dependencies, where a single algorithm or a model cannot effectively capture all the nuances of the data.](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+		
+concept_bagging
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Бэггинг"] (* <-lang_ru;; *);
+		["Bagging"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Бэггинг")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Bagging")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод беггинг (bagging) является одним из методов ансамбля, который используется в машинном обучении для улучшения качества классификации или регрессии. Он был впервые предложен в работе Breiman в 1996 году.Метод беггинг представляет собой процедуру композиции многочисленных моделей, которые обучаются на случайных подвыборках обучающего набора данных. Идея заключается в том, чтобы обучить множество независимых моделей на различных случайных подмножествах выборки, а затем комбинировать прогнозы этих моделей для получения более точного прогноза.Алгоритм метода беггинг: Создание нескольких случайных подмножеств обучающих данных. Обучение независимых моделей на каждом подмножестве данных.Комбинирование прогнозов от каждой модели с помощью голосования для классификации или усреднением для регрессии.Оценка качества эффективности метода беггинг по сравнению с результатами одиночных моделей.Преимущества метода беггинг: Он позволяет увеличить точность прогнозирования, особенно когда используется простая модель. Он уменьшает риск переобучения, т.к. каждая модель обучается на подмножестве данных. Он позволяет учитывать шумовые данные, которые могут быть исключены из исходного набора данных. Однако, метод беггинг не лишен недостатков:Этот метод может быть ресурсоемким в расчетах, поскольку необходимо обучить несколько моделей.Если базовые алгоритмы не различны, обобщенность ансамбля уменьшается.Хотя метод беггинг работает хорошо для моделей, терпящих ошибки из-за случайных изменений в данных, он не всегда позволяет обойти ошибки алгоритма, которые возникают из-за особенностей данных.](*<-lang_ru;;*);
+					[The bagging method is one of the ensemble methods that is used in machine learning to improve the quality of classification or regression. It was first proposed in the work of Breiman in 1996.The begging method is a procedure for composing numerous models that are trained on random subsamples of a training dataset. The idea is to train many independent models on various random subsets of the sample, and then combine the predictions of these models to obtain a more accurate prediction.Algorithm of the begging method:Creating multiple random subsets of training data.Training independent models on each subset of data.Combining predictions from each model by voting for classification or averaging for regression.Evaluation of the quality of the effectiveness of the begging method in comparison with the results of single models.Advantages of the begging method:It allows you to increase the accuracy of forecasting, especially when](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+
+concept_boosting
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Бустинг"] (* <-lang_ru;; *);
+		["Boosting"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Бустинг")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Boosting")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод бустинг (boosting) – это метод машинного обучения, который используется для улучшения предсказательной точности модели. Он был впервые разработан Джеромом Фридманом в 1996 году.Основная идея метода бустинга заключается в том, что он позволяет построить модель путем комбинирования нескольких слабых моделей. Каждая новая модель строится таким образом, чтобы исправлять ошибки, допущенные предыдущими моделями. Это позволяет добиться большой точности прогнозов при минимальном количестве моделей.Алгоритм работы метода бустинга следующий:Обучение базовой модели на всем наборе данных.Определение ошибок модели и создание набора обучающих данных, на которых модель допускала ошибки.Обучение второй модели на наборе данных, в котором большой вес отдается неправильно предсказанным данным.Общая модель, состоящая из суммы первой и второй моделей.Продолжение процесса добавления новых моделей и корректировки ошибок, пока не будет достигнута приемлемая точность.Преимущества метода](*<-lang_ru;;*);
+					[The boosting method is a machine learning method that is used to improve the predictive accuracy of a model. It was first developed by Jerome Friedman in 1996.The main idea of the boosting method is that it allows you to build a model by combining several weak models. Each new model is built in such a way as to correct the mistakes made by previous models. This allows you to achieve high accuracy of forecasts with a minimum number of models.The algorithm of the boosting method is as follows:Training the basic model on the entire dataset.Identifying model errors and creating a set of training data on which the model made mistakes.Training the second model on a data set in which a lot of weight is given to incorrectly predicted data.A general model consisting of the sum of the first and second models.Continue the process of adding new models and correcting errors until acceptable accuracy is achieved.Advantages of the method](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+		
+concept_lowess
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Локально взвешенная регрессия"] (* <-lang_ru;; *);
+		["Locally Weighted regression "] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Локально взвешенная регрессия")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Locally Weighted regression ")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[LOcally WEighted regrESSion (LOWESS) – это метод нелинейной регрессии, который используется для нахождения взаимосвязей между двумя переменными в наборе данных. Основным преимуществом LOWESS является его способность работать с нелинейными зависимостями и выбросами в данных.Процесс работы метода LOWESS следующий:Разбиение данных на подгруппы наблюдений, называемых окнами. В каждом окне выполняется локальная регрессия модели, которая описывает связь между переменными в этом конкретном окне.Строится функция, которая соответствует локальной регрессии в каждом окне. Каждой точке данных присваивается вес, зависящий от расстояния до этой точки и от ширины окна. Чем ближе точка к центру окна, тем больший вес ей присваивается. Чем дальше от центра, тем меньший вес.Строится график зависимости между переменными, используя разработанную функцию. Она будет включать в себя значения, определенные по последнему уравнению регрессии.LOWESS является очень гибким методом и может использоваться ](*<-lang_ru;;*);
+					[LOcally WEighted regrESSion (LOWESS) is a non–linear regression method that is used to find relationships between two variables in a dataset. The main advantage of LOWESS is its ability to work with nonlinear dependencies and outliers in data.The process of the LOWESS method is as follows:Splitting the data into subgroups of observations called windows. In each window, a local regression of the model is performed, which describes the relationship between the variables in this particular window.A function is constructed that corresponds to a local regression in each window. Each data point is assigned a weight depending on the distance to that point and the width of the window. The closer the point is to the center of the window, the more weight is assigned to it. The farther away from the center, the less weight.A graph of the dependence between variables is constructed using the developed function. It will include the values determined by the last regression equation.LOWESS is a very flexible method and can be used](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+		
+concept_loess
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Локально оцененное сглаживание диаграммы рассеяния"] (* <-lang_ru;; *);
+		["Locally estimated scatterplot smoothing"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Локально оцененное сглаживание диаграммы рассеяния")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Locally estimated scatterplot smoothing")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Метод LOESS (LOcally EStimated Scatterplot Smoothing) является развитием метода LOWESS и также предназначен для нахождения взаимосвязей между двумя переменными в наборе данных.Он также использует локальную регрессию, но вместо простых окон LOWESS, LOESS использует полиномы низкой степени (обычно 1 или 2 степеней). Это делает метод более гладким и нечувствительным к выбросам.Процесс работы метода LOESS следующий:Разбиение данных на подгруппы наблюдений, называемых окнами, и выбор степени полинома для каждого окна.В каждом окне выполняется локальная регрессия модели, которая описывает связь между переменными в этом конкретном окне с использованием выбранной степени полинома.Для каждой точки данных рассчитывается вес, который зависит от расстояния до этой точки и ширины окна. Веса используются для определения того, какие точки данных будут задействованы в локальной линейной регрессии в каждом окне.Строится функция, которая соответствует локальной регрессии в каждом окне.](*<-lang_ru;;*);
+					[Hybrid Models algorithm is a data analysis approach that combines multiple algorithms and approaches to improve the accuracy and effectiveness of the analysis. This approach involves integrating multiple models, such as statistical models, machine learning models, neural networks, decision trees, or other data mining techniques, to enhance the overall predictive power of the resulting model. Hybrid models are designed to address the limitations of specific models, leverage the strengths of different models, and deliver more accurate and robust predictions. This approach is particularly useful for complex datasets with multiple variables and dependencies, where a single algorithm or a model cannot effectively capture all the nuances of the data.](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+
+concept_cubic_spline_regression_analysis
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Кубический сплайн-регрессионный анализ"] (* <-lang_ru;; *);
+		["Cubic spline regression analysis"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Кубический сплайн-регрессионный анализ")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Cubic spline regression analysis")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Кубический сплайн-регрессионный анализ - это метод нелинейной регрессии, который использует кусочно-кубические функции (сплайны) для описания взаимосвязи между двумя переменными.Алгоритм кубического сплайн-регрессионного анализа включает в себя следующие шаги:Шаг 1: Разбиваем набор данных на равные интервалы данных, называемые узлами, на которых будут вычислены значения функции.Шаг 2: На каждом интервале определяем кубическую функцию, которая описывает связь между переменными.Шаг 3: Задача состоит в том, чтобы определить коэффициенты кубических функций, которые лучше всего соответствуют данным.Шаг 4: Оценить параметры кубических функций на каждом интервале, чтобы минимизировать сумму квадратов отклонений от истинных значений.Шаг 5: Использовать полученные значения, чтобы построить гладкую кривую регрессии, и оценить статистические характеристики, такие как коэффициент детерминации.](*<-lang_ru;;*);
+					[Cubic spline regression analysis is a nonlinear regression method that uses piecewise cubic functions (splines) to describe the relationship between two variables.The algorithm of cubic spline regression analysis includes the following steps:Step 1: Divide the data set into equal data intervals, called nodes, on which the function values will be calculated.Step 2: At each interval, we define a cubic function that describes the relationship between variables.Step 3: The task is to determine the coefficients of cubic functions that best match the data.Step 4: Evaluate the parameters of cubic functions at each interval to minimize the sum of squared deviations from the true values.Step 5: Use the obtained values to construct a smooth regression curve, and evaluate statistical characteristics such as the coefficient of determination.](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+		
+concept_emd
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Эмпирическая декомпозиция режима"] (* <-lang_ru;; *);
+		["Empirical Mode Decomposition"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Эмпирическая декомпозиция режима")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Empirical Mode Decomposition")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Empirical Mode Decomposition (EMD) - это метод разложения временных рядов на интрансляционные компоненты, который был разработан экономистом Norden Huang в 1998 году. EMD является нон-параметрическим и не предполагает каких-либо моделей временных рядов.Этот метод позволяет извлечь скрытые колебания временного ряда и использовать их для дальнейшего анализа, что может привести к лучшему пониманию структуры временного ряда.Процесс EMD заключается в следующих шагах:Сначала, на исходный временной ряд накладывается сглаживающая кривая, которая показывает общий тренд ряда. Этот шаг называется выделением "средней линии" (mean line).Затем ряд вычитается из "средней линии", что превращает его в сигнал высокой частоты.Чтобы найти очередную интрансляционную компоненту, шаги 1 и 2 повторяются с использованием сигнала высокой частоты в качестве исходного временного ряда до тех пор, пока не будет достигнута амплитудно - распределенная ситуация, т.е. пока не будут извлечены все местные колебания.](*<-lang_ru;;*);
+					[Empirical Mode Decomposition (EMD) is a method of decomposing time series into translational components, which was developed by economist Norden Huang in 1998. EMD is non-parametric and does not involve any time series models.This method allows you to extract hidden fluctuations of the time series and use them for further analysis, which can lead to a better understanding of the structure of the time series.The EMD process consists of the following steps:First, a smoothing curve is superimposed on the original time series, which shows the overall trend of the series. This step is called the allocation of the "mean line" (mean line).Then the series is subtracted from the "middle line", which turns it into a high frequency signal.To find the next relay component, steps 1 and 2 are repeated using a high frequency signal as the initial time series until an amplitude-distributed situation is reached, i.e. until all local oscillations are extracted.](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+
+concept_ssa
+
+	<- sc_node_not_relation;
+	
+	<- concept_rl_non_classical_algorithm;
+	
+	=> nrel_main_idtf: 
+		["Анализ сингулярного спектра"] (* <-lang_ru;; *);
+		["Singular Spectrum Analysis"] (* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Анализ сингулярного спектра")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Singular Spectrum Analysis")] 
+					(* <-lang_en;; *);;
+			
+				<-definition;;
+				<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Singular Spectrum Analysis (SSA) - это метод разложения временных рядов на некоторые базисные функции, которые составляются из собственных векторов корреляционной матрицы ряда. SSA является модельно-независимым методом и хорошо подходит для анализа "шумных" и нестационарных временных рядов.Процесс SSA заключается в следующих шагах:Ряд разбивается на окна фиксированного размера (обычно 10-20 точек) и формируются траектории. Каждая траектория представляет собой вектор из окна наблюдений и перемещается на одну позицию вправо после каждого шага.Формируются траекторные матрицы путем сбора всех траекторий в одну матрицу. Каждая строка матрицы соответствует одной траектории.Применяется метод сингулярного разложения (SVD) к траекторной матрице, что позволяет найти собственные векторы и собственные значения, которые используются для разложения ряда.Используя первые k собственных векторов, формируется базисный набор. Этот набор представляет собой линейную комбинацию траекторий, которые имеют наибольший вклад в разложение ряда.Ряд разлагается на базисные функции, которые являются линейными комбинациями выбранных траекторий.Восстанавливается исходный ряд путем сложения базисных функций.Результатом SSA является базисный набор, состоящий из k компонентов, которые могут использоваться для дальнейшего анализа и прогнозирования. SSA может использоваться для анализа трендов, циклов и шумов во временных рядах, а также для прогнозирования будущих значений ряда.Преимущества SSA включают возможность анализа "шумных" и нестационарных временных рядов, меньшее количество требуемой данных и меньшую степень модельной зависимости по сравнению с традиционными методами разложения временных рядов, такими как Фурье-анализ.](*<-lang_ru;;*);
+					[Singular Spectrum Analysis (SSA) is a method of decomposing time series into some basic functions that are composed of the eigenvectors of the correlation matrix of the series. SSA is a model-independent method and is well suited for the analysis of "noisy" and non-stationary time series.The SSA process consists of the following steps:The series is divided into windows of fixed size (usually 10-20 points) and trajectories are formed. Each trajectory represents a vector from the observation window and moves one position to the right after each step.Trajectory matrices are formed by collecting all trajectories into one matrix. Each row of the matrix corresponds to one trajectory.The singular value decomposition (SVD) method is applied to the trajectory matrix, which makes it possible to find the eigenvectors and eigenvalues that are used to decompose the series.Using the first k eigenvectors, a basic set is formed.](*<-lang_en;;*);;
+				*);;	
+
+		*);;
+		

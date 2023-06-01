@@ -1,0 +1,486 @@
+concept_defenition_of_data_analysis_terminology
+    => nrel_main_idtf: ["Определение терминологий анализа данных"](*<-lang_ru;;*);
+    => nrel_main_idtf: ["Defenition of data analysis terminology"](*<-lang_en;;*);
+
+    => nrel_private_subject_domain:
+        concept_Data_mining;
+        concept_Big_Data;
+        concept_Data_cleansing;
+        concept_Descriptive_analytics;
+        concept_Predictive_analytics;
+		concept_Prescriptive_analytics;
+		concept_Data_visualization;
+		concept_Cluster_analysis;
+		concept_Regression_analysis;
+		concept_Time_series_analysis;
+		concept_Correlation;
+		concept_Outlier_detection;
+		concept_Dimensionality;
+		concept_Decision_trees;
+		concept_Pattern_recognition;
+		concept_Data_warehousing;
+		concept_Business_intelligence;
+		concept_Data_governance;;
+
+
+
+concept_defenition_of_data_analysis_terminology	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+	
+	=>nrel_main_idtf: [Определение: Терминология](*<-lang_ru;;*);;
+	=>nrel_main_idtf: [Definition: Terminology](*<-lang_en;;*);;
+	
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [это набор специализированных терминов, общепринятых в определенной области знаний, профессии или науке. Она устанавливается для дальнейшего использования и обмена знаниями и концепциями внутри данной области. К таким областям относятся, например, медицина, юриспруденция, информационные технологии, экономика, наука о материалах и т.д. Применение терминологии позволяет унифицировать и стандартизировать понимание и описание понятий внутри данной области. Терминология включает в себя также правила и принципы образования новых терминов на основе уже существующих, чтобы они были понятны и соответствовали общепринятым нормам в данной области.](*<-lang_ru;;*);
+            [this is a set of specialized terms generally accepted in a particular field of knowledge, profession or science. It is established for further use and exchange of knowledge and concepts within the field. Such fields include, for example, medicine, law, information technology, economics, materials science, etc. The use of terminology makes it possible to unify and standardize the understanding and description of concepts within a given field. Terminology also includes rules and principles for the formation of new terms based on existing ones, so that they are understandable and comply with generally accepted norms in this field.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Data_mining
+    => nrel_main_idtf: ["Data mining"](*<-lang_en;;*);;
+
+
+concept_Data_mining
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Data mining](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Data mining](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [процесс обработки больших объемов данных (big data) с целью извлечения неочевидных, но значимых закономерностей и паттернов.](*<-lang_ru;;*);
+            [the process of processing large amounts of data (big data) in order to extract non-obvious, but significant patterns and patterns.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+
+concept_Bid_data
+    => nrel_main_idtf: ["Bid data"](*<-lang_en;;*);;
+
+
+concept_Big_data	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Большие данные](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Big data](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Большие данные- термин, описывающий большие объёмы данных, которые обрабатываются с использованием различных инструментов и методов.](*<-lang_ru;;*);
+            [Bid Data- a term describing large amounts of data that are processed using various tools and methods.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Data_cleansing
+    => nrel_main_idtf: ["Data cleansing"](*<-lang_en;;*);;
+
+
+concept_Data_cleansing	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение:  Data cleansing](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Data cleansing](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [процесс очистки данных от ошибок, пропусков, дубликатов, неправильных форматов, неконсистентности и других проблем.](*<-lang_ru;;*);
+            [the process of cleaning data from errors, omissions, duplicates, incorrect formats, inconsistency and other problems.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Descriptive_analytics
+    => nrel_main_idtf: ["Descriptive analytics"](*<-lang_en;;*);;
+
+
+concept_Descriptive_analytics	
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Описательная аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Descriptive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Анализ данных, который отвечает на вопросы о том, что произошло и что происходит в настоящее время.](*<-lang_ru;;*);
+            [Data analysis that answers questions about what happened and what is currently happening.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Predictive_analytics
+    => nrel_main_idtf: ["Predictive analytics"](*<-lang_en;;*);;
+
+
+concept_Predictive_analytics
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Прогнозирующая аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Predictive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [анализ данных, который использует статистические и математические методы для предсказания будущих событий и трендов.](*<-lang_ru;;*);
+            [Data analysis that uses statistical and mathematical methods to predict future events and trends.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Prescriptive_analytics
+    => nrel_main_idtf: ["Prescriptive analytics"](*<-lang_en;;*);;
+
+
+concept_Prescriptive_analytics
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Предписывающая аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Prescriptive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Анализ данных, который помогает принимать решения о том, что сделать в будущем, на основе заранее определенных целей и ограничений.](*<-lang_ru;;*);
+            [Data analysis, which helps to make decisions about what to do in the future, based on pre-defined goals and constraints.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Data_visualization
+    => nrel_main_idtf: ["Data visualization"](*<-lang_en;;*);;
+
+
+concept_Data_visualization
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Визуализация данных](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Data visualization](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [ метод представления данных в виде графиков, диаграмм и карт.](*<-lang_ru;;*);
+            [a method of presenting data in the form of graphs, charts and maps.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Cluster_analysis
+    => nrel_main_idtf: ["Cluster analysis"](*<-lang_en;;*);;
+
+
+concept_Cluster_analysis
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Кластерный анализ](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Cluster analysis](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [метод анализа данных, который позволяет группировать объекты на основе их сходства или различий.](*<-lang_ru;;*);
+            [A data analysis method that allows you to group objects based on their similarities or differences.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Regression_analysis
+    => nrel_main_idtf: ["Regression analysis"](*<-lang_en;;*);;
+
+
+concept_Regression_analysis
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Регрессионный анализ](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Regression analysiss](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Метод анализа данных, который позволяет оценить взаимосвязь между двумя переменными и предсказать значения одной переменной на основе другой.](*<-lang_ru;;*);
+            [А data analysis method that allows you to evaluate the relationship between two variables and predict the values of one variable based on the other.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Time_series_analysis
+    => nrel_main_idtf: ["Time series analysis"](*<-lang_en;;*);;
+
+
+concept_Time_series_analysis
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Анализ временных рядов](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Time series analysis](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Метод анализа временных данных, который позволяет определять тренды, циклы и сезонные изменения и прогнозировать будущие значения.](*<-lang_ru;;*);
+            [A method of analyzing time data that allows you to determine trends, cycles and seasonal changes and predict future values.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Correlation
+    => nrel_main_idtf: ["Correlation"](*<-lang_en;;*);;
+
+
+concept_Correlation
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Корреляция](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Correlation](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [статистический показатель, который определяет, насколько две переменные связаны между собой.](*<-lang_ru;;*);
+            [A statistical indicator that determines how closely two variables are related to each other.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Outlier_detection
+    => nrel_main_idtf: ["Outlier detection"](*<-lang_en;;*);;
+
+
+concept_Outlier_detection
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Обнаружение выбросов](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Outlier detection](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Метод анализа данных, который позволяет определять экстремальные значения, которые отличаются от общего тренда выборки.](*<-lang_ru;;*);
+            [A method of data analysis that allows you to determine extreme values that differ from the general trend of the sample.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Dimensionality_reduction
+    => nrel_main_idtf: ["Dimensionality reduction"](*<-lang_en;;*);;
+
+
+concept_Dimensionality_reduction
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Dimensionality reduction](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Dimensionality reduction](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Метод для уменьшения количества переменных в выборке путем комбинации нескольких из них в новые переменные.](*<-lang_ru;;*);
+            [A method for reducing the number of variables in a sample by combining several of them into new variables.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Decision_trees
+    => nrel_main_idtf: ["Forecast"](*<-lang_en;;*);;
+
+
+concept_Decision_trees
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Деревья принятия решений](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Predictive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Графическое представление решений и их последствий в виде дерева.](*<-lang_ru;;*);
+            [Graphical representation of decisions and their consequences in the form of a tree.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Pattern_recognition
+    => nrel_main_idtf: ["Pattern recognition"](*<-lang_en;;*);;
+
+
+concept_Pattern_recognition
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Распознавание образов](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Pattern recognition](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Метод автоматического распознавания шаблонов в данных.](*<-lang_ru;;*);
+            [A method for automatic pattern recognition in data.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Data_warehousing
+    => nrel_main_idtf: ["Data warehousing"](*<-lang_en;;*);;
+
+
+concept_Data_warehousing
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Хранилище данных](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Data warehousing](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Процесс сбора данных из различных источников и хранения их в централизованной базе данных для последующего использования в анализе.](*<-lang_ru;;*);
+            [The process of collecting data from various sources and storing them in a centralized database for later use in analysis.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Business_intelligence
+    => nrel_main_idtf: ["Business intelligence"](*<-lang_en;;*);;
+
+
+concept_Business_intelligence
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Бизнес-аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Business intelligence](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [Технологии, процессы и приложения для сбора, интеграции, анализа и представления данных в форме информации, которая используется для принятия решений в бизнесе.](*<-lang_ru;;*);
+            [Technologies, processes and applications for the collection, integration, analysis and presentation of data in the form of information that is used for decision-making in business.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Data_governance
+    => nrel_main_idtf: ["Data governance"](*<-lang_en;;*);;
+
+
+concept_Data_governance
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Руководство данными](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Data governance](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [ Процесс управления данными и их качеством в организации. Он включает в себя создание политик, процедур и стандартов для управления данными, а также назначение ответственных лиц для контроля и обеспечения соответствия этим политикам.](*<-lang_ru;;*);
+            [The process of data management and its quality in the organization. It includes the creation of policies, procedures and standards for data management, as well as the appointment of responsible persons to monitor and ensure compliance with these policies..](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Predictive_analytics
+    => nrel_main_idtf: ["Forecast"](*<-lang_en;;*);;
+
+
+concept_Predictive_analytics
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Прогнозирующая аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Predictive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [анализ данных, который использует статистические и математические методы для предсказания будущих событий и трендов.](*<-lang_ru;;*);
+            [Data analysis that uses statistical and mathematical methods to predict future events and trends.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Predictive_analytics
+    => nrel_main_idtf: ["Forecast"](*<-lang_en;;*);;
+
+
+concept_Predictive_analytics
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Прогнозирующая аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Predictive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [анализ данных, который использует статистические и математические методы для предсказания будущих событий и трендов.](*<-lang_ru;;*);
+            [Data analysis that uses statistical and mathematical methods to predict future events and trends.](*<-lang_en;;*);;
+            
+        *);;
+*);;
+
+concept_Predictive_analytics
+    => nrel_main_idtf: ["Forecast"](*<-lang_en;;*);;
+
+
+concept_Predictive_analytics
+    <-rrel_key_sc_element:
+...
+(*
+    <- sc_definition;;
+        =>nrel_main_idtf: [Определение: Прогнозирующая аналитика](*<-lang_ru;;*);;
+        =>nrel_main_idtf: [Definition: Predictive analytics](*<-lang_en;;*);;
+    <-definition;;
+    <=nrel_sc_text_translation: ...
+        (*
+            ->rrel_example:
+            [анализ данных, который использует статистические и математические методы для предсказания будущих событий и трендов.](*<-lang_ru;;*);
+            [Data analysis that uses statistical and mathematical methods to predict future events and trends.](*<-lang_en;;*);;
+            
+        *);;
+*);;

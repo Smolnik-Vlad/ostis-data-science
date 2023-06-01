@@ -5,31 +5,170 @@ section_neural_networks
 			(* <- lang_ru;; *);
 	=> nrel_main_idtf:
 		[Subject area of Neural Networks]
-			(* <- lang_en;; *);
-			
-	<- not_enough_formed_structure;
+			(* <- lang_en;; *);;
 
+section_neural_networks
+			
 	<= nrel_section_decomposition:
-	
-	
-		section_nn_layers_and_modules
-			(*
-			=> nrel_section_base_order:
-				section_nn_in_img_classification;;
-			*);
-			
-		section_nn_in_img_classification
-			(*
-			=> nrel_section_base_order:
-				section_nn_in_img_segmentation;;
-			*);
-			
-		section_nn_in_img_segmentation
-			(*
-			=> nrel_section_base_order:
-				section_nn_in_nlp;;
-			*);
-			
+		section_nn_layers;
+		section_nn_in_img_classification;
+		section_nn_in_img_segmentation;
 		section_nn_in_nlp;;
 		
+section_neural_networks
+
+	-> rrel_key_sc_element:
+		concept_neural_network;
+		concept_neural_network_layer;
+		concept_neural_network_architecture;
+		concept_image_classification;
+		concept_image_segmentation;
+		concept_natural_language_processing;;
+
+section_neural_networks <- non_atomic_section;;
+
+
+
+
+
+
+concept_neural_network
+	=> nrel_main_idtf: ["Нейронная сеть"](*<-lang_ru;;*);
+	=> nrel_main_idtf: ["Neural Network"](*<-lang_en;;*);
+
+	=> nrel_private_subject_domain:
+		concept_neural_network_layer;
+		concept_neural_network_architecture;
+		concept_image_classification;
+		concept_image_segmentation;
+		concept_natural_language_processing;
 	
+	<= nrel_private_subject_domain:
+		concept_machine_learning;;
+
+concept_neural_network	
+	<-rrel_key_sc_element:
+...
+(*
+	<- sc_definition;;
+		=>nrel_main_idtf: [Определение: нейронная сеть](*<-lang_ru;;*);;
+		=>nrel_main_idtf: [Definition: neural network](*<-lang_en;;*);;
+	<-definition;;
+	<=nrel_sc_text_translation: ...
+		(*
+			->rrel_example:
+			[Нейро́нная сеть (также искусственная нейронная сеть, ИНС) — математическая модель, а также её программное или аппаратное воплощение, построенная по принципу организации и функционирования биологических нейронных сетей — сетей нервных клеток живого организма. Это понятие возникло при изучении процессов, протекающих в мозге, и при попытке смоделировать эти процессы. Первой такой попыткой были нейронные сети У. Маккалока и У. Питтса. После разработки алгоритмов обучения получаемые модели стали использовать в практических целях: в задачах прогнозирования, для распознавания образов, в задачах управления и др.](*<-lang_ru;;*);;
+			->rrel_example:
+			[Neural networks, also known as artificial neural networks (ANNs) or simulated neural networks (SNNs), are a subset of machine learning and are at the heart of deep learning algorithms. Their name and structure are inspired by the human brain, mimicking the way that biological neurons signal to one another.
+
+Artificial neural networks (ANNs) are comprised of a node layers, containing an input layer, one or more hidden layers, and an output layer. Each node, or artificial neuron, connects to another and has an associated weight and threshold. If the output of any individual node is above the specified threshold value, that node is activated, sending data to the next layer of the network. Otherwise, no data is passed along to the next layer of the network.](*<-lang_en;;*);;
+			
+		*);;
+*);;
+
+concept_neural_network
+	->rrel_key_sc_element:
+		concept_neural_network;
+		concept_neural_network_layer;
+		concept_neural_network_architecture;
+		concept_image_classification;
+		concept_image_segmentation;
+		concept_natural_language_processing;;
+
+
+
+
+concept_image_classification
+
+	=> nrel_main_idtf: 
+		["Классификация изображений"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Image Classification"] 
+			(* <-lang_en;; *);;
+			
+concept_image_classification
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: классификация изображений](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: image classification](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Классификация изображений – это процесс извлечения классов информации из многоканального растрового изображения.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Image classification is the task of assigning a label or class to an entire image. Images are expected to have only one class for each image.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_image_segmentation
+
+	=> nrel_main_idtf: 
+		["Сегментация изображений"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Image segmentation"] 
+			(* <-lang_en;; *);;
+			
+concept_image_segmentation
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: сегментация изображений](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: image segmentation](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[В компьютерном зрении, сегментация — это процесс разделения цифрового изображения на несколько сегментов (множество пикселей, также называемых суперпикселями). Цель сегментации заключается в упрощении и/или изменении представления изображения, чтобы его было проще и легче анализировать. Сегментация изображений обычно используется для того, чтобы выделить объекты и границы (линии, кривые, и т. д.) на изображениях. Более точно, сегментация изображений — это процесс присвоения таких меток каждому пикселю изображения, что пиксели с одинаковыми метками имеют общие визуальные характеристики.](*<-lang_ru;;*);;
+					->rrel_example:
+					[In digital image processing and computer vision, image segmentation is the process of partitioning a digital image into multiple image segments, also known as image regions or image objects (sets of pixels). The goal of segmentation is to simplify and/or change the representation of an image into something that is more meaningful and easier to analyze. Image segmentation is typically used to locate objects and boundaries (lines, curves, etc.) in images. More precisely, image segmentation is the process of assigning a label to every pixel in an image such that pixels with the same label share certain characteristics.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+concept_natural_language_processing
+
+	=> nrel_main_idtf: 
+		["Обработка естественного языка"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Natural Language Processing"] 
+			(* <-lang_en;; *);;
+			
+concept_natural_language_processing
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: обработка естественного языка](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: natural language processing](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Обработка текстов на естественном языке (Natural Language Processing, NLP) — общее направление искусственного интеллекта и математической лингвистики. Оно изучает проблемы компьютерного анализа и синтеза текстов на естественных языках. Применительно к искусственному интеллекту анализ означает понимание языка, а синтез — генерацию грамотного текста.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Natural language processing (NLP) is an interdisciplinary subfield of linguistics, computer science, and artificial intelligence concerned with the interactions between computers and human language, in particular how to program computers to process and analyze large amounts of natural language data. The goal is a computer capable of "understanding" the contents of documents, including the contextual nuances of the language within them. The technology can then accurately extract information and insights contained in the documents as well as categorize and organize the documents themselves.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+
+
+
+		
+		
+		

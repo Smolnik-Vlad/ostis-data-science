@@ -1,133 +1,92 @@
-concept_nn_region_based_architecture
+concept_rcnn
 
-	<- sc_node_not_relation;
-	
 	=> nrel_main_idtf: 
-		["Region-based архитектура нейронной сети"] 
+		["RCNN"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
-		["Region-based neural network architecture"] 
-			(* <-lang_en;; *);
-
-	<- rrel_key_sc_element:
-		...
-		(*
-		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("Region-based архитектура нейронной сети")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("Region-based neural network architecture")]
-					(* <-lang_en;; *);;
-			
-		*);;
+		["RCNN"] 
+			(* <-lang_en;; *);;
 
 concept_rcnn
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	<- concept_nn_region_based_architecture;
-	
-	=> nrel_main_idtf: 
-		["RCNN"] 
-			(* <-lang_ru;; *);
-	=> nrel_main_idtf: 
-		["RCNN"] 
-			(* <-lang_en;; *);
-
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("RCNN")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("RCNN")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: RCNN](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: RCNN](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_nn_region_based_architecture;;
-				*);;
+					->rrel_example:
+					[Архитектура R-CNN (Region-Based Convolutional Neural Network) была разработана в 2014 году Ross Girshik и другими. В основе этого метода лежит следующий алгоритм:
 
-			
+Нахождение потенциальных объектов на изображении и разбиение их на регионы cпомощью метода selective search. Извлечение признаков каждого полученного региона с помощью сверточных нейронных сетей. Классифицирование обработанных признаков с помощью метода опорных векторов (SVM, Support Vector Machine) и уточнение границ регионов с помощью линейной регрессии.](*<-lang_ru;;*);;
+					->rrel_example:
+					[R-CNN stands for Region-based Convolutional Neural Network. The key concept behind the R-CNN series is region proposals. Region proposals are used to localize objects within an image.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
 
 concept_fast_rcnn
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	<- concept_nn_region_based_architecture;
-	
 	=> nrel_main_idtf: 
-		["fast RCNN"] 
+		["Fast RCNN"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
-		["fast RCNN"] 
-			(* <-lang_en;; *);
+		["Fast RCNN"] 
+			(* <-lang_en;; *);;
+
+concept_fast_rcnn
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("fast RCNN")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("fast RCNN")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Fast RCNN](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Fast RCNN](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_nn_region_based_architecture;;
-				*);;
+					->rrel_example:
+					[Недостатки R-CNN привели авторов в 2015 году к улучшению модели. Они назвали ее Fast R-CNN. В ее основе лежит следующая архитектура:
 
-			
+Изображение подается на вход сверточной нейронной сети и обрабатывается selectivesearch. В итоге, имеем карту признаков и регионы потенциальных объектов. Координаты регионов потенциальных объектов преобразуются в координаты на карте признаков. Полученная карта признаков с регионами передается слою RoI (Region of Interest) polling layer. Здесь на каждый регион накладывается сетка размером HxW. Затем применяется MaxPolling для уменьшения размерности. Так, все регионы потенциальных объектов имеют одинаковую фиксированную размерность. Полученные признаки подаются на вход полносвязного слоя (Fully-conectedlayer), который передается двум другим полносвязным слоям. Первый с функцией активацией softmax определяет вероятность принадлежности классу, второй — границы (смещение) региона потенциального объекта.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Fast R-CNN is an object detection model that improves in its predecessor R-CNN in a number of ways. The Fast R-CNN consists of a CNN (usually pre-trained on the ImageNet classification task) with its final pooling layer replaced by an “ROI pooling” layer and its final FC layer is replaced by two branches — a (K + 1) category softmax layer branch and a category-specific bounding box regression branch.](*<-lang_en;;*);;
+					
+				*);;
 		*);;
-		
+
 concept_faster_rcnn
 
-	<- sc_node_not_relation;
-	
-	<- concept_neural_network_architecture;
-	<- concept_nn_region_based_architecture;
-	
 	=> nrel_main_idtf: 
-		["faster RCNN"] 
+		["Faster RCNN"] 
 			(* <-lang_ru;; *);
 	=> nrel_main_idtf: 
-		["faster RCNN"] 
-			(* <-lang_en;; *);
+		["Faster RCNN"] 
+			(* <-lang_en;; *);;
+
+concept_faster_rcnn
 
 	<- rrel_key_sc_element:
 		...
 		(*
 		
-			<- definition;;
-			
-			=> nrel_main_idtf: 
-				[Опр.("faster RCNN")] 
-					(* <-lang_ru;; *);;
-			=> nrel_main_idtf: 
-				[Def.("faster RCNN")] 
-					(* <-lang_en;; *);;
-					
-			<= nrel_using_constants:
-				...
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Faster RCNN](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Faster RCNN](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
 				(*
-					-> concept_nn_region_based_architecture;;
-				*);;
+					->rrel_example:
+					[Авторы продолжили улучшение над Fast R-CNN и в 2016 предложили Faster R-CNN. Они разработали собственный метод локализации объекта взамен Selective Searc — RPN (Region Proporsal Networks). В основе RPN лежит система якорей. Архитектура Faster R-CNN образована следующим образом:
 
-			
+Изображение подается на вход сверточной нейронной сети. Так, формируется карта признаков. Карта признаков обрабатывается слоем RPN. Здесь скользящее окно проходится по карте признаков. Центр скользящего окна связан с центром якорей. Якоря — это области, имеющие разные соотношения сторон и разные размеры. Авторы используют 3 соотношения сторон и 3 размера. На основе метрики IoF(intersection-over-union), степени пересечения якорей и истинных размеченных прямоугольников, выносится решение о текущем регионе — есть объект или нет. Далее используется алгоритм FastCNN: карта признаков с полученными объектами передаются слою RoI с последующей обработкой полносвязных слоев и классификацией, а также с определением смещения регионов потенциальных объектов.](*<-lang_ru;;*);;
+					->rrel_example:
+					[The most widely used state of the art version of the R-CNN family — Faster R-CNN was first published in 2015. The Faster R-CNN architecture consists of the RPN as a region proposal algorithm and the Fast R-CNN as a detector network.](*<-lang_en;;*);;
+					
+				*);;
 		*);;

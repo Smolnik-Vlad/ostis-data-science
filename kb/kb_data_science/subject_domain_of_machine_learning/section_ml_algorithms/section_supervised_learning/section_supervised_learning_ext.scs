@@ -33,17 +33,11 @@ concept_supervised_learning_algorithm
 				[Def.("Supervised Learning algorithm")]
 					(* <-lang_en;; *);;
 			
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_supervised_learning_algorithm.html" (* <-lang_ru; is_html;;*);;
+					-> rrel_example: [Supervised learning algorithm is a machine learning algorithm the main task of which is to learn a function that maps feature vectors (inputs) to labels (output), based on example input-output pairs.](* <-lang_en;;*);
+									[ алгоритм машинного обучения, основной задачей которого является обучение функции, которая сопоставляет векторы признаков (входы) с метками (выход) на основе примеров пар вход-выход.](* <-lang_ru;;*);;
 				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_supervised_learning_algorithm.html" (* <-lang_en; is_html;;*);;
-				*);;
-
 		*);;
 
 concept_linear_regression
@@ -73,17 +67,11 @@ concept_linear_regression
 				[Def.("Linear regression")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_linear_regression.html" (* <-lang_ru;; *);;
+					-> rrel_example: [an algorithm that provides a linear relationship between an independent variable and a dependent variable to predict the outcome of future events. It is a statistical method used in data science and machine learning for predictive analysis.](* <-lang_en;;*);
+									[алгоритм, который обеспечивает линейную связь между независимой переменной и зависимой переменной для прогнозирования исхода будущих событий. Это статистический метод, используемый в науке о данных и машинном обучении для прогностического анализа.](*<-lang_ru;;*);;
 				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_linear_regression.html" (* <-lang_en;; *);;
-				*);;
-				
 			<= nrel_using_constants:
 				...
 				(*
@@ -119,17 +107,11 @@ concept_support_vector_machines
 				[Def.("Support Vector Machines")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_support_vector_machines.html" (* <-lang_ru;; *);;
+					-> rrel_example: [In Machine Learning, Support vector machines are supervised learning algorithms whose objective is to find a hyperplane in an N-dimensional space(N — the number of features) that distinctly classifies the data points.](* <-lang_en;;*);
+									[В машинном обучении машины опорных векторов являются алгоритмами контролируемого обучения, целью которых является нахождение гиперплоскости в N-мерном пространстве (N - количество признаков), которая однозначно классифицирует точки данных.](*<-lang_ru;;*);;
 				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_support_vector_machines.html" (* <-lang_en;; *);;
-				*);;
-				
 			<= nrel_using_constants:
 				...
 				(*
@@ -165,15 +147,10 @@ concept_decision_trees
 				[Def.("Decision Trees")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_decision_trees.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_decision_trees.html" (* <-lang_en;; *);;
+					-> rrel_example: [graphical models used in machine learning to predict or classify data. They represent a tree structure, where each node represents a test condition, and each branch from a node represents a possible result of that test.](* <-lang_en;;*);
+									[Графические модели, используемые в машинном обучении для прогнозирования или классификации данных. Они представляют собой древовидную структуру, где каждый узел представляет собой условие теста, а каждая ветвь от узла - возможный результат этого теста.](*<-lang_ru;;*);;
 				*);;
 				
 			<= nrel_using_constants:
@@ -211,17 +188,12 @@ concept_random_forest
 				[Def.("Random Forest")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_random_forest.html" (* <-lang_ru;; *);;
+					-> rrel_example: [An ensemble machine learning model that combines multiple decision trees for classification or regression. It uses bootstrap aggregating to create a set of random subsamples from the original data and builds a tree on each subsample.](* <-lang_en;;*);
+									[Ансамблевая модель машинного обучения, объединяющая несколько деревьев решений для классификации или регрессии. Она использует бутстреп-агрегацию для создания набора случайных подвыборок из исходных данных и строит дерево на каждой подвыборке.](*<-lang_ru;;*);;
 				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_random_forest.html" (* <-lang_en;; *);;
-				*);;
-				
+
 			<= nrel_using_constants:
 				...
 				(*
@@ -257,15 +229,10 @@ concept_k_nearest_neighbors
 				[Def.("k-Nearest Neighbors")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_k_nearest_neighbors.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_k_nearest_neighbors.html" (* <-lang_en;; *);;
+					-> rrel_example: [is a machine learning algorithm that is used to classify and regress data. It is based on the proximity principle, according to which objects that are closer in the feature space tend to have similar characteristics or values of the target variable.](* <-lang_en;;*);
+									[ это алгоритм машинного обучения, который используется для классификации и регрессии данных. Он основывается на принципе близости, согласно которому объекты, находящиеся ближе в пространстве признаков, склонны иметь схожие характеристики или значения целевой переменной.](*<-lang_ru;;*);;
 				*);;
 				
 			<= nrel_using_constants:
@@ -304,15 +271,10 @@ concept_logistic_regression
 				[Def.("Logistic Regression")] 
 					(* <-lang_en;; *);;
 					
-			<= nrel_sc_text_translation:
-				...
+			<= nrel_sc_text_translation: ...
 				(* 
-					-> rrel_example: "file://html/ru/concept_logistic_regression.html" (* <-lang_ru;; *);;
-				*);;
-			<= nrel_sc_text_translation:
-				...
-				(* 
-					-> rrel_example: "file://html/en/concept_logistic_regression.html" (* <-lang_en;; *);;
+					-> rrel_example: [a statistical method for modeling the relationship between a set of independent variables and a binary target variable. It is used to predict the probability of occurrence of a particular event or classification into two classes: 0 and 1.](* <-lang_en;;*);
+									[ статистический метод для моделирования зависимости между набором независимых переменных и бинарной целевой переменной. Она используется для прогнозирования вероятности возникновения определенного события или классификации в два класса: 0 и 1.](*<-lang_ru;;*);;
 				*);;
 				
 			<= nrel_using_constants:

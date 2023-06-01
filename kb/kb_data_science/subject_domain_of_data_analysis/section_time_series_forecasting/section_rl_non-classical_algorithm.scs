@@ -1,0 +1,102 @@
+section_rl_non_classical_algorithm
+
+	=> nrel_main_idtf:
+		[Раздел. Неклассические алгоритмы](* <- lang_ru;; *);
+		[Section. non_classical algorithm](* <- lang_en;; *);;
+
+	
+section_rl_non_classical_algorithm
+
+	-> rrel_key_sc_element:
+		concept_rl_non_classical_algorithm;
+		concept_tslm;
+		concept_hybrid_models;
+		concept_bagging;
+		concept_boosting;
+		concept_lowess;
+		concept_loess;
+		concept_cubic_spline_regression_analysis;
+		concept_emd;
+		concept_ssa;;
+
+section_tslm
+
+	=> nrel_main_idtf:
+		[Раздел. TSLM]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. TSLM]
+			(* <- lang_en;; *);;
+
+section_hybrid_models
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+			
+
+section_bagging
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+
+section_boosting
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+
+section_lowess
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+
+section_loess
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+
+section_cubic_spline_regression_analysis
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+
+section_emd
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;
+
+section_ssa
+
+	=> nrel_main_idtf:
+		[Раздел. Гибридные модели]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Section. Hybrid models]
+			(* <- lang_en;; *);;

@@ -1,0 +1,275 @@
+concept_check_execute_conditions_of_linear_regression
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Проверка выполнения условий линейной регрессии"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Сheck execute conditions of linear regression"] 
+			(* <-lang_en;; *);
+
+	=> nrel_private_subject_domain:
+		concept_linear_relationship;
+		concept_no_or_little_multicollinear;
+		concept_no_auto_corelation;
+		concept_homoscedasticity;
+		concept_multivariate_normality;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Проверка выполнения условий линейной регрессии")] 
+					(* <-lang_ru;; *);;
+
+			=> nrel_main_idtf: 
+				[Def.("Сheck execute conditions of linear regression")]
+					(* <-lang_en;; *);;
+			
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Проверка выполнения условий линейной регрессии нужна для дальнейшего построения регрессионного анализа. Регрессионный анализ - это процесс, набор действий исследователя по определенному алгоритму: "подготовка исходных данных - построение модели - анализ модели - прогнозирование с помощью модели". Это ключевая особенность. Не представляет особой сложности сформировать DataFrame исходных данных и построить модель, запустить процедуру из библиотеки statsmodels.](* <-lang_ru;;*);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Checking the fulfillment of the conditions of linear regression is necessary for further construction of regression analysis. Regression analysis is a process, a set of actions of a researcher according to a certain algorithm: "preparation of initial data - model construction - model analysis - forecasting using a model." This is a key feature. It is not particularly difficult to form a DataFrame of the source data and build a model, run the procedure from the statsmodels library.](* <-lang_en;;*);;
+				*);;
+
+		*);;
+
+concept_linear_relationship
+
+	<- sc_node_not_relation;
+	
+	<- concept_check_execute_conditions_of_linear_regression;
+	
+	=> nrel_main_idtf: 
+		["Линейная зависимость"] 
+			(* <-lang_ru;; *);
+			
+	=> nrel_main_idtf: 
+		["Linear relationship"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Линейная зависимость")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Linear relationship")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Линейная зависимость – соотношение вида между элеменнтами векторного пространства над полем, где среди коэффициентов хотя бы один отличен от нуля.](* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Linear dependence is a relation of the form between the elements of a vector space over a field, where among the coefficients at least one is different from zero.](* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_check_execute_conditions_of_linear_regression;;
+				*);;
+
+			
+		*);;
+		
+concept_no_or_little_multicollinear
+
+	<- sc_node_not_relation;
+	
+	<- concept_check_execute_conditions_of_linear_regression;
+	
+	=> nrel_main_idtf: 
+		["Отсутсвие мультиколлинеарность"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["No or little multicollinearity"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Отсутсвие мультиколлинеарность")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("No or little multicollinearity")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Мультиколлинеарность — явление, при котором наблюдается сильная корреляция между признаками.Мультиколлинеарность негативно влияет на модели машинного обучения. Для линейных моделей она может приводить к неустойчивости коэффициентов.](* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Multicollinearity is a phenomenon in which there is a strong correlation between features.Multicollinearity negatively affects machine learning models. For linear models, it can lead to instability of coefficients.](* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_check_execute_conditions_of_linear_regression;;
+				*);;
+
+			
+		*);;
+		
+concept_no_auto_corelation
+
+	<- sc_node_not_relation;
+	
+	<- concept_check_execute_conditions_of_linear_regression;
+	
+	=> nrel_main_idtf: 
+		["Отсутсвие автокорреляции"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["No auto_corelation"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Отсутсвие автокорреляции")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("No auto_corelation")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Автокорреляция – это корреляционная зависимость между текущими значениями некоторой переменной и значениями этой же переменной, сдвинутыми на несколько периодов времени назад. Последствия: оценки перестают быть эффективными, оценка дисперсии ошибок является смещённой и часто заниженной, неверные выводы по t- и f-статистикам.](* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Autocorrelation is a correlation relationship between the current values of a variable and the values of the same variable shifted several time periods ago. Consequences: estimates cease to be effective, the estimate of error variance is biased and often underestimated, incorrect conclusions on t- and f-statistics.](* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_check_execute_conditions_of_linear_regression;;
+				*);;
+
+			
+		*);;
+		
+concept_homoscedasticity
+
+	<- sc_node_not_relation;
+	
+	<- concept_check_execute_conditions_of_linear_regression;
+	
+	=> nrel_main_idtf: 
+		["Гомоскедастичность"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Homoscedasticity"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Гомоскедастичность")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Homoscedasticity")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Гомоскедастичность это свойство, означающее постоянство условной дисперсии вектора или последовательности случайных величин. Однородная вариативность значений наблюдений, выражающаяся в стабильности, однородности дисперсии случайной ошибки регрессионной модели — дисперсии одинаковы во все моменты измерения.](* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Homoscedasticity is a property that means the constancy of the conditional variance of a vector or sequence of random variables. Homogeneous variability of the values of observations, expressed in stability, uniformity of the variance of the random error of the regression model — the variances are the same at all times of measurement](* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_check_execute_conditions_of_linear_regression;;
+				*);;
+
+			
+		*);;
+		
+concept_multivariate_normality
+
+	<- sc_node_not_relation;
+	
+	<- concept_check_execute_conditions_of_linear_regression;
+	
+	=> nrel_main_idtf: 
+		["Многомерная нормальность"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Multivariate normality"] 
+			(* <-lang_en;; *);
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Многомерная нормальность")] 
+					(* <-lang_ru;; *);;
+			=> nrel_main_idtf: 
+				[Def.("Multivariate normality"")] 
+					(* <-lang_en;; *);;
+					
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [Вид распределения для двух и более переменных, при котором распределение одной переменной нормально для каждой категории и всех комбинации категорий других переменных.](* <-lang_ru;; *);;
+				*);;
+			<= nrel_sc_text_translation:
+				...
+				(* 
+					-> rrel_example: [A type of distribution for two or more variables in which the distribution of one variable is normal for each category and all combinations of categories of other variables.](* <-lang_en;; *);;
+				*);;
+				
+			<= nrel_using_constants:
+				...
+				(*
+					-> concept_check_execute_conditions_of_linear_regression;;
+				*);;
+
+			
+		*);;

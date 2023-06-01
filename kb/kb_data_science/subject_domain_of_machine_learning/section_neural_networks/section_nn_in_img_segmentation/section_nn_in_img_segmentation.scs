@@ -5,19 +5,81 @@ section_nn_in_img_segmentation
 			(* <- lang_ru;; *);
 	=> nrel_main_idtf:
 		[Section. Neural network architectures in image segmentation tasks]
-			(* <- lang_en;; *);
-			
-	<- not_enough_formed_structure;
+			(* <- lang_en;; *);;
+
+section_nn_in_img_segmentation
 
 	<= nrel_section_decomposition:
-	{
+		section_nn_one_stage_detector;
+		section_nn_two_stage_detector;;
+		
+section_nn_in_img_segmentation <- non_atomic_section;;
 	
-		section_nn_one_stage_detector
+	concept_nn_one_stage_detector
+		=> nrel_main_idtf: ["One-stage detector"](*<-lang_ru;;*);
+		=> nrel_main_idtf: ["One-stage detector"](*<-lang_en;;*);
+
+		=> nrel_private_subject_domain:
+			concept_yolo;
+			concept_ssd;
+			
+		<= nrel_private_subject_domain:
+			section_nn_in_img_segmentation;;
+	
+	concept_nn_one_stage_detector	
+		<-rrel_key_sc_element:
+	...
+	(*
+		<- sc_definition;;
+			=>nrel_main_idtf: [Определение: One-stage detector](*<-lang_ru;;*);;
+			=>nrel_main_idtf: [Definition: One-stage detector](*<-lang_en;;*);;
+		<-definition;;
+		<=nrel_sc_text_translation: ...
 			(*
-			=> nrel_section_base_order:
-				section_nn_two_stage_detector;;
-			*);
+				->rrel_example:
+				[Одноэтапные модели обнаружения объектов относятся к классу моделей обнаружения объектов, которые являются одноэтапными, то есть моделями, которые пропускают стадию предложения региона двухэтапных моделей и запускают обнаружение непосредственно в плотной выборке местоположений.](*<-lang_ru;;*);;
+				->rrel_example:
+				[One-Stage Object Detection Models refer to a class of object detection models which are one-stage, i.e. models which skip the region proposal stage of two-stage models and run detection directly over a dense sampling of locations.](*<-lang_en;;*);;
+				
+			*);;
+	*);;
+	
+	concept_nn_one_stage_detector
+		->rrel_key_sc_element:
+			concept_nn_one_stage_detector;;
 			
-		section_nn_two_stage_detector
 			
-	};;
+			
+			
+	concept_nn_two_stage_detector
+		=> nrel_main_idtf: ["Two-stage detector"](*<-lang_ru;;*);
+		=> nrel_main_idtf: ["Two-stage detector"](*<-lang_en;;*);
+
+		=> nrel_private_subject_domain:
+			concept_yolo;
+			concept_ssd;
+			
+		<= nrel_private_subject_domain:
+			section_nn_in_img_segmentation;;
+	
+	concept_nn_two_stage_detector	
+		<-rrel_key_sc_element:
+	...
+	(*
+		<- sc_definition;;
+			=>nrel_main_idtf: [Определение: Two-stage detector](*<-lang_ru;;*);;
+			=>nrel_main_idtf: [Definition: Two-stage detector](*<-lang_en;;*);;
+		<-definition;;
+		<=nrel_sc_text_translation: ...
+			(*
+				->rrel_example:
+				[Двухступенчатые детекторы — это детекторы объектов, основанные на извлечении признаков глубокого обучения из входного изображения или видеокадра в целом. Детектор объектов решает две задачи: найти произвольное количество элементов, классифицировать каждый и использовать ограничивающую рамку для оценки его размера.](*<-lang_ru;;*);;
+				->rrel_example:
+				[Two-stage detectors are object detectors based on deep learning extract features from the input picture or video frame in general. Two tasks are solved by an object detector: Find an arbitrary number of items, Classify each one and use a bounding box to estimate its size.](*<-lang_en;;*);;
+				
+			*);;
+	*);;
+	
+	concept_nn_two_stage_detector
+		->rrel_key_sc_element:
+			concept_nn_two_stage_detector;;

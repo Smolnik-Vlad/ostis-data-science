@@ -1,0 +1,2003 @@
+concept_cv
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["CV"] (* <-lang_ru;; *);
+		["CV"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;;
+
+concept_cv
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Компьютерное зрение")] 
+					(* <-lang_ru;; *);
+				[Def.("CV (Computer Vision)")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Компьютерное зрение (Computer Vision, CV) — это область искусственного интеллекта, связанная с анализом изображений и видео. Она включает в себя набор методов, которые наделяют компьютер способностью «видеть» и извлекать информацию из увиденного. Системы состоят из фото- или видеокамеры и специализированного программного обеспечения, которое идентифицирует и классифицирует объекты.](*<-lang_ru;;*);
+					[Computer vision (Computer Vision, CV) is a field of artificial intelligence related to image and video analysis. It includes a set of methods that enable the computer to "see" and extract information from what it sees. The composition consists of photo or video cameras and special software that identifies and classifies objects.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+concept_cv
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["CV"] (* <-lang_ru;; *);
+		["CV"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_pose_estimation;
+			concept_depth_estimation;
+			concept_image_to_image ;
+			concept_image_generation;
+			concept_image_processing;
+			concept_filtering;
+			concept_morphological_operations;
+			concept_binarization ;
+			concept_edge_detection;
+			concept_noise_removal;
+			concept_image_quality_assessment;
+			concept_image_reconstruction;
+			concept_object_recognition;
+			concept_face_recognition;
+			concept_pattern_recognition;
+			concept_character_recognition;
+			concept_handwriting_recognition;
+			concept_gesture_recognition;
+			concept_video_landmark_recognition;
+			concept_determining_the_position_and_orientation_of_objects_in_an_image;
+			concept_video_object_detection;
+			concept_automatic_license_plate_recognition ;
+			concept_image_and_video_enhancement;
+			concept_object_manipulation_robotization;
+			concept_medical_imaging_diagnostics_and_medical_diagnostic_support;
+			concept_traffic_management_and_video_surveillance_in_public_places;
+			concept_reconstruction_of_3D_models_of_objects_and_spaces;
+			concept_military_imaging_processing ;
+			concept_drone_navigation;
+			concept_traffic_analysis;
+			concept_virtual_reality ;
+			concept_truck_weight_analysis_programs;
+			concept_analysis_of_human_behavior_in_public_places;
+			concept_environmental_monitoring;
+			concept_border_passenger_control;
+			concept_road_surface_quality_assessment ;
+			concept_automated_search_for_parking_violations;
+			concept_expert_systems_development;
+			concept_inspection_of_unmanned_aerial_vehicles;
+			concept_working_with_large_data_arrays;
+			concept_improvement_of_the_educational_process;
+			concept_development_of_self_driving_cars;
+			concept_automatic_control_of_equipment_in_production;
+			concept_development_of_a_container_movement_management_system;
+			concept_satellite_navigation_enhancement;
+			concept_supply_chain_management;
+			concept_development_of_algorithms_for_the_analysis_of_multidimensional_data;
+			concept_automatic_audio_signal_processing;
+			concept_development_of_a_data_stream_multiplexing_system;
+			concept_automatic_quality_control_of_welding_seams;
+			concept_development_of_a_laser_cutting_system;;
+            
+
+
+
+concept_pose_estimation
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Оценка позиции"] (* <-lang_ru;; *);
+		["Pose estimation"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Оценка позиции")] 
+					(* <-lang_ru;; *);
+				[Def.("Pose estimation")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Оценка позиции в компьютерном зрении относится к процессу определения положения и ориентации объекта или человека в трехмерном пространстве на основе двухмерного изображения или видео. Оценка позиции является фундаментальной проблемой компьютерного зрения и играет важную роль во многих приложениях, включая робототехнику, дополненную реальность и взаимодействие человека с компьютером. входного изображения или видео, сложности объекта или сцены и выбора алгоритма. Однако благодаря недавним достижениям в области глубокого обучения и других методов компьютерного зрения оценка позы становится более точной и надежной, открывая путь для новых и инновационных приложений.](*<-lang_ru;;*);
+					[Pose estimation in computer vision refers to the process of determining the position and orientation of an object or person in a 3D space based on a 2D image or video. Pose estimation is a fundamental problem in computer vision and plays a critical role in many applications, including robotics, augmented reality, and human-computer interaction.Pose estimation is a challenging and computationally intensive task, and the accuracy of the estimation depends on the quality of the input image or video, the complexity of the object or scene, and the choice of algorithm. However, with recent advances in deep learning and other computer vision techniques, pose estimation is becoming more accurate and reliable, paving the way for new and innovative applications.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_depth_estimation
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Оценка глубины"] (* <-lang_ru;; *);
+		["Depth estimation"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Классификация текста")] 
+					(* <-lang_ru;; *);
+				[Def.("Text Classification")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Оценка глубины в компьютерном зрении относится к процессу определения расстояния до объектов в сцене от камеры или датчика. Эта информация обычно представлена в виде карты глубины, которая представляет собой 2D-изображение, где значение каждого пикселя представляет собой расстояние до соответствующего объекта в сцене.](*<-lang_ru;;*);
+					[Depth estimation in computer vision refers to the process of determining the distance of objects in a scene from a camera or sensor. This information is typically represented as a depth map, which is a 2D image where each pixel value represents the distance of the corresponding object in the scene.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_image_to_image
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Image-to-Image"] (* <-lang_ru;; *);
+		["Image-to-Image"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Image-to-Image")] 
+					(* <-lang_ru;; *);
+				[Def.("Image-to-Image")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Image-to-image относится к типу задач компьютерного зрения, когда модель обучается преобразовывать одно изображение в другое. Цель состоит в том, чтобы изучить сопоставление между двумя доменами изображений, чтобы при заданном входном изображении из одного домена модель могла создать соответствующее выходное изображение в другом домене. Это может быть важным инструментом для различных приложений компьютерного зрения, таких как раскрашивание изображений, сверхвысокое разрешение, передача стилей и другие.](*<-lang_ru;;*);
+					[Image-to-image refers to a type of problem in computer vision where a model is trained to transform one image to another. The goal is to learn a mapping between two image domains, such that given an input image from one domain, the model can produce a corresponding output image in the other domain. This can be an important tool for various computer vision applications, such as image colorization, super-resolution, style transfer, and others.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_image_generation
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Генерация изображения"] (* <-lang_ru;; *);
+		["Image generation"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Генерация изображения")] 
+					(* <-lang_ru;; *);
+				[Def.("Image generation")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Генерация изображений в компьютерном зрении относится к процессу искусственного создания цифровых изображений с использованием алгоритмов и моделей. Этот метод часто используется в компьютерной графике, разработке видеоигр, виртуальной реальности и других приложениях, где требуется создание визуального контента.](*<-lang_ru;;*);
+					[Image generation in computer vision refers to the process of creating digital images artificially using algorithms and models. This technique is often used in computer graphics, video game development, virtual reality, and other applications where generating visual content is required.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_image_processing
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Обработка изображений"] (* <-lang_ru;; *);
+		["Image processing"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Обработка изображений")] 
+					(* <-lang_ru;; *);
+				[Def.("Image processing")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Обработка изображений - это процесс применения различных алгоритмов и методов для модификации и улучшения изображений, а также для извлечения информации из них.](*<-lang_ru;;*);
+					[Image processing is the process of applying various algorithms and techniques to modify and enhance images and extract information from them.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_filtering
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Фильтрация"] (* <-lang_ru;; *);
+		["Filtering"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Фильтрация")] 
+					(* <-lang_ru;; *);
+				[Def.("Filtering")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Фильтрация - это процесс уменьшения шума и повышения качества изображения с помощью фильтрации пикселей, где медианный фильтр, фильтр Собеля и фильтр Гаусса являются наиболее распространенными.](*<-lang_ru;;*);
+					[Filtering is the process of reducing noise and enhancing image quality through pixel filtering, where the median filter, Sobel filter, and Gaussian filter are the most common.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_morphological_operations
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Морфологические операции"] (* <-lang_ru;; *);
+		["Morphological operations"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Морфологические операции")] 
+					(* <-lang_ru;; *);
+				[Def.("Morphological operations")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Морфологические операции - это методы, базирующиеся на формальных математических понятиях, которые используются для обработки геометрических свойств изображений, где дилатация, эрозия, открытие и замыкание наиболее распространены.](*<-lang_ru;;*);
+					[Morphological operations are methods based on formal mathematical concepts that are used to process the geometric properties of images, where dilation, erosion, opening and closing are most common.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_binarization
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Бинаризация"] (* <-lang_ru;; *);
+		["Binarization"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Бинаризация")] 
+					(* <-lang_ru;; *);
+				[Def.("Binarization")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Бинаризация - это процесс преобразования изображения в чёрно-белый формат, где каждый пиксель определяется как черный или белый в зависимости от значений яркости.](*<-lang_ru;;*);
+					[Binarization is the process of converting an image to a black and white format, where each pixel is defined as either black or white depending on the brightness values.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_edge_detection
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Выделение контуров"] (* <-lang_ru;; *);
+		["Edge detection"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Выделение контуров")] 
+					(* <-lang_ru;; *);
+				[Def.("Edge detection")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Выделение контуров - это процесс определения краев объектов на изображении, используя методы детекции границ.](*<-lang_ru;;*);
+					[Edge extraction is the process of detecting the edges of objects in an image using edge detection techniques.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_noise_removal
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Удаление шума"] (* <-lang_ru;; *);
+		["Noise removal"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Удаление шума")] 
+					(* <-lang_ru;; *);
+				[Def.("Noise removal")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Удаление шума - это процесс удаления шума из изображений, используя различные техники.](*<-lang_ru;;*);
+					[Noise removal is the process of removing noise from images using various techniques.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_image_quality_assessment
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Оценка качества изображений"] (* <-lang_ru;; *);
+		["Image quality assessment"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Оценка качества изображений")] 
+					(* <-lang_ru;; *);
+				[Def.("Image quality assessment")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Оценка качества изображений - это процесс качественной оценки изображений с помощью различных метрик.](*<-lang_ru;;*);
+					[Image quality assessment is the process of evaluating images qualitatively using various metrics.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_image_reconstruction
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Реконструкция изображения"] (* <-lang_ru;; *);
+		["Image reconstruction"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Реконструкция изображения")] 
+					(* <-lang_ru;; *);
+				[Def.("Image reconstruction")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Реконструкция изображения - это процесс восстановления изображения, которое было повреждено или утеряно в результате различных причин.](*<-lang_ru;;*);
+					[Image reconstruction is the process of restoring an image that has been damaged or lost due to various reasons.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_object_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание объектов"] (* <-lang_ru;; *);
+		["Object recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание объектов")] 
+					(* <-lang_ru;; *);
+				[Def.("Object recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание объектов - это задача компьютерного зрения, которая заключается в автоматическом определении объектов на изображениях и видео. Для выполнения этой задачи используются техники машинного обучения и глубокого обучения. ](*<-lang_ru;;*);
+					[Object recognition is a computer vision task that involves automatically identifying objects in images and videos. Machine learning and deep learning techniques are used to accomplish this task.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_face_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание лиц"] (* <-lang_ru;; *);
+		["Face recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание лиц")] 
+					(* <-lang_ru;; *);
+				[Def.("Face recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание лиц - это процесс идентификации и классификации лиц на изображениях и видео.](*<-lang_ru;;*);
+					[Face recognition is the process of identifying and classifying faces in images and videos.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_pattern_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание паттернов"] (* <-lang_ru;; *);
+		["Pattern recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание паттернов")] 
+					(* <-lang_ru;; *);
+				[Def.("Pattern recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание паттернов - это процесс автоматического распознавания паттернов на изображениях, таких как рекламные баннеры, логотипы и т.д.](*<-lang_ru;;*);
+					[Pattern recognition is the process of automatically recognizing patterns in images such as advertising banners, logos, etc.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_character_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание символов"] (* <-lang_ru;; *);
+		["Character recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание символов")] 
+					(* <-lang_ru;; *);
+				[Def.("Character recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание символов - это процесс автоматического распознавания символов на изображениях, таких как номерные знаки, штрихкоды и т.д.](*<-lang_ru;;*);
+					[Character recognition is the process of automatically recognizing characters in images such as license plates, barcodes, etc.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_handwriting_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание рукописного текста"] (* <-lang_ru;; *);
+		["Handwriting recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание рукописного текста")] 
+					(* <-lang_ru;; *);
+				[Def.("Handwriting recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание рукописного текста - это процесс автоматического распознавания рукописного текста на изображениях.](*<-lang_ru;;*);
+					[Handwriting recognition is the process of automatically recognizing handwriting on images.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_gesture_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание жестов"] (* <-lang_ru;; *);
+		["Gesture recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание жестов")] 
+					(* <-lang_ru;; *);
+				[Def.("Gesture recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание жестов - это процесс автоматического распознавания жестов, сделанных людьми.](*<-lang_ru;;*);
+					[Gesture recognition is the process of automatically recognizing gestures made by people.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_video_landmark_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание ориентиров на видео"] (* <-lang_ru;; *);
+		["Video Landmark Recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание ориентиров на видео")] 
+					(* <-lang_ru;; *);
+				[Def.("Video Landmark Recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание ориентиров на видео - это процесс автоматического распознавания ориентиров на видео, которые позволяют ориентироваться в пространстве.](*<-lang_ru;;*);
+					[Video Landmark Recognition is the process of automatically recognizing video landmarks that allow you to navigate in space.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_determining_the_position_and_orientation_of_objects_in_an_image
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Определение позиции и ориентации объектов на изображении"] (* <-lang_ru;; *);
+		["Determining the position and orientation of objects in an image"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Определение позиции и ориентации объектов на изображении")] 
+					(* <-lang_ru;; *);
+				[Def.("Determining the position and orientation of objects in an image")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Определение позиции и ориентации объектов на изображении - это процесс определения позиции и ориентации объектов на изображении, используя методы машинного обучения и глубокого обучения.](*<-lang_ru;;*);
+					[Determining the position and orientation of objects in an image is the process of determining the position and orientation of objects in an image using machine learning and deep learning techniques.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_video_object_detection
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Обнаружение объектов на видео"] (* <-lang_ru;; *);
+		["Video object detection"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Обнаружение объектов на видео")] 
+					(* <-lang_ru;; *);
+				[Def.("Video object detection")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Обнаружение объектов на видео - это процесс автоматического обнаружения объектов на видео, используя методы машинного обучения и глубокого обучения.](*<-lang_ru;;*);
+					[Video Object Detection is the process of automatically detecting objects in video using machine learning and deep learning techniques.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_automatic_license_plate_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Автоматическое распознавание номерных знаков"] (* <-lang_ru;; *);
+		["Automatic license plate recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Автоматическое распознавание номерных знаков")] 
+					(* <-lang_ru;; *);
+				[Def.("Automatic license plate recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Автоматическое распознавание номерных знаков - это процесс распознавания номерных знаков автомобилей с целью их идентификации или контроля нарушений дорожного движения.](*<-lang_ru;;*);
+					[Automatic license plate recognition is the process of recognizing the license plates of vehicles in order to identify them or control traffic violations.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_image_and_video_enhancement
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Улучшение качества изображений и видео"] (* <-lang_ru;; *);
+		["Image and video enhancement"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Улучшение качества изображений и видео")] 
+					(* <-lang_ru;; *);
+				[Def.("Image and video enhancement")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Улучшение качества изображений и видео - это процесс уменьшения шума, повышения резкости и яркости изображений или видео для улучшения их визуального качества.](*<-lang_ru;;*);
+					[Image and video enhancement is the process of reducing noise, sharpening and brightening images or videos to improve their visual quality.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_object_manipulation_robotization
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Роботизация манипуляций с объектами"] (* <-lang_ru;; *);
+		["Object manipulation robotization"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Роботизация манипуляций с объектами")] 
+					(* <-lang_ru;; *);
+				[Def.("Object manipulation robotization")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Роботизация манипуляций с объектами - это процесс автоматизации и управления роботами и другими автоматизированными устройствами, использующими компьютерное зрение для определения объектов и выполнения нужных манипуляций.](*<-lang_ru;;*);
+					[Object manipulation robotization is the process of automating and controlling robots and other automated devices that use computer vision to identify objects and perform desired manipulations.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_medical_imaging_diagnostics_and_medical_diagnostic_support
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Диагностика медицинских изображений и поддержка медицинской диагностики"] (* <-lang_ru;; *);
+		["Medical imaging diagnostics and medical diagnostic support"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Диагностика медицинских изображений и поддержка медицинской диагностики")] 
+					(* <-lang_ru;; *);
+				[Def.("Medical imaging diagnostics and medical diagnostic support")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Диагностика медицинских изображений и поддержка медицинской диагностики - это процесс использования компьютерного зрения для анализа медицинских изображений и обнаружения изменений в тканях или органах для определения заболеваний или помощи в диагностике.](*<-lang_ru;;*);
+					[Medical imaging diagnostics and medical diagnostic support is the process of using computer vision to analyze medical images and detect changes in tissues or organs to identify diseases or aid in diagnosis.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_traffic_management_and_video_surveillance_in_public_places
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Управление транспортным потоком и видеонаблюдение в общественных местах"] (* <-lang_ru;; *);
+		["Traffic management and video surveillance in public places"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Управление транспортным потоком и видеонаблюдение в общественных местах")] 
+					(* <-lang_ru;; *);
+				[Def.("Traffic management and video surveillance in public places")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Управление транспортным потоком и видеонаблюдение в общественных местах - это процессы использования компьютерного зрения для управления движением транспорта и наблюдением за общественными местами, такими как парки, аэропорты, торговые центры и т.д.](*<-lang_ru;;*);
+					[Traffic management and video surveillance in public places are the processes of using computer vision to manage traffic and monitor public places such as parks, airports, shopping malls, etc.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_reconstruction_of_3D_models_of_objects_and_spaces
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Реконструкция 3D-моделей объектов и пространств"] (* <-lang_ru;; *);
+		["Reconstruction of 3D models of objects and spaces"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Реконструкция 3D-моделей объектов и пространств")] 
+					(* <-lang_ru;; *);
+				[Def.("Reconstruction of 3D models of objects and spaces")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Реконструкция 3D-моделей объектов и пространств - это процесс создания трехмерных моделей объектов и пространств на основе изображений и видео с помощью компьютерного зрения.](*<-lang_ru;;*);
+					[Reconstruction of 3D models of objects and spaces is the process of creating 3D models of objects and spaces from images and videos using computer vision.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_product_recognition
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Распознавание товаров"] (* <-lang_ru;; *);
+		["Product recognition"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Распознавание товаров")] 
+					(* <-lang_ru;; *);
+				[Def.("Product recognition")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Распознавание товаров в контексте computer vision является процессом выделения объектов, представляющих товары, на изображении или видео. Этот процесс может осуществляться с помощью алгоритмов и методов компьютерного зрения, таких как сегментация, классификация и обнаружение объектов. Это может быть полезным для автоматизации кассовой обработки в магазинах, создания инвентаризации и электронного каталога товаров.](*<-lang_ru;;*);
+					[Product recognition in the context of computer vision is the process of highlighting objects representing products in an image or video. This process can be carried out using computer vision algorithms and techniques such as segmentation, classification, and object detection. This can be useful for automating cash processing in stores, creating an inventory and an electronic product catalog.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_control_of_sales_and_inventory
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Контроль за продажами и запасами"] (* <-lang_ru;; *);
+		["Control of sales and inventory"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Контроль за продажами и запасами")] 
+					(* <-lang_ru;; *);
+				[Def.("Control of sales and inventory")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Контроль за продажами и запасами в контексте computer vision обычно включает в себя использование алгоритмов компьютерного зрения для отслеживания перемещения товаров на складе и в магазине. Это может быть полезным для контроля запасов товаров и определения, какие товары чаще всего продается, а какие остаются на складе. Также с помощью компьютерного зрения можно установить систему контроля за кражами и подделками товаров.](*<-lang_ru;;*);
+					[Control of sales and inventory in the context of computer vision usually involves the use of computer vision algorithms to track the movement of goods in the warehouse and in the store. This can be useful for keeping track of inventory and determining which items are most often sold and which items remain in stock. Also, with the help of computer vision, you can install a control system for theft and counterfeiting of goods.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_creating_recommendations_for_customers
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Создание рекомендаций для покупателей"] (* <-lang_ru;; *);
+		["Creating recommendations for customers"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Создание рекомендаций для покупателей")] 
+					(* <-lang_ru;; *);
+				[Def.("Creating recommendations for customers")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[ Создание рекомендаций для покупателей в контексте computer vision является процессом анализа поведения клиентов в магазине и создания персонализированных рекомендаций для них. Для этого могут использоваться методы машинного обучения и обработки текста для анализа истории покупок и сопоставления ее с базой данных товаров. Это может помочь продавцам увеличить продажи и улучшить общение с клиентами, предоставляя им предметы, которые им действительно интересны.](*<-lang_ru;;*);
+					[Creating recommendations for customers in the context of computer vision is the process of analyzing the behavior of customers in the store and creating personalized recommendations for them. To do this, machine learning and text processing methods can be used to analyze the purchase history and compare it with the product database. This can help sellers increase sales and improve communication with customers by providing them with items they are truly interested in.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_military_imaging_processing
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Обработка изображений военного назначения"] (* <-lang_ru;; *);
+		["Military Imaging Processing"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Обработка изображений военного назначения")] 
+					(* <-lang_ru;; *);
+				[Def.("Military Imaging Processing")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Обработка изображений военного назначения - использование компьютерного зрения для обработки и анализа изображений, полученных при выполнении задач военного назначения.](*<-lang_ru;;*);
+					[Military Imaging Processing - The use of computer vision to process and analyze images obtained while performing military missions.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_drone_navigation
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Навигация дронов"] (* <-lang_ru;; *);
+		["Drone navigation"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Навигация дронов")] 
+					(* <-lang_ru;; *);
+				[Def.("Drone navigation")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Навигация дронов - использование компьютерного зрения для определения местоположения и направления движения беспилотных летательных аппаратов.](*<-lang_ru;;*);
+					[Drone navigation - the use of computer vision to determine the location and direction of movement of unmanned aerial vehicles.	](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_traffic_analysis
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Анализ трафика"] (* <-lang_ru;; *);
+		["Traffic analysis"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Анализ трафика")] 
+					(* <-lang_ru;; *);
+				[Def.("Traffic analysis")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Анализ трафика - применение компьютерного зрения для мониторинга транспортного потока, определения его объема, скорости и других характеристик.](*<-lang_ru;;*);
+					[Traffic analysis - the use of computer vision to monitor the traffic flow, determine its volume, speed and other characteristics.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_virtual_reality
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Виртуальная реальность"] (* <-lang_ru;; *);
+		["Virtual reality"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Виртуальная реальность")] 
+					(* <-lang_ru;; *);
+				[Def.("Virtual reality")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Виртуальная реальность - создание интерактивной среды, используя компьютерное зрение и другие технологии.](*<-lang_ru;;*);
+					[Virtual reality is the creation of an interactive environment using computer vision and other technologies.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_truck_weight_analysis_programs
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Программы анализа веса грузовиков"] (* <-lang_ru;; *);
+		["Truck weight analysis programs"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Программы анализа веса грузовиков")] 
+					(* <-lang_ru;; *);
+				[Def.("Truck weight analysis programs")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Программы анализа веса грузовиков - применение компьютерного зрения для определения веса грузов на транспортных средствах и контроля перегрузок.](*<-lang_ru;;*);
+					[Truck weight analysis programs - application of computer vision to determine the weight of loads on vehicles and control overloads.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_analysis_of_human_behavior_in_public_places
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Анализ людского поведения в общественных местах"] (* <-lang_ru;; *);
+		["Analysis of human behavior in public places"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Анализ людского поведения в общественных местах")] 
+					(* <-lang_ru;; *);
+				[Def.("Analysis of human behavior in public places")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Анализ людского поведения в общественных местах - применение компьютерного зрения для анализа поведения людей в общественных местах, таких как транспорт, торговые центры и т.д.](*<-lang_ru;;*);
+					[Analysis of human behavior in public places - application of computer vision to analyze the behavior of people in public places, such as transport, shopping malls, etc.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_environmental_monitoring
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Экологический мониторинг"] (* <-lang_ru;; *);
+		["Environmental monitoring"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Экологический мониторинг")] 
+					(* <-lang_ru;; *);
+				[Def.("Environmental monitoring")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Экологический мониторинг - использование компьютерного зрения для мониторинга и анализа окружающей среды, определения загрязнения воздуха, воды и т.д.](*<-lang_ru;;*);
+					[Environmental monitoring - the use of computer vision to monitor and analyze the environment, determine air pollution, water pollution, etc.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_border_passenger_control
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Контроль прохождения границы пассажирами"] (* <-lang_ru;; *);
+		["Border Passenger Control"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Контроль прохождения границы пассажирами")] 
+					(* <-lang_ru;; *);
+				[Def.("Border Passenger Control")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Контроль прохождения границы пассажирами - использование компьютерного зрения для контроля прохождения пассажиров через границу и обнаружения нарушений.](*<-lang_ru;;*);
+					[Border Passenger Control - The use of computer vision to monitor the passage of passengers across the border and detect violations.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_road_surface_quality_assessment
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Оценка качества дорожных покрытий"] (* <-lang_ru;; *);
+		["Road surface quality assessment"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Оценка качества дорожных покрытий")] 
+					(* <-lang_ru;; *);
+				[Def.("Road surface quality assessment")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Оценка качества дорожных покрытий - применение компьютерного зрения для оценки качества и состояния дорожных покрытий.](*<-lang_ru;;*);
+					[Road surface quality assessment - application of computer vision to assess the quality and condition of road surfaces.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_automated_search_for_parking_violations
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Автоматизированный поиск нарушений при парковке автомобилей"] (* <-lang_ru;; *);
+		["Automated search for parking violations"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Автоматизированный поиск нарушений при парковке автомобилей")] 
+					(* <-lang_ru;; *);
+				[Def.("Automated search for parking violations")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Автоматизированный поиск нарушений при парковке автомобилей - использование компьютерного зрения для обнаружения нарушений при парковке автомобилей и автоматической выдачи штрафов.](*<-lang_ru;;*);
+					[Automated search for parking violations - using computer vision to detect parking violations and automatically issue tickets.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_expert_systems_development
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Разработка экспертных систем"] (* <-lang_ru;; *);
+		["Expert systems development"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Разработка экспертных систем")] 
+					(* <-lang_ru;; *);
+				[Def.("Expert systems development")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Разработка экспертных систем - применение компьютерного зрения для создания систем, которые могут принимать решения на основе анализа изображений.](*<-lang_ru;;*);
+					[Expert systems development – application of computer vision to create systems that can make decisions based on image analysis.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_inspection_of_unmanned_aerial_vehicles
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Инспекция беспилотных летательных аппаратов"] (* <-lang_ru;; *);
+		["Inspection of unmanned aerial vehicles"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Инспекция беспилотных летательных аппаратов")] 
+					(* <-lang_ru;; *);
+				[Def.("Inspection of unmanned aerial vehicles")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Инспекция беспилотных летательных аппаратов - применение компьютерного зрения для инспекции и технического контроля беспилотных летательных аппаратов.](*<-lang_ru;;*);
+					[Inspection of unmanned aerial vehicles - application of computer vision for the inspection and technical control of unmanned aerial vehicles.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_working_with_large_data_arrays
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Работа с большими массивами данных"] (* <-lang_ru;; *);
+		["Working with large data arrays"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Работа с большими массивами данных")] 
+					(* <-lang_ru;; *);
+				[Def.("Working with large data arrays")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Работа с большими массивами данных - использование компьютерного зрения для анализа больших объемов данных и их обработки.](*<-lang_ru;;*);
+					[Working with large data arrays - the use of computer vision for the analysis of large amounts of data and their processing.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_improvement_of_the_educational_process
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Улучшение образовательного процесса"] (* <-lang_ru;; *);
+		["Improvement of the educational process"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Улучшение образовательного процесса")] 
+					(* <-lang_ru;; *);
+				[Def.("Improvement of the educational process")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Улучшение образовательного процесса - применение компьютерного зрения для улучшения образовательного процесса, например, в онлайн-образовании.](*<-lang_ru;;*);
+					[Improvement of the educational process - the application of computer vision to improve the educational process, for example, in online education.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_development_of_self_driving_cars
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Развитие беспилотных автомобилей"] (* <-lang_ru;; *);
+		["Development of self-driving cars"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Развитие беспилотных автомобилей")] 
+					(* <-lang_ru;; *);
+				[Def.("Development of self-driving cars")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Развитие беспилотных автомобилей - использование компьютерного зрения для развития и улучшения технологий беспилотного управления автомобилями.](*<-lang_ru;;*);
+					[Development of self-driving cars - the use of computer vision to develop and improve technologies for self-driving cars.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_automatic_control_of_equipment_in_production
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Автоматический контроль техники на производстве"] (* <-lang_ru;; *);
+		["Automatic control of equipment in production"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Автоматический контроль техники на производстве")] 
+					(* <-lang_ru;; *);
+				[Def.("Automatic control of equipment in production")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Автоматический контроль техники на производстве - использование компьютерного зрения для контроля технического состояния оборудования на производстве.](*<-lang_ru;;*);
+					[Automatic control of equipment in production - the use of computer vision to control the technical condition of equipment in production.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_development_of_a_container_movement_management_system
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Разработка системы управления движением контейнеров"] (* <-lang_ru;; *);
+		["Development of a container movement management system"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Разработка системы управления движением контейнеров")] 
+					(* <-lang_ru;; *);
+				[Def.("Development of a container movement management system")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Разработка системы управления движением контейнеров - применение компьютерного зрения для управления и координирования движения контейнеров на транспорте и складах.](*<-lang_ru;;*);
+					[Development of a container movement management system - the use of computer vision to control and coordinate the movement of containers in transport and warehouses.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_satellite_navigation_enhancement
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Расширение возможностей спутниковой навигации"] (* <-lang_ru;; *);
+		["Satellite navigation enhancement"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Расширение возможностей спутниковой навигации")] 
+					(* <-lang_ru;; *);
+				[Def.("Satellite navigation enhancement")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Расширение возможностей спутниковой навигации - использование компьютерного зрения для расширения возможностей спутниковой навигационной системы.](*<-lang_ru;;*);
+					[Satellite navigation enhancement - The use of computer vision to enhance the capabilities of a satellite navigation system.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+
+
+concept_supply_chain_management
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Управление цепочкой поставок"] (* <-lang_ru;; *);
+		["Supply chain management"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Управление цепочкой поставок")] 
+					(* <-lang_ru;; *);
+				[Def.("Supply chain management")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Управление цепочкой поставок - применение компьютерного зрения для управления процессами в цепочке поставок и оптимизации логистики.](*<-lang_ru;;*);
+					[Supply chain management - application of computer vision for supply chain process management and logistics optimization.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_development_of_algorithms_for_the_analysis_of_multidimensional_data
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Разработка алгоритмов анализа многомерных данных"] (* <-lang_ru;; *);
+		["Development of algorithms for the analysis of multidimensional data"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+    
+			=> nrel_main_idtf: 
+				[Опр.("Разработка алгоритмов анализа многомерных данных")] 
+					(* <-lang_ru;; *);
+				[Def.("Development of algorithms for the analysis of multidimensional data")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Разработка алгоритмов анализа многомерных данных - использование компьютерного зрения для анализа и интерпретации многомерных данных.](*<-lang_ru;;*);
+					[Development of algorithms for the analysis of multidimensional data - the use of computer vision for the analysis and interpretation of multidimensional data.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_automatic_audio_signal_processing
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Автоматическая обработка звукового сигнала"] (* <-lang_ru;; *);
+		["Automatic audio signal processing"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Автоматическая обработка звукового сигнала")] 
+					(* <-lang_ru;; *);
+				[Def.("Automatic audio signal processing")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Автоматическая обработка звукового сигнала - использование компьютерного зрения для обработки звуковых сигналов.](*<-lang_ru;;*);
+					[Automatic audio signal processing - the use of computer vision to process audio signals.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_development_of_a_data_stream_multiplexing_system
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Разработка системы мультиплексирования потока данных"] (* <-lang_ru;; *);
+		["Development of a data stream multiplexing system"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Разработка системы мультиплексирования потока данных")] 
+					(* <-lang_ru;; *);
+				[Def.("Development of a data stream multiplexing system")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Разработка системы мультиплексирования потока данных - создание систем для передачи и управления различными потоками данных.](*<-lang_ru;;*);
+					[Development of a data stream multiplexing system - creation of systems for the transmission and control of various data streams.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+		
+concept_automatic_quality_control_of_welding_seams
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Автоматический контроль качества сварочных швов"] (* <-lang_ru;; *);
+		["Automatic quality control of welding seams"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Автоматический контроль качества сварочных швов")] 
+					(* <-lang_ru;; *);
+				[Def.("Automatic quality control of welding seams")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Автоматический контроль качества сварочных швов - применение компьютерного зрения для контроля качества сварочных швов.](*<-lang_ru;;*);
+					[Automatic quality control of welding seams - application of computer vision for quality control of welding seams.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;
+
+concept_development_of_a_laser_cutting_system
+
+	<- sc_node_not_relation;
+	
+	=> nrel_main_idtf: 
+		["Разработка системы лазерной резки"] (* <-lang_ru;; *);
+		["Development of a laser cutting system"] (* <-lang_en;; *);
+
+		=> nrel_private_subject_domain:
+			concept_cv;
+
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+			
+			=> nrel_main_idtf: 
+				[Опр.("Разработка системы лазерной резки")] 
+					(* <-lang_ru;; *);
+				[Def.("Development of a laser cutting system")]
+					(* <-lang_en;; *);;	
+
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Разработка системы лазерной резки - применение компьютерного зрения для настройки и управления системой лазерной резки.](*<-lang_ru;;*);
+					[Development of a laser cutting system - application of computer vision to set up and control a laser cutting system.](*<-lang_en;;*);;
+					
+				*);;
+				
+		*);;

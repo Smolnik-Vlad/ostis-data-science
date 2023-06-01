@@ -1,0 +1,54 @@
+section_data_analysis
+	=> nrel_main_idtf:
+		[Раздел. Предметная область анализа данных]
+			(* <- lang_ru;; *);
+		[Section. Subject domain of Data Analysis]
+			(* <- lang_en;; *);;
+			
+section_data_analysis
+
+	<= nrel_section_decomposition:
+		section_check_execute_conditions_of_linear_regression;
+		section_forecasting;
+		concept_defenition_of_data_analysis_terminology;;	
+		
+section_data_analysis
+
+	-> rrel_key_sc_element:
+		subject_domain_of_data_analysis;
+		concept_check_execute_conditions_of_linear_regression;
+		concept_forecasting;
+		concept_defenition_of_data_analysis_terminology;;		
+
+
+section_data_analysis <- non_atomic_section;;
+
+
+subject_domain_of_data_analysis
+	=> nrel_main_idtf:
+		[Предметная область анализа данных]
+			(* <- lang_ru;; *);
+	=> nrel_main_idtf:
+		[Subject area of Data analysis]
+			(* <- lang_en;; *);
+
+	    => nrel_private_subject_domain:
+		concept_check_execute_conditions_of_linear_regression;
+		concept_forecasting;
+		concept_defenition_of_data_analysis_terminology;
+	
+    <-rrel_key_sc_element:
+		...
+		(*
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: Анализ данных](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: Data Analysis](*<-lang_en;;*);;
+			<-definition;;
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[процесс изучения, очистки, преобразования и моделирования данных для извлечения полезной информации и составления выводов. Это предполагает использование статистических и вычислительных методов для выявления закономерностей, тенденций и взаимосвязей в данных. Результаты анализа данных могут дать представление и послужить основой для принятия решений в различных областях, включая бизнес, науку, здравоохранение и социальные науки. Как правило, анализ данных начинается с исследовательского вопроса или гипотезы, за которыми следует сбор данных, а затем анализ с использованием таких инструментов, как статистическое программное обеспечение, визуализация данных и алгоритмы машинного обучения. ](*<-lang_ru;;*);
+					[process of examining, cleaning, transforming and modeling data to extract useful information and draw conclusions. It involves using statistical and computational techniques to identify patterns, trends and relationships in data. The results of data analysis can provide insights and inform decision-making in a variety of fields, including business, science, healthcare, and social sciences. Typically, data analysis begins with a research question or hypothesis, followed by data collection, and then analysis using tools such as statistical software, data visualization, and machine learning algorithms.](*<-lang_en;;*);;
+					
+				*);;
+		*);;

@@ -1,0 +1,195 @@
+concept_neural_network_layer
+
+	=> nrel_main_idtf: 
+		["Слой нейронной сети"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["Neural Network Layer"] 
+			(* <-lang_en;; *);
+	
+	=> nrel_private_subject_domain:
+		concept_fully_connected_neural_network;
+		concept_convolutional_neural_network;
+		concept_recurrent_neural_network;
+		concept_long_short_term_memory;
+		concept_gated_recurrent_unit;;
+			
+concept_neural_network_layer
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: NN Layer](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: NN Layer](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Слой — это общий термин, который применяется к набору нейронов, или «узлов», работающих вместе на определенной глубине в нейронной сети.
+
+Входной слой содержит ваши необработанные данные (вы можете думать о каждой переменной как об «узле»).
+
+Скрытый слой (слои) — это место, где в нейронных сетях происходит черная магия. Каждый уровень пытается изучить различные аспекты данных, минимизируя функцию ошибки/затрат. Самый интуитивный способ понять эти слои — в контексте «распознавания изображений», таких как лица. Первый уровень может научиться обнаруживать края, второй — глаза, третий — нос и т. д. Это не совсем то, что происходит, но идея состоит в том, чтобы разбить проблему на компоненты, которые разные уровни абстракции могут собрать воедино так же, как наш работает собственный мозг (отсюда и название «нейронные сети»).
+
+Выходной слой самый простой, обычно состоящий из одного вывода для задач классификации. Хотя это один «узел», он по-прежнему считается слоем в нейронной сети, поскольку может содержать несколько узлов.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Layer is a general term that applies to a collection of 'nodes' operating together at a specific depth within a neural network.
+
+The input layer is contains your raw data (you can think of each variable as a 'node').
+
+The hidden layer(s) are where the black magic happens in neural networks. Each layer is trying to learn different aspects about the data by minimizing an error/cost function. The most intuitive way to understand these layers is in the context of 'image recognition' such as a face. The first layer may learn edge detection, the second may detect eyes, third a nose, etc. This is not exactly what is happening but the idea is to break the problem up in to components that different levels of abstraction can piece together much like our own brains work (hence the name 'neural networks').
+
+The output layer is the simplest, usually consisting of a single output for classification problems. Although it is a single 'node' it is still considered a layer in a neural network as it could contain multiple nodes.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		
+concept_fully_connected_neural_network
+
+	=> nrel_main_idtf: 
+		["FCNN"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["FCNN"] 
+			(* <-lang_en;; *);;
+			
+concept_fully_connected_neural_network
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: FCNN](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: FCNN](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Полносвязный слой - это простейший слой нейронной сети, в котором каждый нейрон одного слоя связан с каждым нейроном следующего и предыдущего (если они есть).
+
+Первый слой — входной. Например, если мы хотим подать изображение 256x256x3 на вход такой сети, то ровно 256x256x3 нейронов во входном слое нам и понадобится (каждый нейрон будет принимать 1 компоненту (R, G или B) пикселя). Если хотим подать рост человека, его вес и еще 23 признака, то понадобится 25 нейронов во входном слое. Кол-во нейронов на выходе — кол-во признаков, которые мы хотим предсказать. Это может быть как 1 признак, так и все 100. В общем случае по выходному слою сети можно почти наверняка сказать — какую задачу она решает.](*<-lang_ru;;*);;
+					->rrel_example:
+					[The fully convolutional neural network (FCNN) model is a deep learning model based on traditional convolution neural network (CNN) model with a fully connected first layer and combines expression similarities and prior-knowledge similarities as the input.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		
+concept_convolutional_neural_network
+
+	=> nrel_main_idtf: 
+		["CNN"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["CNN"] 
+			(* <-lang_en;; *);;
+			
+concept_convolutional_neural_network
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: CNN](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: CNN](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Свёрточная нейронная сеть (англ. convolutional neural network, CNN) — специальная архитектура искусственных нейронных сетей, предложенная Яном Лекуном в 1988 году и нацеленная на эффективное распознавание образов, входит в состав технологий глубокого обучения (англ. deep learning). Использует некоторые особенности зрительной коры, в которой были открыты так называемые простые клетки, реагирующие на прямые линии под разными углами, и сложные клетки, реакция которых связана с активацией определённого набора простых клеток. Таким образом, идея свёрточных нейронных сетей заключается в чередовании свёрточных слоёв (англ. convolution layers) и субдискретизирующих слоёв (англ. subsampling layers или англ. pooling layers, слоёв подвыборки). Структура сети — однонаправленная (без обратных связей), принципиально многослойная. Для обучения используются стандартные методы, чаще всего метод обратного распространения ошибки. Функция активации нейронов (передаточная функция) — любая, по выбору исследователя.](*<-lang_ru;;*);;
+					->rrel_example:
+					[In deep learning, a convolutional neural network (CNN) is a class of artificial neural network most commonly applied to analyze visual imagery. CNNs use a mathematical operation called convolution in place of general matrix multiplication in at least one of their layers. They are specifically designed to process pixel data and are used in image recognition and processing. They have applications in image and video recognition, recommender systems, image classification, image segmentation, medical image analysis, natural language processing, brain–computer interfaces, and financial time series.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		
+concept_recurrent_neural_network
+
+	=> nrel_main_idtf: 
+		["RNN"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["RNN"] 
+			(* <-lang_en;; *);;
+			
+concept_recurrent_neural_network
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: RNN](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: RNN](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Рекуррентные нейронные сети (РНС, англ. Recurrent neural network, RNN) — вид нейронных сетей, где связи между элементами образуют направленную последовательность. Благодаря этому появляется возможность обрабатывать серии событий во времени или последовательные пространственные цепочки. В отличие от многослойных перцептронов, рекуррентные сети могут использовать свою внутреннюю память для обработки последовательностей произвольной длины. Поэтому сети RNN применимы в таких задачах, где нечто целостное разбито на части, например: распознавание рукописного текста или распознавание речи. Было предложено много различных архитектурных решений для рекуррентных сетей от простых до сложных. В последнее время наибольшее распространение получили сеть с долговременной и кратковременной памятью (LSTM) и управляемый рекуррентный блок (GRU).](*<-lang_ru;;*);;
+					->rrel_example:
+					[A recurrent neural network (RNN) is a class of artificial neural networks where connections between nodes can create a cycle, allowing output from some nodes to affect subsequent input to the same nodes. This allows it to exhibit temporal dynamic behavior. Derived from feedforward neural networks, RNNs can use their internal state (memory) to process variable length sequences of inputs. This makes them applicable to tasks such as unsegmented, connected handwriting recognition or speech recognition. Recurrent neural networks are theoretically Turing complete and can run arbitrary programs to process arbitrary sequences of inputs.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		
+concept_long_short_term_memory
+
+	=> nrel_main_idtf: 
+		["LSTM"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["LSTM"] 
+			(* <-lang_en;; *);;
+			
+concept_long_short_term_memory
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: LSTM](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: LSTM](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Длинная цепь элементов краткосрочной памяти (англ. Long short-term memory; LSTM) — разновидность архитектуры рекуррентных нейронных сетей, предложенная в 1997 году Зеппом Хохрайтером и Юргеном Шмидхубером. Как и большинство рекуррентных нейронных сетей, LSTM-сеть является универсальной в том смысле, что при достаточном числе элементов сети она может выполнить любое вычисление, на которое способен обычный компьютер, для чего необходима соответствующая матрица весов, которая может рассматриваться как программа. В отличие от традиционных рекуррентных нейронных сетей, LSTM-сеть хорошо приспособлена к обучению на задачах классификации, обработки и прогнозирования временных рядов в случаях, когда важные события разделены временными лагами с неопределённой продолжительностью и границами. Относительная невосприимчивость к длительности временных разрывов даёт LSTM преимущество по отношению к альтернативным рекуррентным нейронным сетям, скрытым марковским моделям и другим методам обучения для последовательностей в различных сферах применения. Из множества достижений LSTM-сетей можно выделить наилучшие результаты в распознавании несегментированного слитного рукописного текста, и победу в 2009 году на соревнованиях по распознаванию рукописного текста. LSTM-сети также используются в задачах распознавания речи, например LSTM-сеть была основным компонентом сети, которая в 2013 году достигла рекордного порога ошибки в 17,7 % в задаче распознавания фонем на классическом корпусе естественной речи TIMIT. По состоянию на 2016 год ведущие технологические компании, включая Google, Apple, Microsoft и Baidu, используют LSTM-сети в качестве фундаментального компонента новых продуктов.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Long short-term memory (LSTM) is an artificial neural network used in the fields of artificial intelligence and deep learning. Unlike standard feedforward neural networks, LSTM has feedback connections. Such a recurrent neural network (RNN) can process not only single data points (such as images), but also entire sequences of data (such as speech or video). This characteristic makes LSTM networks ideal for processing and predicting data. For example, LSTM is applicable to tasks such as unsegmented, connected handwriting recognition, speech recognition, machine translation, speech activity detection, robot control, video games, and healthcare.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		
+concept_gated_recurrent_unit
+
+	=> nrel_main_idtf: 
+		["GRU"] 
+			(* <-lang_ru;; *);
+	=> nrel_main_idtf: 
+		["GRU"] 
+			(* <-lang_en;; *);;
+			
+concept_gated_recurrent_unit
+
+	<- rrel_key_sc_element:
+		...
+		(*
+		
+			<- sc_definition;;
+				=>nrel_main_idtf: [Определение: GRU](*<-lang_ru;;*);;
+				=>nrel_main_idtf: [Definition: GRU](*<-lang_en;;*);;
+				
+			<=nrel_sc_text_translation: ...
+				(*
+					->rrel_example:
+					[Управляемые рекуррентные блоки (англ. Gated Recurrent Units, GRU) — механизм вентилей для рекуррентных нейронных сетей, представленный в 2014 году. Было установлено, что его эффективность при решении задач моделирования музыкальных и речевых сигналов сопоставима с использованием долгой краткосрочной памяти (LSTM). По сравнению с LSTM у данного механизма меньше параметров, т.к. отсутствует выходной вентиль.](*<-lang_ru;;*);;
+					->rrel_example:
+					[Gated recurrent units (GRUs) are a gating mechanism in recurrent neural networks, introduced in 2014 by Kyunghyun Cho et al. The GRU is like a long short-term memory (LSTM) with a forget gate, but has fewer parameters than LSTM, as it lacks an output gate. GRU's performance on certain tasks of polyphonic music modeling, speech signal modeling and natural language processing was found to be similar to that of LSTM. GRUs shown that gating is indeed helpful in general and Bengio's team concluding that no concrete conclusion on which of the two gating units was better.](*<-lang_en;;*);;
+					
+				*);;
+		*);;
+		

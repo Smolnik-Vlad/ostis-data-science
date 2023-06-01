@@ -63,8 +63,7 @@ concept_conversational_response_modelling
 		["Моделирование разговорных реакций"] (* <-lang_ru;; *);
 		["Conversational Response Modelling"] (* <-lang_en;; *);
 
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
+
 
 
 	<- rrel_key_sc_element:
@@ -98,8 +97,7 @@ concept_masked_language_modeling
 		["Маскированное моделирование языка"] (* <-lang_ru;; *);
 		["Masked Language Modeling"] (* <-lang_en;; *);
 
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
+
 
 
 	<- rrel_key_sc_element:
@@ -133,9 +131,6 @@ concept_question_answering
 		["Ответы на вопросы"] (* <-lang_ru;; *);
 		["Question Answering"] (* <-lang_en;; *);
 
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
-
 
 	<- rrel_key_sc_element:
 		...
@@ -168,10 +163,6 @@ concept_sentence_similarity
 		["Схоство предложений"] (* <-lang_ru;; *);
 		["Sentence Similarity"] (* <-lang_en;; *);
 
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
-
-
 	<- rrel_key_sc_element:
 		...
 		(*
@@ -202,9 +193,6 @@ concept_text_summarization
 	=> nrel_main_idtf: 
 		["Обобщение текста"] (* <-lang_ru;; *);
 		["Text Summarization"] (* <-lang_en;; *);
-
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
 
 
 	<- rrel_key_sc_element:
@@ -238,10 +226,6 @@ concept_text_classification
 		["Классификация текста"] (* <-lang_ru;; *);
 		["Text Classification"] (* <-lang_en;; *);
 
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
-
-
 	<- rrel_key_sc_element:
 		...
 		(*
@@ -272,10 +256,6 @@ concept_text_generation
 	=> nrel_main_idtf: 
 		["Генерация текста"] (* <-lang_ru;; *);
 		[" Text Generation"] (* <-lang_en;; *);
-
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
-
 
 	<- rrel_key_sc_element:
 		...
@@ -308,9 +288,6 @@ concept_translation
 	=> nrel_main_idtf: 
 		["Перевод"] (* <-lang_ru;; *);
 		["Translation"] (* <-lang_en;; *);
-
-		=> nrel_private_subject_domain:
-			concept_nlp_task;
 
 
 	<- rrel_key_sc_element:

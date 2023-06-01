@@ -1,0 +1,144 @@
+section_rl_classical_algorithm
+	=> nrel_main_idtf:
+		[Раздел. Классические агоритмы прогнозирования временных рядов](* <- lang_ru;; *);
+		[Section. Classical algorithms of forecasting](* <- lang_en;; *);;
+
+	
+section_rl_classical_algorithm
+	<= nrel_section_decomposition:
+		concept_naive;
+		concept_seasonal_naive;
+		concept_exponential_fit;
+		concept_ses;
+		concept_ets_exponential_smoothing;
+		concept_holt_winters_ets;
+		concept_autoregression;
+		concept_ma;
+		concept_arma;
+		concept_arima;
+		concept_sarima;
+		concept_sarimax;
+		concept_stlf;;
+
+section_rl_classical_algorithm
+	-> rrel_key_sc_element:
+		concept_rl_classical_algorithm;;
+
+
+
+section_naive
+	=> nrel_main_idtf:
+		[Раздел. NAIVE](* <- lang_ru;; *);
+		[Section. NAIVE](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_naive;;
+
+section_seasonal_naive
+	=> nrel_main_idtf:
+		[Раздел. Seasonal naive](* <- lang_ru;; *);
+		[Section. Seasonal naive](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_seasonal_naive;;
+
+section_exponential_fit
+	=> nrel_main_idtf:
+		[Раздел. Exponential fit of n'th degree](* <- lang_ru;; *);
+		[Section. Exponential fit of n'th degree](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_exponential_fit_of_n_th_degree;;
+
+section_ses
+	=> nrel_main_idtf:
+		[Раздел. SES](* <- lang_ru;; *);
+		[Section. SES](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_ses;;
+
+section_ets_exponential_smoothing
+	=> nrel_main_idtf:
+		[Раздел. ETS Exponential smoothing](* <- lang_ru;; *);
+		[Section. ETS Exponential smoothing](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_ets_exponential_smoothing;;
+		
+section_holt_winters_ets
+	=> nrel_main_idtf:
+		[Раздел. holt_winters ETS](* <- lang_ru;; *);
+		[Section. holt_winters ETS](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_holt_winters_ets;;
+		
+section_autoregression
+	=> nrel_main_idtf:
+		[Раздел. Autoregression](* <- lang_ru;; *);
+		[Section. Autoregression](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_autoregression;;
+		
+section_ma
+	=> nrel_main_idtf:
+		[Раздел. MA](* <- lang_ru;; *);
+		[Section. MA](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_ma;;
+		
+section_arma
+	=> nrel_main_idtf:
+		[Раздел. ARMA](* <- lang_ru;; *);
+		[Section. ARMA](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_arma;;
+		
+section_arima
+	=> nrel_main_idtf:
+		[Раздел. ARIMA](* <- lang_ru;; *);
+		[Section. ARIMA](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_arima;;
+		
+section_sarima
+	=> nrel_main_idtf:
+		[Раздел. SARIMA](* <- lang_ru;; *);
+		[Section. SARIMA](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_sarima;;
+		
+section_sarimax
+	=> nrel_main_idtf:
+		[Раздел. SARIMAX](* <- lang_ru;; *);
+		[Section. SARIMAX](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_sarimax;;
+		
+section_stlf
+	=> nrel_main_idtf:
+		[Раздел. STLF](* <- lang_ru;; *);
+		[Section. STLF](* <- lang_en;; *);
+
+
+	-> rrel_key_sc_element:
+		concept_stlf;;

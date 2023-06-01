@@ -5,14 +5,18 @@ section_nn_in_img_classification
 			(* <- lang_ru;; *);
 	=> nrel_main_idtf:
 		[Section. Neural network architectures in image classification tasks]
-			(* <- lang_en;; *);
+			(* <- lang_en;; *);;
+			
+section_nn_in_img_classification
 
 	-> rrel_key_sc_element: 
 		concept_neural_network_architecture;
 		concept_alexnet;
 		concept_googlenet;
-		concept_inception;
+		concept_inceptionv2;
 		concept_vgg;
 		concept_resnet;
 		concept_densenet;
 		concept_efficientnet;;
+		
+section_nn_in_img_classification <- atomic_section;;

@@ -5,10 +5,34 @@ section_nn_in_nlp
 			(* <- lang_ru;; *);
 	=> nrel_main_idtf:
 		[Section. Neural network architectures in natural language processing tasks]
-			(* <- lang_en;; *);
+			(* <- lang_en;; *);;
+
+section_nn_in_nlp
 
 	-> rrel_key_sc_element: 
+		concept_gpt;
+		concept_gpt2;
+		concept_gpt3;
+		concept_gpt3_5;
+		concept_gpt4;
+		concept_chatgpt;
+		concept_instructgpt;
+		concept_dialogpt;
+		concept_gptj;
+		concept_gptneo;
+		concept_gptneox;
+		concept_bloom;
 		concept_bert;
+		concept_albert;
 		concept_roberta;
 		concept_distilbert;
-		concept_gpt;;
+		concept_palm;
+		concept_minerva;
+		concept_lamda;
+		concept_gopher;
+		concept_turingnlg;
+		concept_chinchilla;
+		concept_sparrow;
+		concept_opt;
+		concept_blenderbot3;
+		concept_jurrasic1;;
